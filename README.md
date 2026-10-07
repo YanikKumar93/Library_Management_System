@@ -1,166 +1,383 @@
 # 📚 Library Management System
 
-A **menu-driven, console-based Library Management System** written in **C** for the **Software Development Laboratory** (B.Tech ECE, First Year). It handles books, students, issue/return, inventory, fines and library statistics, and saves everything in files so data is not lost when the program closes.
+A **menu-driven, console-based Library Management System** developed in the **C programming language** as a Software Development Laboratory project.
+
+The system automates basic library operations such as book management, student management, inventory tracking, book issue/return, authentication, and fine management.
 
 ---
 
-## 👥 Team Members
+## 📌 Project Overview
 
-| S. No. | Name            | Roll Number |
-| :----: | --------------- | :---------: |
-|   1    | **Yanik Kumar** | 2601020023  |
-|   2    | **Ayush Kumar** | 2601020018  |
-|   3    | **Arav Singh**  | 2601020003  |
-|   4    | **Nehal Gupta** | 2601020025  |
+Managing library records manually can be time-consuming and may lead to errors. This project provides a simple computer-based solution for managing common library operations.
 
----
+The system provides separate access for:
 
-## 📖 About the Project
+- **Administrator**
+- **Student**
 
-The library does its daily work on a computer instead of on paper. There are two types of users, **Admin** and **Student**, and each one sees only the options meant for them.
+All important records are stored using **file handling**, allowing the data to remain available even after the program is closed.
 
 ---
 
-## ✨ Functions of the Project
+## 🎯 Objectives
 
-| Module | What it does |
-| ------ | ------------ |
-| 🔐 **Authentication** | Admin and Student log in separately. The role decides which menu the user gets. |
-| 📚 **Book Management** | Admin adds and deletes books. Books are kept in categories. Students search, issue and return books. |
-| 👨‍🎓 **Student Management** | Stores student ID, name, issued books and pending fines so the admin can view each student's record. |
-| 📦 **Inventory Management** | Keeps total, available and issued copies. Issuing a book reduces available copies; returning it increases them. |
-| 💰 **Fine Management** | Calculates fine on late returns and tracks pending (unpaid) fines for every student. |
-| 📊 **Statistics Dashboard** | Shows total books, available books, issued books, total students and students with pending fines. |
-
-### 👨‍💼 Admin can
-Add books · Delete books · Manage inventory · View student records · Monitor pending fines · View statistics
-
-### 👨‍🎓 Student can
-Log in · Search books · Issue books · Return books · View fines
+- Automate the basic day-to-day operations of a library.
+- Provide separate access for administrators and students.
+- Maintain organised records of books, students, issues, returns, and fines.
+- Track total, available, and issued copies of books.
+- Calculate and monitor pending fines.
+- Store records permanently using file handling.
+- Apply fundamental C programming concepts in a practical project.
 
 ---
 
-## 🏗️ System Architecture
+## ⚙️ Main Features
 
-```mermaid
-flowchart TD
-    A[Library Management System] --> B[Authentication]
+### 🔐 Authentication
 
-    B --> C[Admin]
-    B --> D[Student]
+- Admin login
+- Student login
+- Role-based access
+- Different menus based on the user's role
 
-    C --> E[Book Management]
-    C --> F[Student Management]
-    C --> G[Inventory Management]
-    C --> H[Fine Management]
-    C --> I[Statistics Dashboard]
+### 📖 Book Management
 
-    D --> E
-    D --> J[Issue / Return Books]
+**Administrator can:**
+- Add books
+- Delete books
+- Manage book records
+- Manage inventory
 
-    E --> K[(Book Records)]
-    F --> L[(Student Records)]
-    G --> M[(Inventory Data)]
-    J --> N[(Issue / Return Records)]
-    H --> O[(Fine Records)]
+**Student can:**
+- Search for books
+- Issue available books
+- Return books
 
-    K --> P[File Storage]
-    L --> P
-    M --> P
-    N --> P
-    O --> P
+Book records include information such as:
+
+- Book ID
+- Title
+- Author
+- Category
+- Number of copies
+
+### 👨‍🎓 Student Management
+
+The system maintains student records including:
+
+- Student ID
+- Student name
+- Issued books
+- Pending fines
+
+The administrator can view student records to track issued books and fines.
+
+### 📦 Inventory Management
+
+The inventory module maintains:
+
+- Total copies
+- Available copies
+- Issued copies
+
+The values are automatically updated when books are issued or returned.
+
+### 💰 Fine Management
+
+The system:
+
+- Calculates fines for late returns.
+- Maintains pending fine records.
+- Allows administrators to monitor unpaid fines.
+- Allows students to view their own fines.
+
+---
+
+## 🏗️ System Modules
+
+```text
+Library Management System
+│
+├── Authentication
+│   ├── Admin Login
+│   └── Student Login
+│
+├── Book Management
+│   ├── Add Books
+│   ├── Delete Books
+│   ├── Search Books
+│   ├── Issue Books
+│   └── Return Books
+│
+├── Student Management
+│   ├── Student Records
+│   └── Issued Books
+│
+├── Inventory Management
+│   ├── Total Copies
+│   ├── Available Copies
+│   └── Issued Copies
+│
+└── Fine Management
+    ├── Calculate Fine
+    ├── Pending Fines
+    └── Fine Records
 ```
 
 ---
 
 ## 🔄 Application Workflow
 
-```mermaid
-flowchart TD
-    A([Start]) --> B[Login]
-    B --> C{Select Role}
-
-    C -->|Admin| D[Admin Dashboard]
-    C -->|Student| E[Student Dashboard]
-
-    D --> F[Manage Books]
-    D --> G[Manage Students]
-    D --> H[Manage Inventory]
-    D --> I[Monitor Fines]
-    D --> J[View Statistics]
-
-    E --> K[Search Books]
-    E --> L[Issue Book]
-    E --> M[Return Book]
-
-    F --> N[(File Storage)]
-    G --> N
-    H --> N
-    I --> N
-    J --> N
-    K --> N
-    L --> N
-    M --> N
-
-    N --> O([Exit])
-```
-
----
-
-## 📊 Statistics Dashboard (Sample Output)
-
 ```text
-╔══════════════════════════════╗
-║      LIBRARY STATISTICS      ║
-╠══════════════════════════════╣
-║ Total Books       : XXXX     ║
-║ Available Books   : XXXX     ║
-║ Issued Books      : XXXX     ║
-║ Total Students    : XXXX     ║
-║ Pending Fines     : XXXX     ║
-╚══════════════════════════════╝
+        Start
+          │
+          ▼
+    Login Screen
+          │
+     ┌────┴────┐
+     ▼         ▼
+   Admin     Student
+     │         │
+     ▼         ▼
+Admin Menu  Student Menu
+     │         │
+     ├── Books ├── Search Books
+     ├── Users ├── Issue Books
+     ├── Stock ├── Return Books
+     └── Fines └── View Fines
+          │
+          ▼
+      File Storage
+          │
+          ▼
+         Exit
 ```
 
 ---
 
-## 🧱 C Concepts Used
+## 💻 Technologies Used
 
-* **Control flow:** `if-else`, `switch-case` and loops for menus, login, search, issue/return and fine calculation.
-* **Arrays and structures:** `struct` groups book, student, issue and fine details; arrays hold many records at once.
-* **File handling:** `fopen`, `fclose`, `fread`, `fwrite`, `fprintf`, `fscanf` store records permanently.
-* **Functions:** each module is written as separate functions to keep the code organised.
+| Technology | Purpose |
+|---|---|
+| **C** | Main programming language |
+| **File Handling** | Permanent data storage |
+| **Structures** | Organising related records |
+| **Arrays** | Storing multiple records |
+| **Functions** | Modular program design |
+| **Control Statements** | Program flow and decision making |
 
 ---
 
-## 💻 Requirements
+## 🧠 C Programming Concepts Used
 
-| Component | Requirement |
-| --------- | ----------- |
-| **Hardware** | Intel i3 or above, 4 GB RAM, 100 MB free space |
-| **Software** | Windows / Linux, GCC / Code::Blocks / Turbo C |
+### Control Flow
+
+The project uses:
+
+- `if`
+- `if-else`
+- `switch-case`
+- `for`
+- `while`
+- `do-while`
+
+These are used for login verification, menu navigation, searching, checking availability, issuing and returning books, and calculating fines.
+
+### Arrays
+
+Arrays are used to store multiple book and student records while the program is running.
+
+### Structures
+
+Structures are used to group related information for:
+
+- Books
+- Students
+- Issue records
+- Fine records
+
+### Functions
+
+The project is divided into separate functions to keep the program organised and easier to test and modify.
+
+### File Handling
+
+File handling is used to permanently store records.
+
+Functions used include:
+
+```c
+fopen()
+fclose()
+fread()
+fwrite()
+fprintf()
+fscanf()
+```
+
+---
+
+## 🖥️ Hardware & Software Requirements
+
+### Hardware
+
+- **Processor:** Intel i3 or above
+- **RAM:** 4 GB minimum
+- **Storage:** 100 MB free space
+
+### Software
+
+- **Operating System:** Windows / Linux
+- **Programming Language:** C
+- **Compiler:** GCC / Code::Blocks / Turbo C
 
 ---
 
 ## 🚀 How to Run
 
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/USERNAME/Library-Management-System.git
-cd Library-Management-System
-gcc main.c -o library
-./library          # Linux / macOS
-library.exe        # Windows
+git clone <repository-url>
 ```
 
+### 2. Open the Project
+
+Navigate to the project directory:
+
+```bash
+cd Library-Management-System
+```
+
+### 3. Compile the Program
+
+Using GCC:
+
+```bash
+gcc main.c -o library
+```
+
+### 4. Run the Program
+
+On Windows:
+
+```bash
+library.exe
+```
+
+On Linux:
+
+```bash
+./library
+```
+
+> Replace `main.c` with the actual source filename if your project uses a different filename.
+
 ---
 
-## 📌 Conclusion
+## 📂 Suggested Project Structure
 
-The system automates the main library tasks and shows how first-year C topics (control flow, arrays, structures, functions and file handling) can be combined in one practical project.
+```text
+Library-Management-System/
+│
+├── README.md
+├── main.c
+├── books.dat
+├── students.dat
+├── issues.dat
+├── fines.dat
+└── screenshots/
+```
 
-**Future scope:** graphical interface, database integration, barcode/QR book tracking and online login.
+The exact file structure may vary depending on the implementation.
 
 ---
 
-## 👨‍💻 Developed By
+## 👥 User Roles
 
-**Yanik Kumar** · **Ayush Kumar** · **Arav Singh** · **Nehal Gupta**
+### 👨‍💼 Administrator
+
+The administrator can:
+
+- Add books
+- Delete books
+- Manage inventory
+- View student records
+- Monitor pending fines
+
+### 👨‍🎓 Student
+
+Students can:
+
+- Log in
+- Search for books
+- Issue books
+- Return books
+- View fines
+
+### 🤖 System
+
+The system automatically:
+
+- Maintains book records
+- Stores student information
+- Updates inventory
+- Calculates fines
+- Maintains issue and return records
+
+---
+
+## 🔒 Security
+
+The system uses authentication before allowing users to access the application.
+
+Role-based access ensures that students cannot access administrator-only functions such as deleting books or managing inventory.
+
+---
+
+## 📈 Future Scope
+
+The current project is a console-based C application. It can be extended in the future with features such as:
+
+- Graphical User Interface
+- Online library access
+- Database integration
+- Web-based dashboard
+- Online book reservations
+- Email notifications
+- Advanced search and filtering
+- Automated fine payment
+- Cloud-based record storage
+
+---
+
+## 📋 Project Information
+
+**Project:** Library Management System  
+**Type:** Software Development Laboratory Project  
+**Language:** C  
+**Application:** Console-based  
+**Level:** B.Tech First Year  
+
+### Team Members
+
+| Name | Roll Number |
+|---|---|
+| Yanik Kumar | 2601020023 |
+| Ayush Kumar | 2601020018 |
+| Arav Singh | 2601020003 |
+| Nehal Gupta | 2601020025 |
+
+---
+
+## 📜 Conclusion
+
+The **Library Management System** automates important library operations including book management, student management, inventory tracking, fine calculation, authentication, and issue/return management.
+
+The project demonstrates how fundamental C programming concepts such as **control flow, arrays, structures, functions, and file handling** can be combined to build a practical application.
+
+---
+
+## ⭐ Acknowledgement
+
+This project was developed as part of the **Software Development Laboratory** for **B.Tech Electronics and Communication Engineering (First Year)**.
