@@ -20,7 +20,16 @@ int main()
     return 0;
 }
 Admin()
-{printf("Welcome to the Admin Dashboard");
+{
+    int Choice;
+    printf("Welcome to the Admin Dashboard\n");
+    printf("What do you want to do  : \n");
+    printf("\t1. Add a student \n");
+    printf("\t2. Add a book \n");
+    printf("\t3.Check avaliability of books \n");
+    printf("\t4.Library statistics dashboard \n");
+    printf("Enter your choice here : ");
+    scanf("%d",&Choice);
 }
 Student()
 {printf("Welcome to the Student Dashboard");}
