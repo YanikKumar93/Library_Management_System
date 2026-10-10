@@ -20,6 +20,7 @@ int main()
     return 0;
 }
 Admin()
-{}
+{printf("Welcome to the Admin Dashboard");
+}
 Student()
-{}
+{printf("Welcome to the Student Dashboard");}
