@@ -32,4 +32,13 @@ Admin()
     scanf("%d",&Choice);
 }
 Student()
-{printf("Welcome to the Student Dashboard");}
+{int Choice;
+    printf("Welcome to the Student Dashboard\n");
+    printf("What do you want to do  : \n");
+    printf("\t1. Issue a book \n");
+    printf("\t2. Return a book \n");
+    printf("\t3.Check pending fine \n");
+    printf("\t4. Search for a book \n");
+    printf("Enter your choice here : ");
+    scanf("%d",&Choice);
+}
