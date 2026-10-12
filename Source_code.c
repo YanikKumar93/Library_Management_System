@@ -30,6 +30,12 @@ Admin()
     printf("\t4.Library statistics dashboard \n");
     printf("Enter your choice here : ");
     scanf("%d",&Choice);
+    switch(Choice){
+        case 1:{
+            printf("");
+            printf();}
+        case 2:{
+            printf();}
 }
 Student()
 {int Choice;
