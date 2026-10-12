@@ -36,6 +36,9 @@ Admin()
             printf();}
         case 2:{
             printf();}
+        case 3:{}
+        case 4:{}
+    }
 }
 Student()
 {int Choice;
@@ -47,4 +50,13 @@ Student()
     printf("\t4. Search for a book \n");
     printf("Enter your choice here : ");
     scanf("%d",&Choice);
+ switch(Choice){
+        case 1:{
+            printf("");
+            printf();}
+        case 2:{
+            printf();}
+        case 3:{}
+        case 4:{}
+    }
 }
