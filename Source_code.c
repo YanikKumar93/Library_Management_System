@@ -1,7 +1,10 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 int main()
 {
     int User;
+    FILE *file = fopen("IT_College_Library_Catalogue.csv","r");
     start : printf("-----------------WELCOME TO JIIT LIBRARY-----------------\n\n");
     printf("Please select your category : \n");;
     printf("\t1. Admin\n");
