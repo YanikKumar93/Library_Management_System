@@ -55,8 +55,10 @@ Student()
     scanf("%d",&Choice);
  switch(Choice){
         case 1:{
-            printf("");
-            printf();}
+            printf("Enter following0 details of the book : \n");
+            printf("\t1.Book Name\n");
+            printf("\t2.Author Name\n");
+        }
         case 2:{
             printf();}
         case 3:{}
