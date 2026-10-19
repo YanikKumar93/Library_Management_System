@@ -35,10 +35,24 @@ Admin()
     scanf("%d",&Choice);
     switch(Choice){
         case 1:{
-            printf("");
-            printf();}
+            printf("To add a student add please provide the following details : \n");
+            printf("\tEnter the name of the student : ");
+            printf("\tEnter the enrollment number of the student : ");
+            printf("\tEnter the branch of the student :");
+            printf("\tEnter the contact number of the student withount any prefixes :");
+            printf("\n");
+            printf("The student is added successfully :");
+            
+        }
         case 2:{
-            printf();}
+            printf("To add a new book to the library, please enter the following details about the book :\n");
+            printf("\tEnter the name of the book :");
+            printf("\tEnter the name of the Author of the book :");
+            printf("\tEnter the serial number of the book :");
+            printf("\tEnter the shelf number in which the book is placed :");
+            printf("\n");
+            printf("The book is added successfully :");
+        }
         case 3:{}
         case 4:{}
     }
