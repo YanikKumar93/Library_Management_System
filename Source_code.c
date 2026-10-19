@@ -72,10 +72,21 @@ Student()
             printf("Enter following0 details of the book : \n");
             printf("\t1.Book Name\n");
             printf("\t2.Author Name\n");
+            printf("\tPublisher name\n");
+            printf("Enter the number of days for which you want to issue the book : ");
+            //Write a part to take input for system date and time of issue
         }
         case 2:{
-            printf();}
-        case 3:{}
-        case 4:{}
+            printf("Enter the following details of the book :");
+            printf("\t1.Book Name\n");
+            printf("\t2.Author Name\n");
+            printf("\tPublisher name\n");
+        }
+        case 3:{
+            printf("Enter the name of the book you issued :");
+        }
+        case 4:{
+            printf("Enter the name of the book :");
+        }
     }
 }
