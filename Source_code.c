@@ -10,13 +10,15 @@ int main(void)
 start:
     printf("-----------------WELCOME TO JIIT LIBRARY-----------------\n\n");
     printf("Please select your category:\n");
-    printf("\t1. Admin\n");
-    printf("\t2. Student\n");
+    printf("\t 1. Admin\n");
+    printf("\t 2. Student\n");
     printf("Enter your choice here: ");
+    printf("\n\n");
     if (scanf("%d", &User) != 1)
     {
-        printf("Invalid input. Please enter a number.\n");
-        return 1;
+        printf("Invalid input. Please enter a number.\n\n\n");
+        while (getchar() != '\n');
+        goto start;
     }
     switch (User)
     {
@@ -93,10 +95,10 @@ void Student(void)
 
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
-    printf("\t1. Issue a book\n");
-    printf("\t2. Return a book\n");
-    printf("\t3. Check pending fine\n");
-    printf("\t4. Search for a book\n");
+    printf("\t 1. Issue a book\n");
+    printf("\t 2. Return a book\n");
+    printf("\t 3. Check pending fine\n");
+    printf("\t 4. Search for a book\n");
     printf("Enter your choice here: ");
 
     if (scanf("%d", &Choice) != 1)
@@ -132,7 +134,8 @@ void Student(void)
             break;
 
         default:
-            printf("Invalid Student choice.\n");
+            printf("Invalid choice.\n");
+            printf("Please enter  a valid choice. \n");
             break;
     }
 }
