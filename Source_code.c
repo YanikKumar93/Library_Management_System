@@ -4,6 +4,8 @@
 /* Function declarations */
 void Admin(void);
 void Student(void);
+void Studedt_Login(void):
+void Admin_Login(void):
 int main(void)
 {
     int User;
@@ -36,6 +38,21 @@ start:
     }
     return 0;
 }
+
+void Admin_Login(void)
+{
+
+}
+
+void Student_Login(void)
+{
+
+
+}
+
+
+
+
 void Admin(void)
 {
     int Choice;
