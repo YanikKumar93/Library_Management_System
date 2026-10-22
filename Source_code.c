@@ -13,13 +13,13 @@ start:
     printf("\t 1. Admin\n");
     printf("\t 2. Student\n");
     printf("Enter your choice here: ");
-    printf("\n\n");
     if (scanf("%d", &User) != 1)
     {
         printf("Invalid input. Please enter a number.\n\n\n");
         while (getchar() != '\n');
         goto start;
     }
+    printf("\n\n");
     switch (User)
     {
         case 1:
