@@ -58,30 +58,34 @@ void Admin(void)
     {
         case 1:
             printf("\nTo add a student, provide the following details:\n");
-            printf("\tEnter the name of the student: ");
-            printf("\n\tEnter the enrollment number of the student: ");
-            printf("\n\tEnter the branch of the student: ");
-            printf("\n\tEnter the contact number of the student: ");
-            printf("\nThe student is added successfully.\n");
+            printf("\t1.Enter the name of the student: ");
+            printf("\n\t2.Enter the enrollment number of the student: ");
+            printf("\n\t3.Enter the branch of the student: ");
+            printf("\n\t4.Enter the contact number of the student: ");
+            printf("\n5.The student is added successfully.\n");
             break;
 
         case 2:
             printf("\nTo add a new book, provide the following details:\n");
-            printf("\tEnter the name of the book: ");
-            printf("\n\tEnter the name of the author: ");
-            printf("\n\tEnter the serial number of the book: ");
-            printf("\n\tEnter the shelf number: ");
+            printf("\t1.Enter the name of the book: ");
+            printf("\n\t2.Enter the name of the author: ");
+            printf("\n\t3.Enter the serial number of the book: ");
+            printf("\n\t4.Enter the shelf number: ");
             printf("\nThe book is added successfully.\n");
             break;
 
         case 3:
             printf("\nTo check the availability of a book:\n");
-            printf("\tEnter the name of the book:\n");
-            printf("\tEnter the author name:\n");
+            printf("\t1.Enter the name of the book:\n");
+            printf("\t2.Enter the author name:\n");
             break;
 
         case 4:
             printf("\nLibrary Statistics Dashboard\n");
+            printf("1.Total number of books in the library : \n");
+            printf("2.Total number of book currently present in the library : \n");
+            printf("3.Total Issued Books :\n");
+            printf("4.Total registered students : \n");
             break;
 
         default:
@@ -114,7 +118,7 @@ void Student(void)
             printf("\t1. Book Name\n");
             printf("\t2. Author Name\n");
             printf("\t3. Publisher Name\n");
-            printf("Enter the number of days for which you want to issue the book: ");
+            printf("\t4.Enter the number of days for which you want to issue the book: ");
             /* Add input handling for book details and issue date. */
             break;
 
@@ -127,6 +131,7 @@ void Student(void)
 
         case 3:
             printf("\nEnter the name of the book you issued: ");
+            printf("\nEnter the name of the author of the book  : ");
             break;
 
         case 4:
