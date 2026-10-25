@@ -41,13 +41,12 @@ start:
 
 void Admin_Login(void)
 {
-
+    //Here we will create the valdidation login for student portal
 }
 
 void Student_Login(void)
 {
-
-
+    // Here we will create the validation login for admin portal 
 }
 
 
