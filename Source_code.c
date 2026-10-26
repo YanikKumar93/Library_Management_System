@@ -13,6 +13,7 @@ int main(void)
     int User;
     FILE *catalogue;
     catalogue = fopen("catalogue.txt", "a+");
+
 start:
     printf("-----------------WELCOME TO JIIT LIBRARY-----------------\n\n");
     printf("Please select your category:\n");
@@ -83,14 +84,14 @@ void Admin(void)
             for (int i = 0; i < num; i++)
             {
                 printf("Enter the name of student %d: ", i + 1);
-                fgets(name, sizeof(name), stdin); 
-                name[strcspn(name, "\n")] = '\0'; 
+                fgets(name, sizeof(name), stdin); // Read string with spaces
+                name[strcspn(name, "\n")] = '\0'; // Remove newline character from the end of the string
                 printf("Enter the roll number of student %d: ", i + 1);
-                fgets(roll_number, sizeof(roll_number), stdin); 
-                roll_number[strcspn(roll_number, "\n")] = '\0'; 
+                fgets(roll_number, sizeof(roll_number), stdin); // Read string with spaces
+                roll_number[strcspn(roll_number, "\n")] = '\0'; // Remove newline character from the end of the string
                 printf("Enter the email of student %d: ", i + 1);
-                fgets(email, sizeof(email), stdin);
-                email[strcspn(email, "\n")] = '\0'; 
+                fgets(email, sizeof(email), stdin); // Read string with spaces
+                email[strcspn(email, "\n")] = '\0'; // Remove newline character from the end of the string
                 fprintf(student_file, "%s,%s,%s\n", name, roll_number, email);  
             }
             fclose(student_file);
@@ -114,18 +115,18 @@ void Admin(void)
             for (int i = 0; i < total_books; i++)
             {
                 printf("Enter the name of book %d: ", i + 1);
-                getchar();
-                fgets(book_name, sizeof(book_name), stdin); 
-                book_name[strcspn(book_name, "\n")] = '\0'; 
+                getchar(); // Clear the newline character from the input buffer
+                fgets(book_name, sizeof(book_name), stdin); // Read string with spaces
+                book_name[strcspn(book_name, "\n")] = '\0'; // Remove newline character from the end of the string
                 printf("Enter the author name of book %d: ", i + 1);
-                fgets(author_name, sizeof(author_name), stdin); 
-                author_name[strcspn(author_name, "\n")] = '\0'; 
+                fgets(author_name, sizeof(author_name), stdin); // Read string with spaces
+                author_name[strcspn(author_name, "\n")] = '\0'; // Remove newline character from the end of the string
                 printf("Enter the publisher name of book %d: ", i + 1);
-                fgets(publisher_name, sizeof(publisher_name), stdin);
-                publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
+                fgets(publisher_name, sizeof(publisher_name), stdin); // Read string with spaces
+                publisher_name[strcspn(publisher_name, "\n")] = '\0'; // Remove newline character from the end of the string
                 printf("Enter the quantity of copies of the books added to the library %d: ", i + 1);
-                scanf("%s", num_books); 
-                num_books[strcspn(num_books, "\n")] = '\0'; 
+                scanf("%s", num_books); // Read number of books as string
+                num_books[strcspn(num_books, "\n")] = '\0'; // Remove newline character from the end of the string
                 fprintf(IT_College_Library_Catalogue, "%s,%s,%s,%s\n", book_name, author_name, publisher_name, num_books);
             }
 
@@ -142,12 +143,34 @@ void Admin(void)
             break;}
 
         case 4:
-            {printf("\nLibrary Statistics Dashboard\n");
-            printf("1.Total number of books in the library : \n");
-            printf("2.Total number of book currently present in the library : \n");
-            printf("3.Total Issued Books :\n");
-            printf("4.Total registered students : \n");
-            break;}
+            {
+                FILE *catalogue;
+                char book_name[100],author_name[100],publisher_name[100];
+                int num_books;
+                int total_books = 0;
+                catalogue = fopen("IT_College_Library_Catalogue.txt", "r"); 
+                if (catalogue == NULL)
+                {
+                    printf("Error opening library catalogue file.\n");
+                    return;
+                }
+                fscanf(catalogue,"%*[^\n]\n");//To remove the first line of the csv file 
+                while (fscanf(catalogue, "%[^,],%[^,],%[^,],%d\n", 
+                    book_name, 
+                    author_name, 
+                    publisher_name, 
+                    &num_books) == 4)
+                {
+                    total_books += num_books;
+                }
+                fclose(catalogue);
+                printf("\nLibrary Statistics Dashboard\n");
+                printf("1.Total number of books in the library : %d\n",total_books);
+                printf("2.Total number of book currently present in the library : \n");
+                printf("3.Total Issued Books :\n");
+                printf("4.Total registered students : \n");
+                break;
+        }
 
         default:
             {printf("Invalid Admin choice.\n");
@@ -203,5 +226,5 @@ void Student(void)
             {printf("Invalid choice.\n");
             printf("Please enter  a valid choice. \n");
             break;}
-    }
+    } 
 }
