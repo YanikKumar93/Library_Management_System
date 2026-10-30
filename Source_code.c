@@ -7,7 +7,6 @@ void Student(void);
 void Student_Login(void);
 void Admin_Login(void); 
 
-
 int main(void)
 {
     int User;
@@ -15,7 +14,7 @@ int main(void)
     catalogue = fopen("catalogue.txt", "a+");
 
 start:
-    printf("-----------------WELCOME TO JIIT LIBRARY-----------------\n\n");
+    printf("-------------------WELCOME TO JIIT LIBRARY--------------------\n\n");
     printf("Please select your category:\n");
     printf("\t 1. Admin\n");
     printf("\t 2. Student\n");
@@ -23,35 +22,81 @@ start:
 
     if (scanf("%d", &User) != 1)
     {
-        printf("Invalid input. Please enter a number.\n\n\n");
+        printf("Invalid input. Please enter a number.\n\n");
         while (getchar() != '\n');
         goto start;
     }
+
     printf("\n\n");
+
     switch (User)
     {
         case 1:
-            Admin();
+            Admin_Login();
             break;
 
         case 2:
-            Student();
+            Student_Login();
             break;
 
         default:
-            printf("Please enter a valid user choice.\n\n");
+            printf("Invalid choice. Please enter 1 or 2.\n\n");
             goto start;
     }
-    fclose(catalogue);
+
+    if (catalogue != NULL)
+    {
+        fclose(catalogue);
+    }
+
     return 0;
 }
+
+void Admin_Login(void)
+{
+    char username[20], password[20];
+    printf("Enter admin username: "); 
+    scanf("%s", username);
+    printf("Enter admin password: ");
+    scanf("%s", password);
+
+    if (strcmp(username, "admin") == 0 && strcmp(password, "admin123") == 0)
+    {
+        printf("Admin login successful.\n");
+        Admin();
+    }
+    else
+    {
+        printf("Invalid admin credentials.\n");
+    }
+}
+
+void Student_Login(void)
+{
+    char username[20], password[20];
+    printf("Enter student username: ");
+    scanf("%s", username);
+    printf("Enter student password: ");
+    scanf("%s", password);
+
+    if (strcmp(username, "student") == 0 && strcmp(password, "student123") == 0)
+    {
+        printf("Student login successful.\n");
+        Student();
+    }
+    else
+    {
+        printf("Invalid student credentials.\n");
+    }
+}
+
 void Admin(void)
 {
     int Choice;
     FILE *student_file;
     student_file = fopen("students.txt", "a+");
     FILE *IT_College_Library_Catalogue;
-    IT_College_Library_Catalogue = fopen("IT_College_Library_Catalogue.txt", "a+");
+    IT_College_Library_Catalogue = fopen("IT_College_Library_Catalogue.csv", "a+");
     printf("\nWelcome to the Admin Dashboard\n");
     printf("What do you want to do?\n");
     printf("\t1. Add a student\n");
@@ -78,27 +123,30 @@ void Admin(void)
             }
             printf("How many students do you want to add? ");
             scanf("%d", &num);
+            getchar();  // Consume the leftover newline
             printf("\n");
             char name[50], roll_number[20], email[50];
             fprintf(student_file, "Name,Roll Number,Email\n");
             for (int i = 0; i < num; i++)
             {
                 printf("Enter the name of student %d: ", i + 1);
-                fgets(name, sizeof(name), stdin); // Read string with spaces
-                name[strcspn(name, "\n")] = '\0'; // Remove newline character from the end of the string
+                fgets(name, sizeof(name), stdin);
+                name[strcspn(name, "\n")] = '\0';
+                printf("\n");
                 printf("Enter the roll number of student %d: ", i + 1);
-                fgets(roll_number, sizeof(roll_number), stdin); // Read string with spaces
-                roll_number[strcspn(roll_number, "\n")] = '\0'; // Remove newline character from the end of the string
+                fgets(roll_number, sizeof(roll_number), stdin);
+                roll_number[strcspn(roll_number, "\n")] = '\0';
                 printf("Enter the email of student %d: ", i + 1);
-                fgets(email, sizeof(email), stdin); // Read string with spaces
-                email[strcspn(email, "\n")] = '\0'; // Remove newline character from the end of the string
-                fprintf(student_file, "%s,%s,%s\n", name, roll_number, email);  
+                fgets(email, sizeof(email), stdin);
+                email[strcspn(email, "\n")] = '\0';
+                fprintf(student_file, "%s,%s,%s\n", name, roll_number, email);
             }
             fclose(student_file);
-            printf("Students added successfully.\n");   
+            printf("Students added successfully.\n");
             printf("The changes will be reflected in the students.txt file.\n");
             break;}
 
+            
         case 2:
             {
             if (IT_College_Library_Catalogue == NULL)
@@ -132,7 +180,7 @@ void Admin(void)
 
             fclose(IT_College_Library_Catalogue);
             printf("Books added to the library successfully.\n");
-            printf("The changes will be reflected in the IT_College_Library_Catalogue.txt file.\n");
+            printf("The changes will be reflected in the IT_College_Library_Catalogue.csv file.\n");
             break;
             }
         case 3:
@@ -148,7 +196,7 @@ void Admin(void)
                 char book_name[100],author_name[100],publisher_name[100];
                 int num_books;
                 int total_books = 0;
-                catalogue = fopen("IT_College_Library_Catalogue.txt", "r"); 
+                catalogue = fopen("IT_College_Library_Catalogue.csv", "r"); 
                 if (catalogue == NULL)
                 {
                     printf("Error opening library catalogue file.\n");
@@ -177,6 +225,7 @@ void Admin(void)
             break;}
     }
 }
+
 void Student(void)
 {
     int Choice;
@@ -227,4 +276,4 @@ void Student(void)
             printf("Please enter  a valid choice. \n");
             break;}
     } 
-}
+}       
