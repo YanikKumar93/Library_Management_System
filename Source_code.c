@@ -310,18 +310,17 @@ void Student(void)
     int Choice;
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
-    printf("\t1. Issue a book\n");
-    printf("\t2. Return a book\n");
-    printf("\t3. Check pending fine\n");
+    printf("\t1. Issue a book\n");//To be done 
+    printf("\t2. Return a book\n");//To be done
+    printf("\t3. Check pending fine\n");//To be done
     printf("\t4. Search for a book\n");
-    printf("\t5. Check student fine\n");
-    printf("\t6. Exit\n");
+    printf("\t5. Exit\n");
     printf("Enter your choice here: ");
 
     if (scanf("%d", &Choice) != 1)
     {
         printf("Invalid input.\n");
-        return;
+        goto Student;
     }
 
     switch (Choice)
@@ -411,16 +410,8 @@ void Student(void)
                 }
                 fclose(catalogue);
                 goto Student;
-            }
+            } 
         case 5:
-            {
-                printf("\nEnter your name :");
-                printf("\nEnter your roll number :");
-                printf("\nEnter the your email address: ");
-                printf("\nEnter your branch :");
-                goto Student;
-            }   
-        case 6:
             {
                 printf("\nExiting the Student Dashboard.\n");
                 printf("Thank you for using the Library Management System.\n");
