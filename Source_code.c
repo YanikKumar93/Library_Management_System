@@ -236,7 +236,21 @@ void Admin(void)
                 goto Admin;
             }
 
-        case 5: // Library statistics dashboard
+        case 4: // Checking pending fines
+            {
+                FILE *catalogue;
+            }
+
+        case 5: // Issue a book 
+            {
+                goto Admin;
+            }
+        case 6: // Return a book
+
+            {
+                goto Admin;
+            }
+        case 7:
             {
                 FILE *catalogue;
                 FILE *student_file;
@@ -257,6 +271,7 @@ void Admin(void)
                     total_books += num_books;
                 }
                 fclose(catalogue);
+                fclose(student_file);
                 student_file = fopen("students.csv", "r");
                 fscanf(student_file, "%*[^\n]\n");
                 while (fscanf(student_file, "%99[^,],%99[^,],%99[^,],%c",
@@ -275,15 +290,10 @@ void Admin(void)
                 printf("4. Total registered students: %d\n", total_students); // Placeholder for actual number of registered students
                 goto Admin;
             }
-
-        case 4: // Checking pending fines
-            {
-                printf("\nChecking student fine:\n");
-                goto Admin;
-            }
-        case 6:
+        case 8:
             {
                 printf("\nExiting the Admin Dashboard.\n");
+                printf("Thank you for using the JIIT Library Management System.\n");
                 break;
             }
 
@@ -322,7 +332,35 @@ void Student(void)
     switch (Choice)
     {
         case 1:{
-            
+            FILE *catalogue;
+            Check_File_Opening(catalogue = fopen("IT_College_Library_Catalogue.csv", "r"), "IT_College_Library_Catalogue.csv");
+            char book_name[100];
+            char author_name[100];
+            char publisher_name[100];
+            char search_book[100];
+            int num_books;
+            int found = 0;
+            fscanf(catalogue, "%*[^\n]\n");
+            printf("Enter the name of the book you want to search for: ");
+            scanf("%99s", search_book);
+            while (fscanf(catalogue, "%99[^,],%99[^,],%99[^,],%d", book_name, author_name, publisher_name, &num_books) == 4)
+            {
+                if (strcmp(book_name, search_book) == 0)
+                {
+                    printf("Book found: \n");
+                    printf("Book Name: %s\n", book_name);
+                    printf("Author Name: %s\n", author_name);
+                    printf("Publisher Name: %s\n", publisher_name);
+                    printf("Number of copies available in library: %d\n", num_books);
+                    found = 1;
+                    break;
+                }
+            }
+            if (found==0)
+            {
+                printf("Book not found.\n");
+            }
+            fclose(catalogue);
         }
         case 2:{
 
