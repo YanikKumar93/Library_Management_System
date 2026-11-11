@@ -239,16 +239,89 @@ void Admin(void)
         case 4: // Checking pending fines
             {
                 FILE *catalogue;
+                int enrollment_number;
+                char book_name[100];
+                int date_issued, date_today;
+                Check_File_Opening(catalogue, "Issued_Books.csv");
+                printf("Enter the enrollment number of the student: ");
+                scanf("%d", &enrollment_number);
+                printf("Enter the name of the book to check pending fine: ");
+                getchar();
+                fgets(book_name, sizeof(book_name), stdin);
+                book_name[strcspn(book_name, "\n")] = '\0';
+                printf("Enter the return date (in format DDMMYYYY): ");
+                scanf("%d", &date_issued);
+                printf("Enter the current date (in format DDMMYYYY): ");
+                scanf("%d", &date_today);
+                
             }
+                
 
         case 5: // Issue a book 
             {
+                FILE *Issued_Books;
+                Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "a+"), "Issued_Books.csv");
+                char book_name[100], author_name[100], publisher_name[100];
+                int enrollment_number;
+                int date;
+                printf("Enter the enrollment number of the student: ");
+                scanf("%d", &enrollment_number);
+                int num_books;
+                printf("Enter the number of books to issue: ");
+                scanf("%d", &num_books);
+                printf("Enter the issue date (in format DDMMYYYY): ");
+                scanf("%d", &date);
+                if (num_books > 5)
+                {
+                    printf("You can issue maximum 5 books at a time.\n");
+                    goto Admin;
+                }
+                for (int i = 0; i < num_books; i++)
+                {
+                    printf("Enter the name of book %d to issue: ", i + 1);
+                    getchar(); 
+                    fgets(book_name, sizeof(book_name), stdin); 
+                    book_name[strcspn(book_name, "\n")] = '\0'; 
+                    printf("Enter the author name of book %d to issue: ", i + 1);
+                    fgets(author_name, sizeof(author_name), stdin); 
+                    author_name[strcspn(author_name, "\n")] = '\0'; 
+                    printf("Enter the publisher name of book %d to issue: ", i + 1);
+                    fgets(publisher_name, sizeof(publisher_name), stdin); 
+                    publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
+                    fprintf(Issued_Books, "%s,%s,%s,%d,%d\n", book_name, author_name, publisher_name, enrollment_number, date);
+                }
+                fclose(Issued_Books);
+                printf("Books issued successfully.\n"); 
                 goto Admin;
             }
         case 6: // Return a book
 
             {
-                goto Admin;
+                FILE *Issued_Books;
+                Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "a+"), "Issued_Books.csv");
+                char book_name[100], author_name[100], publisher_name[100];
+                int enrollment_number;  
+                int num_books;
+                printf("Enter the enrollment number of the student: ");
+                scanf("%d", &enrollment_number);
+                printf("Enter the number of books to return: ");
+                scanf("%d", &num_books);
+                for (int i = 0; i < num_books; i++)
+                {
+                    printf("Enter the name of book %d to return: ", i + 1);
+                    getchar(); 
+                    fgets(book_name, sizeof(book_name), stdin); 
+                    book_name[strcspn(book_name, "\n")] = '\0'; 
+                    printf("Enter the author name of book %d to return: ", i + 1);
+                    fgets(author_name, sizeof(author_name), stdin); 
+                    author_name[strcspn(author_name, "\n")] = '\0'; 
+                    printf("Enter the publisher name of book %d to return: ", i + 1);
+                    fgets(publisher_name, sizeof(publisher_name), stdin); 
+                    publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
+                    fprintf(Issued_Books, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, enrollment_number);
+                }
+                fclose(Issued_Books);
+                printf("Books returned successfully.\n");
             }
         case 7:
             {
@@ -321,7 +394,8 @@ void Student(void)
     printf("What do you want to do?\n");
     printf("\t1. Search for a book\n");
     printf("\t2. Check pending fine\n");//To be done
-    printf("\t3. Exit\n");
+    printf("\t3. Check the issued books\n");
+    printf("\t4. Exit\n");
     printf("Enter your choice here: ");
     if (scanf("%d", &Choice) != 1)
     {
@@ -363,15 +437,28 @@ void Student(void)
             fclose(catalogue);
         }
         case 2:{
-
+            int enrollment_number;
+            char book_name[100];
+            printf("Enter your enrollment number: ");
+            scanf("%d", &enrollment_number);
+            printf("Enter the name of the book for which you want to check the pending fine: ");
+            scanf("%s", book_name);
+            printf("\nChecking pending fine:\n");
         }
         case 3:{
-
+            printf("\nChecking issued books:\n");
         }
         case 4:
             {
                 printf("\nExiting the Student Dashboard.\n");
+                printf("Thank you for using the JIIT Library Management System.\n");
                 break;
+            }
+        default :
+            {
+                printf("Invalid Student choice.\n");
+                printf("Please enter a valid choice.\n");
+                goto Student;
             }
     }      
 }
