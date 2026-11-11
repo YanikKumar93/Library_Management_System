@@ -365,11 +365,17 @@ void Admin(void)
             {
                 FILE *catalogue;
                 FILE *student_file;
+                FILE *Issued_Books;
                 char book_name[100], author_name[100], publisher_name[100];
                 char name[50], roll_number[20], email[50], Branch[50];
+                int enrollment_number;
                 int num_books;
+                int date;
                 int total_books = 0;
                 int total_students = 0;
+                int total_issued_books = 0;
+                Issued_Books = fopen("Issued_Books.csv", "r");
+                Check_File_Opening(Issued_Books, "Issued_Books.csv");
                 Check_File_Opening(catalogue, "IT_College_Library_Catalogue.csv");
                 Check_File_Opening(student_file, "students.csv");
                 fscanf(catalogue, "%*[^\n]\n");
@@ -377,10 +383,21 @@ void Admin(void)
                             book_name,
                             author_name,
                             publisher_name,
-                            &num_books) == 4)
+                            num_books,
+                            &date) == 5)
                 {
                     total_books += num_books;
                 }
+                while (fscanf(Issued_Books, "%99[^,],%99[^,],%99[^,],%d,%d",
+                            book_name,
+                            author_name,
+                            publisher_name,
+                            &enrollment_number,
+                            &date) == 5)
+                {
+                    total_issued_books += 1;
+                }
+                fclose(Issued_Books);
                 fclose(catalogue);
                 fclose(student_file);
                 student_file = fopen("students.csv", "r");
@@ -396,9 +413,9 @@ void Admin(void)
                 fclose(student_file);
                 printf("\nLibrary Statistics Dashboard\n");
                 printf("1. Total number of books in the library: %d\n", total_books);
-                printf("2. Total number of books currently present in the library: %d\n", total_books); // Update it after maintaining a record of issued books
-                printf("3. Total issued books: %d\n", total_books); //Update it after maintaining a record of issued books
-                printf("4. Total registered students: %d\n", total_students); // Placeholder for actual number of registered students
+                printf("2. Total number of books currently present in the library: %d\n", total_books-total_issued_books); 
+                printf("3. Total issued books: %d\n", total_issued_books); 
+                printf("4. Total registered students: %d\n", total_students);
                 goto Admin;
             }
 
@@ -539,7 +556,7 @@ void Student(void)
                 }
             goto Student;
         }
-        
+
         case 3:
         {
             FILE *Issued_Books;
