@@ -237,11 +237,17 @@ void Admin(void)
             }
 
         case 4: // Checking pending fines
-            {
+            {   
                 FILE *catalogue;
                 int enrollment_number;
                 char book_name[100];
+                char book[100];
+                char author[100];
+                char publisher[100];
+                int enrollment;
                 int date_issued, date_today;
+                int found = 0;
+                catalogue = fopen("Issued_Books.csv", "r");
                 Check_File_Opening(catalogue, "Issued_Books.csv");
                 printf("Enter the enrollment number of the student: ");
                 scanf("%d", &enrollment_number);
@@ -249,11 +255,48 @@ void Admin(void)
                 getchar();
                 fgets(book_name, sizeof(book_name), stdin);
                 book_name[strcspn(book_name, "\n")] = '\0';
-                printf("Enter the return date (in format DDMMYYYY): ");
-                scanf("%d", &date_issued);
-                printf("Enter the current date (in format DDMMYYYY): ");
-                scanf("%d", &date_today);
-                
+                // Search for the matching record in the Issued_Books.csv file
+                //[^,]- Used to skip the programme from reading commas
+                while (fscanf(catalogue,
+                            "%99[^,],%99[^,],%99[^,],%d,%d",
+                            book,
+                            author,
+                            publisher,
+                            &enrollment,
+                            &date_issued) == 5)
+                {
+                    if (enrollment == enrollment_number &&
+                        strcmp(book, book_name) == 0)
+                    {
+                        found = 1;
+                        break;
+                    }
+                }
+                fclose(catalogue);
+                // Calculate the pending fine.
+                if (found>0)
+                {
+                    printf("Enter the current date (DDMMYYYY): ");
+                    scanf("%d", &date_today);
+
+                    if ((date_today - date_issued) > 15)
+                    {
+                        printf("\nBook is overdue.\n");
+                        int fine = (date_today - date_issued - 15) * 2 + 10; // Assuming a fine of 2 units per day after 15 days and a base fine of 10 units
+                        printf("\nPending fine for enrollment number %d and book '%s' is: %d units.\n",
+                            enrollment_number, book_name, fine);
+                    }
+                    else
+                    {
+                        printf("\nNo pending fine for enrollment number %d and book '%s'.\n",
+                            enrollment_number, book_name);
+                    }
+                }
+                else
+                {
+                    printf("\nNo matching issued-book record found.\n");
+                }
+                goto Admin;
             }
                 
 
@@ -322,6 +365,7 @@ void Admin(void)
                 }
                 fclose(Issued_Books);
                 printf("Books returned successfully.\n");
+                goto Admin;
             }
         case 7:
             {
