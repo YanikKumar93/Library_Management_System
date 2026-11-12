@@ -166,7 +166,7 @@ void Admin(void)
             {
             Check_File_Opening(IT_College_Library_Catalogue, "IT_College_Library_Catalogue.csv");
             char book_name[100], author_name[100], publisher_name[100];
-            char num_books[10];
+            int num_books =0;
             int total_books = 0;
             printf("How many books do you want to add? ");
             scanf("%d", &total_books);
@@ -184,9 +184,8 @@ void Admin(void)
                 fgets(publisher_name, sizeof(publisher_name), stdin); 
                 publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
                 printf("Enter the quantity of copies of the books added to the library %d: ", i + 1);
-                scanf("%s", num_books); 
-                num_books[strcspn(num_books, "\n")] = '\0'; 
-                fprintf(IT_College_Library_Catalogue, "%s,%s,%s,%s\n", book_name, author_name, publisher_name, num_books);
+                scanf("%d", num_books); 
+                fprintf(IT_College_Library_Catalogue, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, num_books);
             }
             fclose(IT_College_Library_Catalogue);
             printf("Books added to the library successfully.\n");
