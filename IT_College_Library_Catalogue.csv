@@ -1,482 +1,482 @@
-﻿Sr No,Type,Title,Author(s),Category,Year (books: first published; journals: founded),Publisher,Number of copies
-1,Book,Fundamentals of Physics,"David Halliday, Robert Resnick, Jearl Walker",Physics,1970,Wiley,10
-2,Book,University Physics (Sears & Zemansky),"Hugh Young, Roger Freedman",Physics,1949,Addison-Wesley,10
-3,Book,Concepts of Physics (Vol 1 & 2),H.C. Verma,Physics,1992,Bharati Bhawan,10
-4,Book,The Feynman Lectures on Physics,"Richard Feynman, Robert Leighton, Matthew Sands",Physics,1963,Addison-Wesley,10
-5,Book,Introduction to Electrodynamics,David J. Griffiths,Physics,1981,Prentice Hall,10
-6,Book,Introduction to Quantum Mechanics,David J. Griffiths,Physics,1995,Prentice Hall,10
-7,Book,Classical Mechanics,Herbert Goldstein,Physics,1950,Addison-Wesley,10
-8,Book,Classical Electrodynamics,John David Jackson,Physics,1961,Wiley,10
-9,Book,Principles of Quantum Mechanics,R. Shankar,Physics,1980,Plenum Press,10
-10,Book,Modern Quantum Mechanics,J.J. Sakurai,Physics,1985,Addison-Wesley,10
-11,Book,Physics for Scientists and Engineers,"Raymond Serway, John Jewett",Physics,1982,Saunders,10
-12,Book,Physics for Scientists and Engineers,Paul Tipler,Physics,1976,Worth Publishers,10
-13,Book,Optics,Eugene Hecht,Physics,1974,Addison-Wesley,10
-14,Book,Principles of Optics,"Max Born, Emil Wolf",Physics,1959,Pergamon Press,10
-15,Book,Concepts of Modern Physics,Arthur Beiser,Physics,1967,McGraw-Hill,10
-16,Book,Modern Physics,Kenneth Krane,Physics,1983,Wiley,10
-17,Book,"Quantum Physics of Atoms, Molecules, Solids, Nuclei and Particles","Robert Eisberg, Robert Resnick",Physics,1974,Wiley,10
-18,Book,Introduction to Solid State Physics,Charles Kittel,Physics,1953,Wiley,10
-19,Book,Solid State Physics,"Neil Ashcroft, N. David Mermin",Physics,1976,"Holt, Rinehart and Winston",10
-20,Book,Thermal Physics,"Charles Kittel, Herbert Kroemer",Physics,1980,W.H. Freeman,10
-21,Book,An Introduction to Thermal Physics,Daniel Schroeder,Physics,1999,Addison-Wesley,10
-22,Book,Statistical Mechanics,R.K. Pathria,Physics,1972,Pergamon Press,10
-23,Book,Mechanics (Berkeley Physics Course Vol. 1),"Charles Kittel, Walter Knight, Malvin Ruderman",Physics,1962,McGraw-Hill,10
-24,Book,Electricity and Magnetism (Berkeley Physics Course Vol. 2),Edward Purcell,Physics,1965,McGraw-Hill,10
-25,Book,An Introduction to Mechanics,"Daniel Kleppner, Robert Kolenkow",Physics,1973,McGraw-Hill,10
-26,Book,Introduction to Classical Mechanics,David Morin,Physics,2008,Cambridge University Press,10
-27,Book,Mathematical Methods for Physicists,George Arfken,Physics,1966,Academic Press,10
-28,Book,Mathematical Methods in the Physical Sciences,Mary L. Boas,Physics,1966,Wiley,10
-29,Book,Gravitation,"Charles Misner, Kip Thorne, John Wheeler",Physics,1973,W.H. Freeman,10
-30,Book,Mechanics (Course of Theoretical Physics Vol. 1),"L.D. Landau, E.M. Lifshitz",Physics,1960,Pergamon Press,10
-31,Book,Introductory Nuclear Physics,Kenneth Krane,Physics,1987,Wiley,10
-32,Book,Physics of Semiconductor Devices,S.M. Sze,Physics,1969,Wiley,10
-33,Book,Fundamentals of Photonics,"Bahaa Saleh, Malvin Teich",Physics,1991,Wiley,10
-34,Book,Lasers and Electro-Optics,Christopher Davis,Physics,1996,Cambridge University Press,10
-35,Book,Introduction to Special Relativity,Robert Resnick,Physics,1968,Wiley,10
-36,Book,Six Easy Pieces,Richard Feynman,Physics,1994,Addison-Wesley,10
-37,Book,The Elegant Universe,Brian Greene,Physics,1999,W.W. Norton,10
-38,Book,A Brief History of Time,Stephen Hawking,Physics,1988,Bantam Books,10
-39,Book,Cosmos,Carl Sagan,Physics,1980,Random House,10
-40,Book,Astrophysics for People in a Hurry,Neil deGrasse Tyson,Physics,2017,W.W. Norton,10
-41,Book,The Art of Electronics,"Paul Horowitz, Winfield Hill",Basic Electronics,1980,Cambridge University Press,10
-42,Book,Microelectronic Circuits,"Adel Sedra, Kenneth Smith",Basic Electronics,1982,"Holt, Rinehart and Winston",10
-43,Book,Electronic Devices and Circuit Theory,"Robert Boylestad, Louis Nashelsky",Basic Electronics,1972,Prentice Hall,10
-44,Book,Electronic Principles,Albert Malvino,Basic Electronics,1973,McGraw-Hill,10
-45,Book,Integrated Electronics,"Jacob Millman, Christos Halkias",Basic Electronics,1972,McGraw-Hill,10
-46,Book,Electronic Devices,Thomas Floyd,Basic Electronics,1984,Merrill,10
-47,Book,Solid State Electronic Devices,"Ben Streetman, Sanjay Banerjee",Basic Electronics,1972,Prentice Hall,10
-48,Book,Design of Analog CMOS Integrated Circuits,Behzad Razavi,Basic Electronics,2001,McGraw-Hill,10
-49,Book,Fundamentals of Microelectronics,Behzad Razavi,Basic Electronics,2008,Wiley,10
-50,Book,Operational Amplifiers and Linear Integrated Circuits,Ramakant Gayakwad,Basic Electronics,1983,Prentice Hall,10
-51,Book,Operational Amplifiers and Linear Integrated Circuits,"Robert Coughlin, Frederick Driscoll",Basic Electronics,1977,Prentice Hall,10
-52,Book,Digital Design,M. Morris Mano,Basic Electronics,1984,Prentice Hall,10
-53,Book,Digital Logic and Computer Design,M. Morris Mano,Basic Electronics,1979,Prentice Hall,10
-54,Book,Fundamentals of Digital Logic with Verilog Design,"Stephen Brown, Zvonko Vranesic",Basic Electronics,2000,McGraw-Hill,10
-55,Book,Principles of CMOS VLSI Design,"Neil Weste, Kamran Eshraghian",Basic Electronics,1985,Addison-Wesley,10
-56,Book,Signals and Systems,"Alan Oppenheim, Alan Willsky",Basic Electronics,1983,Prentice Hall,10
-57,Book,Discrete-Time Signal Processing,"Alan Oppenheim, Ronald Schafer",Basic Electronics,1989,Prentice Hall,10
-58,Book,Digital Signal Processing,"John Proakis, Dimitris Manolakis",Basic Electronics,1988,Macmillan,10
-59,Book,Communication Systems,Simon Haykin,Basic Electronics,1978,Wiley,10
-60,Book,Principles of Communications,"Rodger Ziemer, William Tranter",Basic Electronics,1976,Houghton Mifflin,10
-61,Book,Digital Communications,John Proakis,Basic Electronics,1983,McGraw-Hill,10
-62,Book,"Microprocessor Architecture, Programming, and Applications with the 8085",Ramesh Gaonkar,Basic Electronics,1984,Merrill,10
-63,Book,The 8051 Microcontroller and Embedded Systems,"Muhammad Ali Mazidi, Janice Mazidi",Basic Electronics,1999,Prentice Hall,10
-64,Book,Network Analysis,M.E. Van Valkenburg,Basic Electronics,1955,Prentice Hall,10
-65,Book,Engineering Circuit Analysis,"William Hayt, Jack Kemmerly",Basic Electronics,1962,McGraw-Hill,10
-66,Book,Fundamentals of Electric Circuits,"Charles Alexander, Matthew Sadiku",Basic Electronics,2000,McGraw-Hill,10
-67,Book,Introductory Circuit Analysis,Robert Boylestad,Basic Electronics,1968,Merrill,10
-68,Book,Electromagnetic Waves and Radiating Systems,"Edward Jordan, Keith Balmain",Basic Electronics,1950,Prentice Hall,10
-69,Book,Engineering Electromagnetics,William Hayt,Basic Electronics,1958,McGraw-Hill,10
-70,Book,Elements of Electromagnetics,Matthew Sadiku,Basic Electronics,1989,Oxford University Press,10
-71,Book,Antenna Theory: Analysis and Design,Constantine Balanis,Basic Electronics,1982,Harper & Row,10
-72,Book,Microwave Engineering,David Pozar,Basic Electronics,1990,Addison-Wesley,10
-73,Book,Control Systems Engineering,Norman Nise,Basic Electronics,1991,Benjamin/Cummings,10
-74,Book,Modern Control Engineering,Katsuhiko Ogata,Basic Electronics,1970,Prentice Hall,10
-75,Book,Practical Electronics for Inventors,Paul Scherz,Basic Electronics,2000,McGraw-Hill,10
-76,Book,Make: Electronics,Charles Platt,Basic Electronics,2009,O'Reilly / Make,10
-77,Book,Artificial Intelligence: A Modern Approach,"Stuart Russell, Peter Norvig",AI / Machine Learning,1995,Prentice Hall,10
-78,Book,Pattern Recognition and Machine Learning,Christopher Bishop,AI / Machine Learning,2006,Springer,10
-79,Book,Machine Learning,Tom Mitchell,AI / Machine Learning,1997,McGraw-Hill,10
-80,Book,Deep Learning,"Ian Goodfellow, Yoshua Bengio, Aaron Courville",AI / Machine Learning,2016,MIT Press,10
-81,Book,The Elements of Statistical Learning,"Trevor Hastie, Robert Tibshirani, Jerome Friedman",AI / Machine Learning,2001,Springer,10
-82,Book,Machine Learning: A Probabilistic Perspective,Kevin Murphy,AI / Machine Learning,2012,MIT Press,10
-83,Book,Probabilistic Machine Learning: An Introduction,Kevin Murphy,AI / Machine Learning,2022,MIT Press,10
-84,Book,Hands-On Machine Learning with Scikit-Learn and TensorFlow,Aurelien Geron,AI / Machine Learning,2017,O'Reilly,10
-85,Book,Reinforcement Learning: An Introduction,"Richard Sutton, Andrew Barto",AI / Machine Learning,1998,MIT Press,10
-86,Book,Understanding Machine Learning,"Shai Shalev-Shwartz, Shai Ben-David",AI / Machine Learning,2014,Cambridge University Press,10
-87,Book,Speech and Language Processing,"Daniel Jurafsky, James Martin",AI / Machine Learning,2000,Prentice Hall,10
-88,Book,Computer Vision: Algorithms and Applications,Richard Szeliski,AI / Machine Learning,2010,Springer,10
-89,Book,Probabilistic Graphical Models,"Daphne Koller, Nir Friedman",AI / Machine Learning,2009,MIT Press,10
-90,Book,Neural Networks and Deep Learning,Michael Nielsen,AI / Machine Learning,2015,Determination Press,10
-91,Book,Python Machine Learning,Sebastian Raschka,AI / Machine Learning,2015,Packt Publishing,10
-92,Book,Deep Learning with Python,Francois Chollet,AI / Machine Learning,2017,Manning,10
-93,Book,Neural Networks: A Comprehensive Foundation,Simon Haykin,AI / Machine Learning,1994,Macmillan,10
-94,Book,Bayesian Reasoning and Machine Learning,David Barber,AI / Machine Learning,2012,Cambridge University Press,10
-95,Book,"Information Theory, Inference, and Learning Algorithms",David MacKay,AI / Machine Learning,2003,Cambridge University Press,10
-96,Book,Pattern Classification,"Richard Duda, Peter Hart, David Stork",AI / Machine Learning,1973,Wiley,10
-97,Book,Digital Image Processing,"Rafael Gonzalez, Richard Woods",AI / Machine Learning,1977,Addison-Wesley,10
-98,Book,Artificial Intelligence,"Elaine Rich, Kevin Knight",AI / Machine Learning,1983,McGraw-Hill,10
-99,Book,Machine Learning Yearning,Andrew Ng,AI / Machine Learning,2018,Self-published,10
-100,Book,Life 3.0,Max Tegmark,AI / Machine Learning,2017,Knopf,10
-101,Book,Superintelligence,Nick Bostrom,AI / Machine Learning,2014,Oxford University Press,10
-102,Book,Human Compatible,Stuart Russell,AI / Machine Learning,2019,Viking,10
-103,Book,The Master Algorithm,Pedro Domingos,AI / Machine Learning,2015,Basic Books,10
-104,Book,Dive into Deep Learning,"Aston Zhang, Zachary Lipton, Mu Li, Alexander Smola",AI / Machine Learning,2023,Cambridge University Press,10
-105,Book,Designing Machine Learning Systems,Chip Huyen,AI / Machine Learning,2022,O'Reilly,10
-106,Book,Natural Language Processing with Transformers,"Lewis Tunstall, Leandro von Werra, Thomas Wolf",AI / Machine Learning,2022,O'Reilly,10
-107,Book,Grokking Deep Learning,Andrew Trask,AI / Machine Learning,2019,Manning,10
-108,Book,Pattern Recognition,"Sergios Theodoridis, Konstantinos Koutroumbas",AI / Machine Learning,1999,Academic Press,10
-109,Book,Introduction to Machine Learning,Ethem Alpaydin,AI / Machine Learning,2004,MIT Press,10
-110,Book,Machine Learning in Action,Peter Harrington,AI / Machine Learning,2012,Manning,10
-111,Book,Learning from Data,"Yaser Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin",AI / Machine Learning,2012,AMLBook,10
-112,Book,A First Course in Machine Learning,"Simon Rogers, Mark Girolami",AI / Machine Learning,2011,Chapman & Hall/CRC,10
-113,Book,Gaussian Processes for Machine Learning,"Carl Rasmussen, Christopher Williams",AI / Machine Learning,2006,MIT Press,10
-114,Book,Foundations of Statistical Natural Language Processing,"Christopher Manning, Hinrich Schutze",AI / Machine Learning,1999,MIT Press,10
-115,Book,Multiple View Geometry in Computer Vision,"Richard Hartley, Andrew Zisserman",AI / Machine Learning,2000,Cambridge University Press,10
-116,Book,Computer Vision: A Modern Approach,"David Forsyth, Jean Ponce",AI / Machine Learning,2002,Prentice Hall,10
-117,Book,Learning OpenCV,"Gary Bradski, Adrian Kaehler",AI / Machine Learning,2008,O'Reilly,10
-118,Book,Probabilistic Robotics,"Sebastian Thrun, Wolfram Burgard, Dieter Fox",AI / Machine Learning,2005,MIT Press,10
-119,Book,Introduction to Robotics: Mechanics and Control,John J. Craig,AI / Machine Learning,1986,Addison-Wesley,10
-120,Book,Artificial Intelligence: Foundations of Computational Agents,"David Poole, Alan Mackworth",AI / Machine Learning,2010,Cambridge University Press,10
-121,Book,Artificial Intelligence: A Guide to Intelligent Systems,Michael Negnevitsky,AI / Machine Learning,2002,Addison-Wesley,10
-122,Book,Programming Collective Intelligence,Toby Segaran,AI / Machine Learning,2007,O'Reilly,10
-123,Book,Deep Learning for Coders with fastai and PyTorch,"Jeremy Howard, Sylvain Gugger",AI / Machine Learning,2020,O'Reilly,10
-124,Book,Deep Learning with PyTorch,"Eli Stevens, Luca Antiga, Thomas Viehmann",AI / Machine Learning,2020,Manning,10
-125,Book,Generative Deep Learning,David Foster,AI / Machine Learning,2019,O'Reilly,10
-126,Book,Machine Learning Design Patterns,"Valliappa Lakshmanan, Sara Robinson, Michael Munn",AI / Machine Learning,2020,O'Reilly,10
-127,Book,The Hundred-Page Machine Learning Book,Andriy Burkov,AI / Machine Learning,2019,Andriy Burkov (self-published),10
-128,Book,Build a Large Language Model (From Scratch),Sebastian Raschka,AI / Machine Learning,2024,Manning,10
-129,Book,Architects of Intelligence,Martin Ford,AI / Machine Learning,2018,Packt Publishing,10
-130,Book,Prediction Machines,"Ajay Agrawal, Joshua Gans, Avi Goldfarb",AI / Machine Learning,2018,Harvard Business Review Press,10
-131,Book,AI Superpowers,Kai-Fu Lee,AI / Machine Learning,2018,Houghton Mifflin Harcourt,10
-132,Book,Rebooting AI,"Gary Marcus, Ernest Davis",AI / Machine Learning,2019,Pantheon,10
-133,Book,Artificial Intelligence: A Guide for Thinking Humans,Melanie Mitchell,AI / Machine Learning,2019,"Farrar, Straus and Giroux",10
-134,Book,The Alignment Problem,Brian Christian,AI / Machine Learning,2020,W.W. Norton,10
-135,Book,Genius Makers,Cade Metz,AI / Machine Learning,2021,Dutton,10
-136,Book,Python for Data Analysis,Wes McKinney,Data Science,2012,O'Reilly,10
-137,Book,Python Data Science Handbook,Jake VanderPlas,Data Science,2016,O'Reilly,10
-138,Book,An Introduction to Statistical Learning,"Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",Data Science,2013,Springer,10
-139,Book,Data Science from Scratch,Joel Grus,Data Science,2015,O'Reilly,10
-140,Book,Storytelling with Data,Cole Nussbaumer Knaflic,Data Science,2015,Wiley,10
-141,Book,Mining of Massive Datasets,"Jure Leskovec, Anand Rajaraman, Jeffrey Ullman",Data Science,2011,Cambridge University Press,10
-142,Book,Data Mining: Concepts and Techniques,"Jiawei Han, Micheline Kamber",Data Science,2000,Morgan Kaufmann,10
-143,Book,Introduction to Data Mining,"Pang-Ning Tan, Michael Steinbach, Vipin Kumar",Data Science,2005,Addison-Wesley,10
-144,Book,Designing Data-Intensive Applications,Martin Kleppmann,Data Science,2017,O'Reilly,10
-145,Book,R for Data Science,"Hadley Wickham, Garrett Grolemund",Data Science,2017,O'Reilly,10
-146,Book,Practical Statistics for Data Scientists,"Peter Bruce, Andrew Bruce",Data Science,2017,O'Reilly,10
-147,Book,Think Stats,Allen Downey,Data Science,2011,O'Reilly,10
-148,Book,"Big Data: A Revolution That Will Transform How We Live, Work, and Think","Viktor Mayer-Schonberger, Kenneth Cukier",Data Science,2013,Houghton Mifflin Harcourt,10
-149,Book,The Visual Display of Quantitative Information,Edward Tufte,Data Science,1983,Graphics Press,10
-150,Book,Naked Statistics,Charles Wheelan,Data Science,2013,W.W. Norton,10
-151,Book,Weapons of Math Destruction,Cathy O'Neil,Data Science,2016,Crown,10
-152,Book,Data Science for Business,"Foster Provost, Tom Fawcett",Data Science,2013,O'Reilly,10
-153,Book,Hadoop: The Definitive Guide,Tom White,Data Science,2009,O'Reilly,10
-154,Book,Learning Spark,"Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia",Data Science,2015,O'Reilly,10
-155,Book,Fundamentals of Data Visualization,Claus Wilke,Data Science,2019,O'Reilly,10
-156,Book,Bayesian Data Analysis,"Andrew Gelman, John Carlin, Hal Stern, Donald Rubin",Data Science,1995,Chapman & Hall,10
-157,Book,Statistical Inference,"George Casella, Roger Berger",Data Science,1990,Duxbury Press,10
-158,Book,Doing Data Science,"Cathy O'Neil, Rachel Schutt",Data Science,2013,O'Reilly,10
-159,Book,The Signal and the Noise,Nate Silver,Data Science,2012,Penguin Press,10
-160,Book,All of Statistics,Larry Wasserman,Data Science,2004,Springer,10
-161,Book,Statistics,"David Freedman, Robert Pisani, Roger Purves",Data Science,1978,W.W. Norton,10
-162,Book,Data Analysis Using Regression and Multilevel/Hierarchical Models,"Andrew Gelman, Jennifer Hill",Data Science,2006,Cambridge University Press,10
-163,Book,Regression and Other Stories,"Andrew Gelman, Jennifer Hill, Aki Vehtari",Data Science,2020,Cambridge University Press,10
-164,Book,Statistical Rethinking,Richard McElreath,Data Science,2015,CRC Press,10
-165,Book,Applied Predictive Modeling,"Max Kuhn, Kjell Johnson",Data Science,2013,Springer,10
-166,Book,Feature Engineering for Machine Learning,"Alice Zheng, Amanda Casari",Data Science,2018,O'Reilly,10
-167,Book,The Art of Statistics,David Spiegelhalter,Data Science,2019,Pelican (Penguin),10
-168,Book,The Data Warehouse Toolkit,"Ralph Kimball, Margy Ross",Data Science,1996,Wiley,10
-169,Book,Spark: The Definitive Guide,"Bill Chambers, Matei Zaharia",Data Science,2018,O'Reilly,10
-170,Book,Fundamentals of Data Engineering,"Joe Reis, Matt Housley",Data Science,2022,O'Reilly,10
-171,Book,Learning SQL,Alan Beaulieu,Data Science,2005,O'Reilly,10
-172,Book,SQL Cookbook,Anthony Molinaro,Data Science,2005,O'Reilly,10
-173,Book,Data Science at the Command Line,Jeroen Janssens,Data Science,2014,O'Reilly,10
-174,Book,Information Dashboard Design,Stephen Few,Data Science,2006,O'Reilly,10
-175,Book,The Truthful Art,Alberto Cairo,Data Science,2016,New Riders,10
-176,Book,Data Smart,John Foreman,Data Science,2013,Wiley,10
-177,Book,Competing on Analytics,"Thomas Davenport, Jeanne Harris",Data Science,2007,Harvard Business School Press,10
-178,Book,Moneyball,Michael Lewis,Data Science,2003,W.W. Norton,10
-179,Book,How to Lie with Statistics,Darrell Huff,Data Science,1954,W.W. Norton,10
-180,Book,Freakonomics,"Steven Levitt, Stephen Dubner",Data Science,2005,William Morrow,10
-181,Book,Statistics Done Wrong,Alex Reinhart,Data Science,2015,No Starch Press,10
-182,Book,The Book of Why,"Judea Pearl, Dana Mackenzie",Data Science,2018,Basic Books,10
-183,Book,Causal Inference: The Mixtape,Scott Cunningham,Data Science,2021,Yale University Press,10
-184,Book,Time Series Analysis and Its Applications,"Robert Shumway, David Stoffer",Data Science,2000,Springer,10
-185,Book,Forecasting: Principles and Practice,"Rob Hyndman, George Athanasopoulos",Data Science,2013,OTexts,10
-186,Book,Introduction to Algorithms (CLRS),"Thomas Cormen, Charles Leiserson, Ronald Rivest, Clifford Stein",Computer Science,1990,MIT Press,10
-187,Book,The Art of Computer Programming,Donald Knuth,Computer Science,1968,Addison-Wesley,10
-188,Book,The C Programming Language,"Brian Kernighan, Dennis Ritchie",Computer Science,1978,Prentice Hall,10
-189,Book,Let Us C,Yashavant Kanetkar,Computer Science,,BPB Publications,10
-190,Book,Programming in ANSI C,E. Balagurusamy,Computer Science,,Tata McGraw-Hill,10
-191,Book,Computer Systems: A Programmer's Perspective,"Randal Bryant, David O'Hallaron",Computer Science,2002,Prentice Hall,10
-192,Book,Operating System Concepts,"Abraham Silberschatz, Peter Galvin, Greg Gagne",Computer Science,1983,Addison-Wesley,10
-193,Book,Modern Operating Systems,Andrew Tanenbaum,Computer Science,1992,Prentice Hall,10
-194,Book,Operating Systems: Three Easy Pieces,"Remzi Arpaci-Dusseau, Andrea Arpaci-Dusseau",Computer Science,2018,Arpaci-Dusseau Books,10
-195,Book,Computer Networks,Andrew Tanenbaum,Computer Science,1981,Prentice Hall,10
-196,Book,Computer Networking: A Top-Down Approach,"James Kurose, Keith Ross",Computer Science,2000,Addison-Wesley,10
-197,Book,Database System Concepts,"Abraham Silberschatz, Henry Korth, S. Sudarshan",Computer Science,1986,McGraw-Hill,10
-198,Book,Fundamentals of Database Systems,"Ramez Elmasri, Shamkant Navathe",Computer Science,1989,Benjamin/Cummings,10
-199,Book,"Compilers: Principles, Techniques, and Tools","Alfred Aho, Ravi Sethi, Jeffrey Ullman",Computer Science,1986,Addison-Wesley,10
-200,Book,Introduction to the Theory of Computation,Michael Sipser,Computer Science,1997,PWS Publishing,10
-201,Book,"Introduction to Automata Theory, Languages, and Computation","John Hopcroft, Jeffrey Ullman",Computer Science,1979,Addison-Wesley,10
-202,Book,Computer Organization and Architecture,William Stallings,Computer Science,1987,Macmillan,10
-203,Book,Computer Architecture: A Quantitative Approach,"John Hennessy, David Patterson",Computer Science,1990,Morgan Kaufmann,10
-204,Book,Computer Organization and Design,"David Patterson, John Hennessy",Computer Science,1994,Morgan Kaufmann,10
-205,Book,Structure and Interpretation of Computer Programs,"Harold Abelson, Gerald Sussman",Computer Science,1985,MIT Press,10
-206,Book,Clean Code,Robert C. Martin,Computer Science,2008,Prentice Hall,10
-207,Book,The Pragmatic Programmer,"Andrew Hunt, David Thomas",Computer Science,1999,Addison-Wesley,10
-208,Book,Design Patterns: Elements of Reusable Object-Oriented Software,"Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",Computer Science,1994,Addison-Wesley,10
-209,Book,Code Complete,Steve McConnell,Computer Science,1993,Microsoft Press,10
-210,Book,Refactoring,Martin Fowler,Computer Science,1999,Addison-Wesley,10
-211,Book,The Mythical Man-Month,Frederick Brooks,Computer Science,1975,Addison-Wesley,10
-212,Book,Cracking the Coding Interview,Gayle Laakmann McDowell,Computer Science,2008,CareerCup,10
-213,Book,Algorithms,"Robert Sedgewick, Kevin Wayne",Computer Science,1983,Addison-Wesley,10
-214,Book,The Algorithm Design Manual,Steven Skiena,Computer Science,1997,Springer (TELOS),10
-215,Book,Fundamentals of Data Structures,"Ellis Horowitz, Sartaj Sahni",Computer Science,1976,Computer Science Press,10
-216,Book,Data Structures Using C,Reema Thareja,Computer Science,2011,Oxford University Press,10
-217,Book,Python Crash Course,Eric Matthes,Computer Science,2015,No Starch Press,10
-218,Book,Automate the Boring Stuff with Python,Al Sweigart,Computer Science,2015,No Starch Press,10
-219,Book,Fluent Python,Luciano Ramalho,Computer Science,2015,O'Reilly,10
-220,Book,Effective Java,Joshua Bloch,Computer Science,2001,Addison-Wesley,10
-221,Book,Head First Java,"Kathy Sierra, Bert Bates",Computer Science,2003,O'Reilly,10
-222,Book,The C++ Programming Language,Bjarne Stroustrup,Computer Science,1985,Addison-Wesley,10
-223,Book,Discrete Mathematics and Its Applications,Kenneth Rosen,Computer Science,1988,McGraw-Hill,10
-224,Book,Software Engineering,Ian Sommerville,Computer Science,1982,Addison-Wesley,10
-225,Book,Software Engineering: A Practitioner's Approach,Roger Pressman,Computer Science,1982,McGraw-Hill,10
-226,Book,Cryptography and Network Security,William Stallings,Computer Science,1998,Prentice Hall,10
-227,Book,The Linux Programming Interface,Michael Kerrisk,Computer Science,2010,No Starch Press,10
-228,Book,The Linux Command Line,William Shotts,Computer Science,2012,No Starch Press,10
-229,Book,Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,Computer Science,2000,Microsoft Press,10
-230,Book,"Godel, Escher, Bach: An Eternal Golden Braid",Douglas Hofstadter,Computer Science,1979,Basic Books,10
-231,Book,The Soul of a New Machine,Tracy Kidder,Computer Science,1981,"Little, Brown",10
-232,Book,Hackers: Heroes of the Computer Revolution,Steven Levy,Computer Science,1984,Anchor Press/Doubleday,10
-233,Book,Algorithm Design,"Jon Kleinberg, Eva Tardos",Computer Science,2005,Addison-Wesley,10
-234,Book,Algorithms Unlocked,Thomas Cormen,Computer Science,2013,MIT Press,10
-235,Book,Grokking Algorithms,Aditya Bhargava,Computer Science,2016,Manning,10
-236,Book,Programming Pearls,Jon Bentley,Computer Science,1986,Addison-Wesley,10
-237,Book,The Practice of Programming,"Brian Kernighan, Rob Pike",Computer Science,1999,Addison-Wesley,10
-238,Book,The Unix Programming Environment,"Brian Kernighan, Rob Pike",Computer Science,1984,Prentice Hall,10
-239,Book,Advanced Programming in the UNIX Environment,W. Richard Stevens,Computer Science,1992,Addison-Wesley,10
-240,Book,"TCP/IP Illustrated, Volume 1",W. Richard Stevens,Computer Science,1994,Addison-Wesley,10
-241,Book,UNIX Network Programming,W. Richard Stevens,Computer Science,1990,Prentice Hall,10
-242,Book,Operating Systems: Internals and Design Principles,William Stallings,Computer Science,1992,Macmillan,10
-243,Book,Database Management Systems,"Raghu Ramakrishnan, Johannes Gehrke",Computer Science,1998,McGraw-Hill,10
-244,Book,Database Internals,Alex Petrov,Computer Science,2019,O'Reilly,10
-245,Book,Introduction to Information Retrieval,"Christopher Manning, Prabhakar Raghavan, Hinrich Schutze",Computer Science,2008,Cambridge University Press,10
-246,Book,Computer Graphics: Principles and Practice,"James Foley, Andries van Dam, Steven Feiner, John Hughes",Computer Science,1990,Addison-Wesley,10
-247,Book,Concepts of Programming Languages,Robert Sebesta,Computer Science,1989,Benjamin/Cummings,10
-248,Book,Types and Programming Languages,Benjamin Pierce,Computer Science,2002,MIT Press,10
-249,Book,Programming Language Pragmatics,Michael Scott,Computer Science,2000,Morgan Kaufmann,10
-250,Book,Engineering a Compiler,"Keith Cooper, Linda Torczon",Computer Science,2003,Morgan Kaufmann,10
-251,Book,Java: The Complete Reference,Herbert Schildt,Computer Science,1996,Osborne/McGraw-Hill,10
-252,Book,C++ Primer,Stanley Lippman,Computer Science,1989,Addison-Wesley,10
-253,Book,JavaScript: The Good Parts,Douglas Crockford,Computer Science,2008,O'Reilly,10
-254,Book,Learning Python,Mark Lutz,Computer Science,1999,O'Reilly,10
-255,Book,Think Python,Allen Downey,Computer Science,2012,O'Reilly,10
-256,Book,Computer Networks: A Systems Approach,"Larry Peterson, Bruce Davie",Computer Science,1996,Morgan Kaufmann,10
-257,Book,Security Engineering,Ross Anderson,Computer Science,2001,Wiley,10
-258,Book,Applied Cryptography,Bruce Schneier,Computer Science,1994,Wiley,10
-259,Book,The Art of Unix Programming,Eric S. Raymond,Computer Science,2003,Addison-Wesley,10
-260,Book,The Cathedral and the Bazaar,Eric S. Raymond,Computer Science,1999,O'Reilly,10
-261,Book,Site Reliability Engineering,"Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Murphy",Computer Science,2016,O'Reilly,10
-262,Book,The Phoenix Project,"Gene Kim, Kevin Behr, George Spafford",Computer Science,2013,IT Revolution Press,10
-263,Book,Domain-Driven Design,Eric Evans,Computer Science,2003,Addison-Wesley,10
-264,Book,Patterns of Enterprise Application Architecture,Martin Fowler,Computer Science,2002,Addison-Wesley,10
-265,Book,Head First Design Patterns,"Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra",Computer Science,2004,O'Reilly,10
-266,Book,Peopleware,"Tom DeMarco, Timothy Lister",Computer Science,1987,Dorset House,10
-267,Book,Hacker's Delight,Henry S. Warren Jr.,Computer Science,2002,Addison-Wesley,10
-268,Book,Molecular Biology of the Cell,Bruce Alberts et al.,Biotechnology,1983,Garland Science,5
-269,Book,Essential Cell Biology,Bruce Alberts et al.,Biotechnology,1998,Garland Science,5
-270,Book,Lehninger Principles of Biochemistry,"David Nelson, Michael Cox",Biotechnology,1982,Worth Publishers,5
-271,Book,Biochemistry,Lubert Stryer,Biotechnology,1975,W.H. Freeman,5
-272,Book,Molecular Biology of the Gene,James Watson et al.,Biotechnology,1965,W.A. Benjamin,5
-273,Book,Genes,Benjamin Lewin,Biotechnology,1983,Wiley,5
-274,Book,Principles of Genetics,"D. Peter Snustad, Michael Simmons",Biotechnology,1997,Wiley,5
-275,Book,Genetics: From Genes to Genomes,Leland Hartwell et al.,Biotechnology,2000,McGraw-Hill,5
-276,Book,Brock Biology of Microorganisms,Michael Madigan et al.,Biotechnology,1970,Prentice Hall,5
-277,Book,Microbiology: An Introduction,"Gerard Tortora, Berdell Funke, Christine Case",Biotechnology,1982,Benjamin Cummings,5
-278,Book,Molecular Cloning: A Laboratory Manual,"Tom Maniatis, Edward Fritsch, Joseph Sambrook",Biotechnology,1982,Cold Spring Harbor Laboratory Press,5
-279,Book,Gene Cloning and DNA Analysis,T.A. Brown,Biotechnology,1986,Blackwell,5
-280,Book,Principles of Gene Manipulation,"R.W. Old, S.B. Primrose",Biotechnology,1980,Blackwell,5
-281,Book,Biotechnology: Academic Cell Update Edition,"David Clark, Nanette Pazdernik",Biotechnology,2009,Academic Press,5
-282,Book,Bioprocess Engineering: Basic Concepts,"Michael Shuler, Fikret Kargi",Biotechnology,1992,Prentice Hall,5
-283,Book,Campbell Biology,Jane Reece et al.,Biotechnology,1987,Benjamin Cummings,5
-284,Book,Janeway's Immunobiology,Kenneth Murphy,Biotechnology,1994,Garland Science,5
-285,Book,Cell and Molecular Biology,Gerald Karp,Biotechnology,1996,Wiley,5
-286,Book,Bioinformatics and Functional Genomics,Jonathan Pevsner,Biotechnology,2003,Wiley,5
-287,Book,Introduction to Bioinformatics,Arthur Lesk,Biotechnology,2002,Oxford University Press,5
-288,Book,Biological Sequence Analysis,"Richard Durbin, Sean Eddy, Anders Krogh, Graeme Mitchison",Biotechnology,1998,Cambridge University Press,5
-289,Book,Structure and Mechanism in Protein Science,Alan Fersht,Biotechnology,1999,W.H. Freeman,5
-290,Book,Introduction to Protein Structure,"Carl Branden, John Tooze",Biotechnology,1991,Garland,5
-291,Book,The Double Helix,James Watson,Biotechnology,1968,Atheneum,5
-292,Book,The Gene: An Intimate History,Siddhartha Mukherjee,Biotechnology,2016,Scribner,5
-293,Book,The Emperor of All Maladies,Siddhartha Mukherjee,Biotechnology,2010,Scribner,5
-294,Book,The Selfish Gene,Richard Dawkins,Biotechnology,1976,Oxford University Press,5
-295,Book,The Immortal Life of Henrietta Lacks,Rebecca Skloot,Biotechnology,2010,Crown,5
-296,Book,A Crack in Creation,"Jennifer Doudna, Samuel Sternberg",Biotechnology,2017,Houghton Mifflin Harcourt,5
-297,Book,Advanced Engineering Mathematics,Erwin Kreyszig,Mathematics,1962,Wiley,10
-298,Book,Higher Engineering Mathematics,B.S. Grewal,Mathematics,,Khanna Publishers,10
-299,Book,Calculus,James Stewart,Mathematics,1987,Brooks/Cole,10
-300,Book,Thomas' Calculus,"George Thomas, Ross Finney",Mathematics,1951,Addison-Wesley,10
-301,Book,Calculus,Michael Spivak,Mathematics,1967,W.A. Benjamin,10
-302,Book,Calculus Made Easy,Silvanus P. Thompson,Mathematics,1910,Macmillan,10
-303,Book,Linear Algebra and Its Applications,Gilbert Strang,Mathematics,1976,Academic Press,10
-304,Book,Introduction to Linear Algebra,Gilbert Strang,Mathematics,1993,Wellesley-Cambridge Press,10
-305,Book,Linear Algebra Done Right,Sheldon Axler,Mathematics,1996,Springer,10
-306,Book,Matrix Computations,"Gene Golub, Charles Van Loan",Mathematics,1983,Johns Hopkins University Press,10
-307,Book,Principles of Mathematical Analysis,Walter Rudin,Mathematics,1953,McGraw-Hill,10
-308,Book,Real and Complex Analysis,Walter Rudin,Mathematics,1966,McGraw-Hill,10
-309,Book,Introductory Real Analysis,"A.N. Kolmogorov, S.V. Fomin",Mathematics,1970,Prentice Hall,10
-310,Book,Introduction to Probability,"Dimitri Bertsekas, John Tsitsiklis",Mathematics,2002,Athena Scientific,10
-311,Book,A First Course in Probability,Sheldon Ross,Mathematics,1976,Macmillan,10
-312,Book,Introduction to Probability Models,Sheldon Ross,Mathematics,1972,Academic Press,10
-313,Book,Probability and Statistics,"Morris DeGroot, Mark Schervish",Mathematics,1975,Addison-Wesley,10
-314,Book,"Probability, Random Variables, and Stochastic Processes",Athanasios Papoulis,Mathematics,1965,McGraw-Hill,10
-315,Book,Elementary Differential Equations and Boundary Value Problems,"William Boyce, Richard DiPrima",Mathematics,1965,Wiley,10
-316,Book,Complex Variables and Applications,"James Brown, Ruel Churchill",Mathematics,1948,McGraw-Hill,10
-317,Book,Numerical Methods for Engineers,"Steven Chapra, Raymond Canale",Mathematics,1985,McGraw-Hill,10
-318,Book,Numerical Analysis,"Richard Burden, J. Douglas Faires",Mathematics,1978,PWS Publishing,10
-319,Book,Concrete Mathematics,"Ronald Graham, Donald Knuth, Oren Patashnik",Mathematics,1989,Addison-Wesley,10
-320,Book,How to Solve It,George Polya,Mathematics,1945,Princeton University Press,10
-321,Book,Elementary Number Theory,David Burton,Mathematics,1976,Allyn and Bacon,10
-322,Book,Introduction to Graph Theory,Douglas West,Mathematics,1996,Prentice Hall,10
-323,Book,Abstract Algebra,"David Dummit, Richard Foote",Mathematics,1991,Prentice Hall,10
-324,Book,Topics in Algebra,I.N. Herstein,Mathematics,1964,Blaisdell,10
-325,Book,Convex Optimization,"Stephen Boyd, Lieven Vandenberghe",Mathematics,2004,Cambridge University Press,10
-326,Book,Mathematics for Machine Learning,"Marc Deisenroth, A. Aldo Faisal, Cheng Soon Ong",Mathematics,2020,Cambridge University Press,10
-327,Book,Fermat's Enigma,Simon Singh,Mathematics,1997,Walker & Company,10
-328,Book,The Man Who Knew Infinity,Robert Kanigel,Mathematics,1991,Scribner,10
-329,Book,A Mind for Numbers,Barbara Oakley,Mathematics,2014,TarcherPerigee,10
-330,Book,Wings of Fire,"A.P.J. Abdul Kalam, Arun Tiwari",Autobiography / Inspirational,1999,Universities Press,10
-331,Book,Ignited Minds,A.P.J. Abdul Kalam,Autobiography / Inspirational,2002,Viking (Penguin India),10
-332,Book,India 2020,"A.P.J. Abdul Kalam, Y.S. Rajan",Autobiography / Inspirational,1998,Viking (Penguin India),10
-333,Book,Turning Points,A.P.J. Abdul Kalam,Autobiography / Inspirational,2012,HarperCollins India,10
-334,Book,My Journey,A.P.J. Abdul Kalam,Autobiography / Inspirational,2013,Rupa Publications,10
-335,Book,The Story of My Experiments with Truth,M.K. Gandhi,Autobiography / Inspirational,1927,Navajivan,10
-336,Book,An Autobiography (Toward Freedom),Jawaharlal Nehru,Autobiography / Inspirational,1936,The Bodley Head,10
-337,Book,The Discovery of India,Jawaharlal Nehru,Autobiography / Inspirational,1946,Signet Press,10
-338,Book,Long Walk to Freedom,Nelson Mandela,Autobiography / Inspirational,1994,"Little, Brown",10
-339,Book,Autobiography of a Yogi,Paramahansa Yogananda,Autobiography / Inspirational,1946,Philosophical Library,10
-340,Book,The Diary of a Young Girl,Anne Frank,Autobiography / Inspirational,1947,Contact Publishing,10
-341,Book,Steve Jobs,Walter Isaacson,Autobiography / Inspirational,2011,Simon & Schuster,10
-342,Book,Elon Musk,Ashlee Vance,Autobiography / Inspirational,2015,Ecco,10
-343,Book,Elon Musk,Walter Isaacson,Autobiography / Inspirational,2023,Simon & Schuster,10
-344,Book,Einstein: His Life and Universe,Walter Isaacson,Autobiography / Inspirational,2007,Simon & Schuster,10
-345,Book,The Innovators,Walter Isaacson,Autobiography / Inspirational,2014,Simon & Schuster,10
-346,Book,"Surely You're Joking, Mr. Feynman!","Richard Feynman, Ralph Leighton",Autobiography / Inspirational,1985,W.W. Norton,10
-347,Book,What Do You Care What Other People Think?,"Richard Feynman, Ralph Leighton",Autobiography / Inspirational,1988,W.W. Norton,10
-348,Book,My Brief History,Stephen Hawking,Autobiography / Inspirational,2013,Bantam,10
-349,Book,Born a Crime,Trevor Noah,Autobiography / Inspirational,2016,Spiegel & Grau,10
-350,Book,Becoming,Michelle Obama,Autobiography / Inspirational,2018,Crown,10
-351,Book,Dreams from My Father,Barack Obama,Autobiography / Inspirational,1995,Times Books,10
-352,Book,I Am Malala,"Malala Yousafzai, Christina Lamb",Autobiography / Inspirational,2013,Weidenfeld & Nicolson,10
-353,Book,Educated,Tara Westover,Autobiography / Inspirational,2018,Random House,10
-354,Book,Man's Search for Meaning,Viktor Frankl,Autobiography / Inspirational,1946,Verlag fur Jugend und Volk (German original),10
-355,Book,Atomic Habits,James Clear,Autobiography / Inspirational,2018,Avery,10
-356,Book,The 7 Habits of Highly Effective People,Stephen R. Covey,Autobiography / Inspirational,1989,Free Press,10
-357,Book,Rich Dad Poor Dad,Robert Kiyosaki,Autobiography / Inspirational,1997,Plata Publishing,10
-358,Book,Think and Grow Rich,Napoleon Hill,Autobiography / Inspirational,1937,The Ralston Society,10
-359,Book,How to Win Friends and Influence People,Dale Carnegie,Autobiography / Inspirational,1936,Simon & Schuster,10
-360,Book,The Power of Now,Eckhart Tolle,Autobiography / Inspirational,1997,Namaste Publishing,10
-361,Book,Mindset,Carol Dweck,Autobiography / Inspirational,2006,Random House,10
-362,Book,Grit,Angela Duckworth,Autobiography / Inspirational,2016,Scribner,10
-363,Book,Deep Work,Cal Newport,Autobiography / Inspirational,2016,Grand Central Publishing,10
-364,Book,Zero to One,"Peter Thiel, Blake Masters",Autobiography / Inspirational,2014,Crown Business,10
-365,Book,Shoe Dog,Phil Knight,Autobiography / Inspirational,2016,Scribner,10
-366,Book,The Hard Thing About Hard Things,Ben Horowitz,Autobiography / Inspirational,2014,HarperBusiness,10
-367,Book,The Lean Startup,Eric Ries,Autobiography / Inspirational,2011,Crown Business,10
-368,Book,Sapiens,Yuval Noah Harari,Autobiography / Inspirational,2011,Dvir Publishing House (Hebrew original),10
-369,Book,The Subtle Art of Not Giving a F*ck,Mark Manson,Autobiography / Inspirational,2016,HarperOne,10
-370,Book,Can't Hurt Me,David Goggins,Autobiography / Inspirational,2018,Lioncrest Publishing,10
-371,Book,Playing It My Way,"Sachin Tendulkar, Boria Majumdar",Autobiography / Inspirational,2014,Hodder & Stoughton,10
-372,Book,Tuesdays with Morrie,Mitch Albom,Autobiography / Inspirational,1997,Doubleday,10
-373,Book,The Pursuit of Happyness,Chris Gardner,Autobiography / Inspirational,2006,Amistad,10
-374,Book,Open,Andre Agassi,Autobiography / Inspirational,2009,Knopf,10
-375,Book,Unbroken,Laura Hillenbrand,Autobiography / Inspirational,2010,Random House,10
-376,Book,The Boy Who Harnessed the Wind,"William Kamkwamba, Bryan Mealer",Autobiography / Inspirational,2009,William Morrow,10
-377,Book,Hidden Figures,Margot Lee Shetterly,Autobiography / Inspirational,2016,William Morrow,10
-378,Book,"Thinking, Fast and Slow",Daniel Kahneman,Autobiography / Inspirational,2011,"Farrar, Straus and Giroux",10
-379,Book,Pride and Prejudice,Jane Austen,Novels / Popular Science Fiction,1813,T. Egerton,4
-380,Book,Frankenstein,Mary Shelley,Novels / Popular Science Fiction,1818,"Lackington, Hughes, Harding, Mavor & Jones",4
-381,Book,The Time Machine,H.G. Wells,Novels / Popular Science Fiction,1895,William Heinemann,4
-382,Book,The Great Gatsby,F. Scott Fitzgerald,Novels / Popular Science Fiction,1925,Charles Scribner's Sons,4
-383,Book,Brave New World,Aldous Huxley,Novels / Popular Science Fiction,1932,Chatto & Windus,4
-384,Book,The Hobbit,J.R.R. Tolkien,Novels / Popular Science Fiction,1937,George Allen & Unwin,4
-385,Book,Animal Farm,George Orwell,Novels / Popular Science Fiction,1945,Secker & Warburg,4
-386,Book,1984,George Orwell,Novels / Popular Science Fiction,1949,Secker & Warburg,4
-387,Book,"I, Robot",Isaac Asimov,Novels / Popular Science Fiction,1950,Gnome Press,4
-388,Book,Foundation,Isaac Asimov,Novels / Popular Science Fiction,1951,Gnome Press,4
-389,Book,The Catcher in the Rye,J.D. Salinger,Novels / Popular Science Fiction,1951,"Little, Brown",4
-390,Book,The Guide,R.K. Narayan,Novels / Popular Science Fiction,1958,Viking Press,4
-391,Book,To Kill a Mockingbird,Harper Lee,Novels / Popular Science Fiction,1960,J.B. Lippincott,4
-392,Book,Dune,Frank Herbert,Novels / Popular Science Fiction,1965,Chilton Books,4
-393,Book,Do Androids Dream of Electric Sheep?,Philip K. Dick,Novels / Popular Science Fiction,1968,Doubleday,4
-394,Book,Malgudi Days,R.K. Narayan,Novels / Popular Science Fiction,1943,Indian Thought Publications,4
-395,Book,The Hitchhiker's Guide to the Galaxy,Douglas Adams,Novels / Popular Science Fiction,1979,Pan Books,4
-396,Book,Midnight's Children,Salman Rushdie,Novels / Popular Science Fiction,1981,Jonathan Cape,4
-397,Book,Neuromancer,William Gibson,Novels / Popular Science Fiction,1984,Ace Books,4
-398,Book,Ender's Game,Orson Scott Card,Novels / Popular Science Fiction,1985,Tor Books,4
-399,Book,Contact,Carl Sagan,Novels / Popular Science Fiction,1985,Simon & Schuster,4
-400,Book,Jurassic Park,Michael Crichton,Novels / Popular Science Fiction,1990,Knopf,4
-401,Book,Harry Potter and the Philosopher's Stone,J.K. Rowling,Novels / Popular Science Fiction,1997,Bloomsbury,4
-402,Book,The God of Small Things,Arundhati Roy,Novels / Popular Science Fiction,1997,IndiaInk,4
-403,Book,Five Point Someone,Chetan Bhagat,Novels / Popular Science Fiction,2004,Rupa Publications,4
-404,Book,The Alchemist,Paulo Coelho,Novels / Popular Science Fiction,1988,Rocco (Portuguese original),4
-405,Book,The White Tiger,Aravind Adiga,Novels / Popular Science Fiction,2008,Atlantic Books,4
-406,Book,Ready Player One,Ernest Cline,Novels / Popular Science Fiction,2011,Crown,4
-407,Book,The Martian,Andy Weir,Novels / Popular Science Fiction,2014,Crown,4
-408,Book,Jane Eyre,Charlotte Bronte,Novels / Popular Science Fiction,1847,"Smith, Elder & Co.",4
-409,Book,Wuthering Heights,Emily Bronte,Novels / Popular Science Fiction,1847,Thomas Cautley Newby,4
-410,Book,Moby-Dick,Herman Melville,Novels / Popular Science Fiction,1851,Harper & Brothers,4
-411,Book,Great Expectations,Charles Dickens,Novels / Popular Science Fiction,1861,Chapman & Hall,4
-412,Book,Crime and Punishment,Fyodor Dostoevsky,Novels / Popular Science Fiction,1866,The Russian Messenger (serial),4
-413,Book,Twenty Thousand Leagues Under the Seas,Jules Verne,Novels / Popular Science Fiction,1870,Pierre-Jules Hetzel,4
-414,Book,Around the World in Eighty Days,Jules Verne,Novels / Popular Science Fiction,1873,Pierre-Jules Hetzel,4
-415,Book,The Adventures of Tom Sawyer,Mark Twain,Novels / Popular Science Fiction,1876,American Publishing Company,4
-416,Book,The Picture of Dorian Gray,Oscar Wilde,Novels / Popular Science Fiction,1890,Lippincott's Monthly Magazine,4
-417,Book,The Adventures of Sherlock Holmes,Arthur Conan Doyle,Novels / Popular Science Fiction,1892,George Newnes,4
-418,Book,Dracula,Bram Stoker,Novels / Popular Science Fiction,1897,Archibald Constable and Company,4
-419,Book,The War of the Worlds,H.G. Wells,Novels / Popular Science Fiction,1898,William Heinemann,4
-420,Book,Murder on the Orient Express,Agatha Christie,Novels / Popular Science Fiction,1934,Collins Crime Club,4
-421,Book,Of Mice and Men,John Steinbeck,Novels / Popular Science Fiction,1937,Covici Friede,4
-422,Book,The Grapes of Wrath,John Steinbeck,Novels / Popular Science Fiction,1939,Viking Press,4
-423,Book,The Little Prince,Antoine de Saint-Exupery,Novels / Popular Science Fiction,1943,Reynal & Hitchcock,4
-424,Book,The Old Man and the Sea,Ernest Hemingway,Novels / Popular Science Fiction,1952,Charles Scribner's Sons,4
-425,Book,Fahrenheit 451,Ray Bradbury,Novels / Popular Science Fiction,1953,Ballantine Books,4
-426,Book,Childhood's End,Arthur C. Clarke,Novels / Popular Science Fiction,1953,Ballantine Books,4
-427,Book,"The Fellowship of the Ring (The Lord of the Rings, Vol. 1)",J.R.R. Tolkien,Novels / Popular Science Fiction,1954,George Allen & Unwin,4
-428,Book,Lord of the Flies,William Golding,Novels / Popular Science Fiction,1954,Faber and Faber,4
-429,Book,One Hundred Years of Solitude,Gabriel Garcia Marquez,Novels / Popular Science Fiction,1967,Editorial Sudamericana,4
-430,Book,2001: A Space Odyssey,Arthur C. Clarke,Novels / Popular Science Fiction,1968,Hutchinson,4
-431,Book,Slaughterhouse-Five,Kurt Vonnegut,Novels / Popular Science Fiction,1969,Delacorte Press,4
-432,Book,The Left Hand of Darkness,Ursula K. Le Guin,Novels / Popular Science Fiction,1969,Ace Books,4
-433,Book,Rendezvous with Rama,Arthur C. Clarke,Novels / Popular Science Fiction,1973,Victor Gollancz,4
-434,Book,Hyperion,Dan Simmons,Novels / Popular Science Fiction,1989,Doubleday,4
-435,Book,Snow Crash,Neal Stephenson,Novels / Popular Science Fiction,1992,Bantam Books,4
-436,Book,Life of Pi,Yann Martel,Novels / Popular Science Fiction,2001,Knopf Canada,4
-437,Book,The Kite Runner,Khaled Hosseini,Novels / Popular Science Fiction,2003,Riverhead Books,4
-438,Book,The Namesake,Jhumpa Lahiri,Novels / Popular Science Fiction,2003,Houghton Mifflin,4
-439,Book,The Da Vinci Code,Dan Brown,Novels / Popular Science Fiction,2003,Doubleday,4
-440,Book,The Three-Body Problem,Liu Cixin,Novels / Popular Science Fiction,2008,Chongqing Publishing House,4
-441,Book,The Hunger Games,Suzanne Collins,Novels / Popular Science Fiction,2008,Scholastic Press,4
-442,Book,2 States: The Story of My Marriage,Chetan Bhagat,Novels / Popular Science Fiction,2009,Rupa Publications,4
-443,Book,Project Hail Mary,Andy Weir,Novels / Popular Science Fiction,2021,Ballantine Books,4
-444,Journal / Magazine,Communications of the ACM,,Journal: General computing,1958,ACM,
-445,Journal / Magazine,Journal of the ACM,,Journal: Theoretical CS,1954,ACM,
-446,Journal / Magazine,ACM Computing Surveys,,Journal: Survey articles in CS,1969,ACM,
-447,Journal / Magazine,ACM Transactions on Graphics,,Journal: Computer graphics,1982,ACM,
-448,Journal / Magazine,ACM Transactions on Database Systems,,Journal: Databases,1976,ACM,
-449,Journal / Magazine,IEEE Computer,,Journal: General computing,1970,IEEE Computer Society,
-450,Journal / Magazine,IEEE Spectrum,,Journal: Technology magazine,1964,IEEE,
-451,Journal / Magazine,Proceedings of the IEEE,,Journal: Electrical and computer engineering,1913,IEEE,
-452,Journal / Magazine,IEEE Transactions on Pattern Analysis and Machine Intelligence,,Journal: AI / computer vision,1979,IEEE,
-453,Journal / Magazine,IEEE Transactions on Neural Networks and Learning Systems,,Journal: Neural networks,1990,IEEE,
-454,Journal / Magazine,IEEE Transactions on Software Engineering,,Journal: Software engineering,1975,IEEE Computer Society,
-455,Journal / Magazine,IEEE/ACM Transactions on Networking,,Journal: Networking,1993,IEEE / ACM,
-456,Journal / Magazine,IEEE Transactions on Knowledge and Data Engineering,,Journal: Data engineering,1989,IEEE,
-457,Journal / Magazine,IEEE Transactions on Electron Devices,,Journal: Electronics / semiconductor devices,1954,IEEE,
-458,Journal / Magazine,IEEE Journal of Solid-State Circuits,,Journal: Integrated circuits,1966,IEEE,
-459,Journal / Magazine,IEEE Transactions on Dependable and Secure Computing,,Journal: Security,2004,IEEE,
-460,Journal / Magazine,Journal of Machine Learning Research,,Journal: Machine learning,2000,JMLR Inc. / MIT Press,
-461,Journal / Magazine,Machine Learning,,Journal: Machine learning,1986,Springer,
-462,Journal / Magazine,Neural Computation,,Journal: Neural computation,1989,MIT Press,
-463,Journal / Magazine,Artificial Intelligence,,Journal: AI,1970,Elsevier,
-464,Journal / Magazine,Pattern Recognition,,Journal: Pattern recognition,1968,Elsevier,
-465,Journal / Magazine,International Journal of Computer Vision,,Journal: Computer vision,1987,Springer,
-466,Journal / Magazine,Data Mining and Knowledge Discovery,,Journal: Data science,1997,Springer,
-467,Journal / Magazine,Journal of Big Data,,Journal: Big data,2014,SpringerOpen,
-468,Journal / Magazine,Nature Machine Intelligence,,Journal: AI,2019,Springer Nature,
-469,Journal / Magazine,Journal of Cryptology,,Journal: Cryptography,1988,IACR / Springer,
-470,Journal / Magazine,Nature,,Journal: Multidisciplinary science,1869,Springer Nature,
-471,Journal / Magazine,Science,,Journal: Multidisciplinary science,1880,AAAS,
-472,Journal / Magazine,Bioinformatics,,Journal: Bioinformatics,1985,Oxford University Press,
-473,Journal / Magazine,Nucleic Acids Research,,Journal: Molecular biology,1974,Oxford University Press,
-474,Journal / Magazine,Nature Biotechnology,,Journal: Biotechnology,1983,Springer Nature,
-475,Journal / Magazine,Physical Review Letters,,Journal: Physics,1958,American Physical Society,
-476,Journal / Magazine,Reviews of Modern Physics,,Journal: Physics,1929,American Physical Society,
-477,Journal / Magazine,Applied Physics Letters,,Journal: Applied physics,1962,AIP Publishing,
-478,Journal / Magazine,Annals of Mathematics,,Journal: Mathematics,1884,Princeton University / IAS,
-479,Journal / Magazine,SIAM Review,,Journal: Applied mathematics,1959,SIAM,
-480,Journal / Magazine,Current Science,,Journal: Multidisciplinary science,1932,Current Science Association (India),
-481,Journal / Magazine,"arXiv (cs, stat.ML, physics sections)",,Journal: Open preprint server,1991,Cornell University,
+﻿Sr No,Title,Author(s),Category,Year ( s: first published; journals: founded),Publisher,Number of copies
+1,Fundamentals of Physics,"David Halliday, Robert Resnick, Jearl Walker",Physics,1970,Wiley,10
+2,University Physics (Sears & Zemansky),"Hugh Young, Roger Freedman",Physics,1949,Addison-Wesley,10
+3,Concepts of Physics (Vol 1 & 2),H.C. Verma,Physics,1992,Bharati Bhawan,10
+4,The Feynman Lectures on Physics,"Richard Feynman, Robert Leighton, Matthew Sands",Physics,1963,Addison-Wesley,10
+5,Introduction to Electrodynamics,David J. Griffiths,Physics,1981,Prentice Hall,10
+6,Introduction to Quantum Mechanics,David J. Griffiths,Physics,1995,Prentice Hall,10
+7,Classical Mechanics,Herbert Goldstein,Physics,1950,Addison-Wesley,10
+8,Classical Electrodynamics,John David Jackson,Physics,1961,Wiley,10
+9,Principles of Quantum Mechanics,R. Shankar,Physics,1980,Plenum Press,10
+10,Modern Quantum Mechanics,J.J. Sakurai,Physics,1985,Addison-Wesley,10
+11,Physics for Scientists and Engineers,"Raymond Serway, John Jewett",Physics,1982,Saunders,10
+12,Physics for Scientists and Engineers,Paul Tipler,Physics,1976,Worth Publishers,10
+13,Optics,Eugene Hecht,Physics,1974,Addison-Wesley,10
+14,Principles of Optics,"Max Born, Emil Wolf",Physics,1959,Pergamon Press,10
+15,Concepts of Modern Physics,Arthur Beiser,Physics,1967,McGraw-Hill,10
+16,Modern Physics,Kenneth Krane,Physics,1983,Wiley,10
+17,"Quantum Physics of Atoms, Molecules, Solids, Nuclei and Particles","Robert Eisberg, Robert Resnick",Physics,1974,Wiley,10
+18,Introduction to Solid State Physics,Charles Kittel,Physics,1953,Wiley,10
+19,Solid State Physics,"Neil Ashcroft, N. David Mermin",Physics,1976,"Holt, Rinehart and Winston",10
+20,Thermal Physics,"Charles Kittel, Herbert Kroemer",Physics,1980,W.H. Freeman,10
+21,An Introduction to Thermal Physics,Daniel Schroeder,Physics,1999,Addison-Wesley,10
+22,Statistical Mechanics,R.K. Pathria,Physics,1972,Pergamon Press,10
+23,Mechanics (Berkeley Physics Course Vol. 1),"Charles Kittel, Walter Knight, Malvin Ruderman",Physics,1962,McGraw-Hill,10
+24,Electricity and Magnetism (Berkeley Physics Course Vol. 2),Edward Purcell,Physics,1965,McGraw-Hill,10
+25,An Introduction to Mechanics,"Daniel Kleppner, Robert Kolenkow",Physics,1973,McGraw-Hill,10
+26,Introduction to Classical Mechanics,David Morin,Physics,2008,Cambridge University Press,10
+27,Mathematical Methods for Physicists,George Arfken,Physics,1966,Academic Press,10
+28,Mathematical Methods in the Physical Sciences,Mary L. Boas,Physics,1966,Wiley,10
+29,Gravitation,"Charles Misner, Kip Thorne, John Wheeler",Physics,1973,W.H. Freeman,10
+30,Mechanics (Course of Theoretical Physics Vol. 1),"L.D. Landau, E.M. Lifshitz",Physics,1960,Pergamon Press,10
+31,Introductory Nuclear Physics,Kenneth Krane,Physics,1987,Wiley,10
+32,Physics of Semiconductor Devices,S.M. Sze,Physics,1969,Wiley,10
+33,Fundamentals of Photonics,"Bahaa Saleh, Malvin Teich",Physics,1991,Wiley,10
+34,Lasers and Electro-Optics,Christopher Davis,Physics,1996,Cambridge University Press,10
+35,Introduction to Special Relativity,Robert Resnick,Physics,1968,Wiley,10
+36,Six Easy Pieces,Richard Feynman,Physics,1994,Addison-Wesley,10
+37,The Elegant Universe,Brian Greene,Physics,1999,W.W. Norton,10
+38,A Brief History of Time,Stephen Hawking,Physics,1988,Bantam  s,10
+39,Cosmos,Carl Sagan,Physics,1980,Random House,10
+40,Astrophysics for People in a Hurry,Neil deGrasse Tyson,Physics,2017,W.W. Norton,10
+41,The Art of Electronics,"Paul Horowitz, Winfield Hill",Basic Electronics,1980,Cambridge University Press,10
+42,Microelectronic Circuits,"Adel Sedra, Kenneth Smith",Basic Electronics,1982,"Holt, Rinehart and Winston",10
+43,Electronic Devices and Circuit Theory,"Robert Boylestad, Louis Nashelsky",Basic Electronics,1972,Prentice Hall,10
+44,Electronic Principles,Albert Malvino,Basic Electronics,1973,McGraw-Hill,10
+45,Integrated Electronics,"Jacob Millman, Christos Halkias",Basic Electronics,1972,McGraw-Hill,10
+46,Electronic Devices,Thomas Floyd,Basic Electronics,1984,Merrill,10
+47,Solid State Electronic Devices,"Ben Streetman, Sanjay Banerjee",Basic Electronics,1972,Prentice Hall,10
+48,Design of Analog CMOS Integrated Circuits,Behzad Razavi,Basic Electronics,2001,McGraw-Hill,10
+49,Fundamentals of Microelectronics,Behzad Razavi,Basic Electronics,2008,Wiley,10
+50,Operational Amplifiers and Linear Integrated Circuits,Ramakant Gayakwad,Basic Electronics,1983,Prentice Hall,10
+51,Operational Amplifiers and Linear Integrated Circuits,"Robert Coughlin, Frederick Driscoll",Basic Electronics,1977,Prentice Hall,10
+52,Digital Design,M. Morris Mano,Basic Electronics,1984,Prentice Hall,10
+53,Digital Logic and Computer Design,M. Morris Mano,Basic Electronics,1979,Prentice Hall,10
+54,Fundamentals of Digital Logic with Verilog Design,"Stephen Brown, Zvonko Vranesic",Basic Electronics,2000,McGraw-Hill,10
+55,Principles of CMOS VLSI Design,"Neil Weste, Kamran Eshraghian",Basic Electronics,1985,Addison-Wesley,10
+56,Signals and Systems,"Alan Oppenheim, Alan Willsky",Basic Electronics,1983,Prentice Hall,10
+57,Discrete-Time Signal Processing,"Alan Oppenheim, Ronald Schafer",Basic Electronics,1989,Prentice Hall,10
+58,Digital Signal Processing,"John Proakis, Dimitris Manolakis",Basic Electronics,1988,Macmillan,10
+59,Communication Systems,Simon Haykin,Basic Electronics,1978,Wiley,10
+60,Principles of Communications,"Rodger Ziemer, William Tranter",Basic Electronics,1976,Houghton Mifflin,10
+61,Digital Communications,John Proakis,Basic Electronics,1983,McGraw-Hill,10
+62,"Microprocessor Architecture, Programming, and Applications with the 8085",Ramesh Gaonkar,Basic Electronics,1984,Merrill,10
+63,The 8051 Microcontroller and Embedded Systems,"Muhammad Ali Mazidi, Janice Mazidi",Basic Electronics,1999,Prentice Hall,10
+64,Network Analysis,M.E. Van Valkenburg,Basic Electronics,1955,Prentice Hall,10
+65,Engineering Circuit Analysis,"William Hayt, Jack Kemmerly",Basic Electronics,1962,McGraw-Hill,10
+66,Fundamentals of Electric Circuits,"Charles Alexander, Matthew Sadiku",Basic Electronics,2000,McGraw-Hill,10
+67,Introductory Circuit Analysis,Robert Boylestad,Basic Electronics,1968,Merrill,10
+68,Electromagnetic Waves and Radiating Systems,"Edward Jordan, Keith Balmain",Basic Electronics,1950,Prentice Hall,10
+69,Engineering Electromagnetics,William Hayt,Basic Electronics,1958,McGraw-Hill,10
+70,Elements of Electromagnetics,Matthew Sadiku,Basic Electronics,1989,Oxford University Press,10
+71,Antenna Theory: Analysis and Design,Constantine Balanis,Basic Electronics,1982,Harper & Row,10
+72,Microwave Engineering,David Pozar,Basic Electronics,1990,Addison-Wesley,10
+73,Control Systems Engineering,Norman Nise,Basic Electronics,1991,Benjamin/Cummings,10
+74,Modern Control Engineering,Katsuhiko Ogata,Basic Electronics,1970,Prentice Hall,10
+75,Practical Electronics for Inventors,Paul Scherz,Basic Electronics,2000,McGraw-Hill,10
+76,Make: Electronics,Charles Platt,Basic Electronics,2009,O'Reilly / Make,10
+77,Artificial Intelligence: A Modern Approach,"Stuart Russell, Peter Norvig",AI / Machine Learning,1995,Prentice Hall,10
+78,Pattern Recognition and Machine Learning,Christopher Bishop,AI / Machine Learning,2006,Springer,10
+79,Machine Learning,Tom Mitchell,AI / Machine Learning,1997,McGraw-Hill,10
+80,Deep Learning,"Ian Goodfellow, Yoshua Bengio, Aaron Courville",AI / Machine Learning,2016,MIT Press,10
+81,The Elements of Statistical Learning,"Trevor Hastie, Robert Tibshirani, Jerome Friedman",AI / Machine Learning,2001,Springer,10
+82,Machine Learning: A Probabilistic Perspective,Kevin Murphy,AI / Machine Learning,2012,MIT Press,10
+83,Probabilistic Machine Learning: An Introduction,Kevin Murphy,AI / Machine Learning,2022,MIT Press,10
+84,Hands-On Machine Learning with Scikit-Learn and TensorFlow,Aurelien Geron,AI / Machine Learning,2017,O'Reilly,10
+85,Reinforcement Learning: An Introduction,"Richard Sutton, Andrew Barto",AI / Machine Learning,1998,MIT Press,10
+86,Understanding Machine Learning,"Shai Shalev-Shwartz, Shai Ben-David",AI / Machine Learning,2014,Cambridge University Press,10
+87,Speech and Language Processing,"Daniel Jurafsky, James Martin",AI / Machine Learning,2000,Prentice Hall,10
+88,Computer Vision: Algorithms and Applications,Richard Szeliski,AI / Machine Learning,2010,Springer,10
+89,Probabilistic Graphical Models,"Daphne Koller, Nir Friedman",AI / Machine Learning,2009,MIT Press,10
+90,Neural Networks and Deep Learning,Michael Nielsen,AI / Machine Learning,2015,Determination Press,10
+91,Python Machine Learning,Sebastian Raschka,AI / Machine Learning,2015,Packt Publishing,10
+92,Deep Learning with Python,Francois Chollet,AI / Machine Learning,2017,Manning,10
+93,Neural Networks: A Comprehensive Foundation,Simon Haykin,AI / Machine Learning,1994,Macmillan,10
+94,Bayesian Reasoning and Machine Learning,David Barber,AI / Machine Learning,2012,Cambridge University Press,10
+95,"Information Theory, Inference, and Learning Algorithms",David MacKay,AI / Machine Learning,2003,Cambridge University Press,10
+96,Pattern Classification,"Richard Duda, Peter Hart, David Stork",AI / Machine Learning,1973,Wiley,10
+97,Digital Image Processing,"Rafael Gonzalez, Richard Woods",AI / Machine Learning,1977,Addison-Wesley,10
+98,Artificial Intelligence,"Elaine Rich, Kevin Knight",AI / Machine Learning,1983,McGraw-Hill,10
+99,Machine Learning Yearning,Andrew Ng,AI / Machine Learning,2018,Self-published,10
+100,Life 3.0,Max Tegmark,AI / Machine Learning,2017,Knopf,10
+101,Superintelligence,Nick Bostrom,AI / Machine Learning,2014,Oxford University Press,10
+102,Human Compatible,Stuart Russell,AI / Machine Learning,2019,Viking,10
+103,The Master Algorithm,Pedro Domingos,AI / Machine Learning,2015,Basic  s,10
+104,Dive into Deep Learning,"Aston Zhang, Zachary Lipton, Mu Li, Alexander Smola",AI / Machine Learning,2023,Cambridge University Press,10
+105,Designing Machine Learning Systems,Chip Huyen,AI / Machine Learning,2022,O'Reilly,10
+106,Natural Language Processing with Transformers,"Lewis Tunstall, Leandro von Werra, Thomas Wolf",AI / Machine Learning,2022,O'Reilly,10
+107,Grokking Deep Learning,Andrew Trask,AI / Machine Learning,2019,Manning,10
+108,Pattern Recognition,"Sergios Theodoridis, Konstantinos Koutroumbas",AI / Machine Learning,1999,Academic Press,10
+109,Introduction to Machine Learning,Ethem Alpaydin,AI / Machine Learning,2004,MIT Press,10
+110,Machine Learning in Action,Peter Harrington,AI / Machine Learning,2012,Manning,10
+111,Learning from Data,"Yaser Abu-Mostafa, Malik Magdon-Ismail, Hsuan-Tien Lin",AI / Machine Learning,2012,AML10
+112,A First Course in Machine Learning,"Simon Rogers, Mark Girolami",AI / Machine Learning,2011,Chapman & Hall/CRC,10
+113,Gaussian Processes for Machine Learning,"Carl Rasmussen, Christopher Williams",AI / Machine Learning,2006,MIT Press,10
+114,Foundations of Statistical Natural Language Processing,"Christopher Manning, Hinrich Schutze",AI / Machine Learning,1999,MIT Press,10
+115,Multiple View Geometry in Computer Vision,"Richard Hartley, Andrew Zisserman",AI / Machine Learning,2000,Cambridge University Press,10
+116,Computer Vision: A Modern Approach,"David Forsyth, Jean Ponce",AI / Machine Learning,2002,Prentice Hall,10
+117,Learning OpenCV,"Gary Bradski, Adrian Kaehler",AI / Machine Learning,2008,O'Reilly,10
+118,Probabilistic Robotics,"Sebastian Thrun, Wolfram Burgard, Dieter Fox",AI / Machine Learning,2005,MIT Press,10
+119,Introduction to Robotics: Mechanics and Control,John J. Craig,AI / Machine Learning,1986,Addison-Wesley,10
+120,Artificial Intelligence: Foundations of Computational Agents,"David Poole, Alan Mackworth",AI / Machine Learning,2010,Cambridge University Press,10
+121,Artificial Intelligence: A Guide to Intelligent Systems,Michael Negnevitsky,AI / Machine Learning,2002,Addison-Wesley,10
+122,Programming Collective Intelligence,Toby Segaran,AI / Machine Learning,2007,O'Reilly,10
+123,Deep Learning for Coders with fastai and PyTorch,"Jeremy Howard, Sylvain Gugger",AI / Machine Learning,2020,O'Reilly,10
+124,Deep Learning with PyTorch,"Eli Stevens, Luca Antiga, Thomas Viehmann",AI / Machine Learning,2020,Manning,10
+125,Generative Deep Learning,David Foster,AI / Machine Learning,2019,O'Reilly,10
+126,Machine Learning Design Patterns,"Valliappa Lakshmanan, Sara Robinson, Michael Munn",AI / Machine Learning,2020,O'Reilly,10
+127,The Hundred-Page Machine Learning,Andriy Burkov,AI / Machine Learning,2019,Andriy Burkov (self-published),10
+128,Build a Large Language Model (From Scratch),Sebastian Raschka,AI / Machine Learning,2024,Manning,10
+129,Architects of Intelligence,Martin Ford,AI / Machine Learning,2018,Packt Publishing,10
+130,Prediction Machines,"Ajay Agrawal, Joshua Gans, Avi Goldfarb",AI / Machine Learning,2018,Harvard Business Review Press,10
+131,AI Superpowers,Kai-Fu Lee,AI / Machine Learning,2018,Houghton Mifflin Harcourt,10
+132,Rebooting AI,"Gary Marcus, Ernest Davis",AI / Machine Learning,2019,Pantheon,10
+133,Artificial Intelligence: A Guide for Thinking Humans,Melanie Mitchell,AI / Machine Learning,2019,"Farrar, Straus and Giroux",10
+134,The Alignment Problem,Brian Christian,AI / Machine Learning,2020,W.W. Norton,10
+135,Genius Makers,Cade Metz,AI / Machine Learning,2021,Dutton,10
+136,Python for Data Analysis,Wes McKinney,Data Science,2012,O'Reilly,10
+137,Python Data Science HandJake VanderPlas,Data Science,2016,O'Reilly,10
+138,An Introduction to Statistical Learning,"Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani",Data Science,2013,Springer,10
+139,Data Science from Scratch,Joel Grus,Data Science,2015,O'Reilly,10
+140,Storytelling with Data,Cole Nussbaumer Knaflic,Data Science,2015,Wiley,10
+141,Mining of Massive Datasets,"Jure Leskovec, Anand Rajaraman, Jeffrey Ullman",Data Science,2011,Cambridge University Press,10
+142,Data Mining: Concepts and Techniques,"Jiawei Han, Micheline Kamber",Data Science,2000,Morgan Kaufmann,10
+143,Introduction to Data Mining,"Pang-Ning Tan, Michael Steinbach, Vipin Kumar",Data Science,2005,Addison-Wesley,10
+144,Designing Data-Intensive Applications,Martin Kleppmann,Data Science,2017,O'Reilly,10
+145,R for Data Science,"Hadley Wickham, Garrett Grolemund",Data Science,2017,O'Reilly,10
+146,Practical Statistics for Data Scientists,"Peter Bruce, Andrew Bruce",Data Science,2017,O'Reilly,10
+147,Think Stats,Allen Downey,Data Science,2011,O'Reilly,10
+148,"Big Data: A Revolution That Will Transform How We Live, Work, and Think","Viktor Mayer-Schonberger, Kenneth Cukier",Data Science,2013,Houghton Mifflin Harcourt,10
+149,The Visual Display of Quantitative Information,Edward Tufte,Data Science,1983,Graphics Press,10
+150,Naked Statistics,Charles Wheelan,Data Science,2013,W.W. Norton,10
+151,Weapons of Math Destruction,Cathy O'Neil,Data Science,2016,Crown,10
+152,Data Science for Business,"Foster Provost, Tom Fawcett",Data Science,2013,O'Reilly,10
+153,Hadoop: The Definitive Guide,Tom White,Data Science,2009,O'Reilly,10
+154,Learning Spark,"Holden Karau, Andy Konwinski, Patrick Wendell, Matei Zaharia",Data Science,2015,O'Reilly,10
+155,Fundamentals of Data Visualization,Claus Wilke,Data Science,2019,O'Reilly,10
+156,Bayesian Data Analysis,"Andrew Gelman, John Carlin, Hal Stern, Donald Rubin",Data Science,1995,Chapman & Hall,10
+157,Statistical Inference,"George Casella, Roger Berger",Data Science,1990,Duxbury Press,10
+158,Doing Data Science,"Cathy O'Neil, Rachel Schutt",Data Science,2013,O'Reilly,10
+159,The Signal and the Noise,Nate Silver,Data Science,2012,Penguin Press,10
+160,All of Statistics,Larry Wasserman,Data Science,2004,Springer,10
+161,Statistics,"David Freedman, Robert Pisani, Roger Purves",Data Science,1978,W.W. Norton,10
+162,Data Analysis Using Regression and Multilevel/Hierarchical Models,"Andrew Gelman, Jennifer Hill",Data Science,2006,Cambridge University Press,10
+163,Regression and Other Stories,"Andrew Gelman, Jennifer Hill, Aki Vehtari",Data Science,2020,Cambridge University Press,10
+164,Statistical Rethinking,Richard McElreath,Data Science,2015,CRC Press,10
+165,Applied Predictive Modeling,"Max Kuhn, Kjell Johnson",Data Science,2013,Springer,10
+166,Feature Engineering for Machine Learning,"Alice Zheng, Amanda Casari",Data Science,2018,O'Reilly,10
+167,The Art of Statistics,David Spiegelhalter,Data Science,2019,Pelican (Penguin),10
+168,The Data Warehouse Toolkit,"Ralph Kimball, Margy Ross",Data Science,1996,Wiley,10
+169,Spark: The Definitive Guide,"Bill Chambers, Matei Zaharia",Data Science,2018,O'Reilly,10
+170,Fundamentals of Data Engineering,"Joe Reis, Matt Housley",Data Science,2022,O'Reilly,10
+171,Learning SQL,Alan Beaulieu,Data Science,2005,O'Reilly,10
+172,SQL CookAnthony Molinaro,Data Science,2005,O'Reilly,10
+173,Data Science at the Command Line,Jeroen Janssens,Data Science,2014,O'Reilly,10
+174,Information Dashboard Design,Stephen Few,Data Science,2006,O'Reilly,10
+175,The Truthful Art,Alberto Cairo,Data Science,2016,New Riders,10
+176,Data Smart,John Foreman,Data Science,2013,Wiley,10
+177,Competing on Analytics,"Thomas Davenport, Jeanne Harris",Data Science,2007,Harvard Business School Press,10
+178,Moneyball,Michael Lewis,Data Science,2003,W.W. Norton,10
+179,How to Lie with Statistics,Darrell Huff,Data Science,1954,W.W. Norton,10
+180,Freakonomics,"Steven Levitt, Stephen Dubner",Data Science,2005,William Morrow,10
+181,Statistics Done Wrong,Alex Reinhart,Data Science,2015,No Starch Press,10
+182,Theof Why,"Judea Pearl, Dana Mackenzie",Data Science,2018,Basic  s,10
+183,Causal Inference: The Mixtape,Scott Cunningham,Data Science,2021,Yale University Press,10
+184,Time Series Analysis and Its Applications,"Robert Shumway, David Stoffer",Data Science,2000,Springer,10
+185,Forecasting: Principles and Practice,"Rob Hyndman, George Athanasopoulos",Data Science,2013,OTexts,10
+186,Introduction to Algorithms (CLRS),"Thomas Cormen, Charles Leiserson, Ronald Rivest, Clifford Stein",Computer Science,1990,MIT Press,10
+187,The Art of Computer Programming,Donald Knuth,Computer Science,1968,Addison-Wesley,10
+188,The C Programming Language,"Brian Kernighan, Dennis Ritchie",Computer Science,1978,Prentice Hall,10
+189,Let Us C,Yashavant Kanetkar,Computer Science,,BPB Publications,10
+190,Programming in ANSI C,E. Balagurusamy,Computer Science,,Tata McGraw-Hill,10
+191,Computer Systems: A Programmer's Perspective,"Randal Bryant, David O'Hallaron",Computer Science,2002,Prentice Hall,10
+192,Operating System Concepts,"Abraham Silberschatz, Peter Galvin, Greg Gagne",Computer Science,1983,Addison-Wesley,10
+193,Modern Operating Systems,Andrew Tanenbaum,Computer Science,1992,Prentice Hall,10
+194,Operating Systems: Three Easy Pieces,"Remzi Arpaci-Dusseau, Andrea Arpaci-Dusseau",Computer Science,2018,Arpaci-Dusseau  s,10
+195,Computer Networks,Andrew Tanenbaum,Computer Science,1981,Prentice Hall,10
+196,Computer Networking: A Top-Down Approach,"James Kurose, Keith Ross",Computer Science,2000,Addison-Wesley,10
+197,Database System Concepts,"Abraham Silberschatz, Henry Korth, S. Sudarshan",Computer Science,1986,McGraw-Hill,10
+198,Fundamentals of Database Systems,"Ramez Elmasri, Shamkant Navathe",Computer Science,1989,Benjamin/Cummings,10
+199,"Compilers: Principles, Techniques, and Tools","Alfred Aho, Ravi Sethi, Jeffrey Ullman",Computer Science,1986,Addison-Wesley,10
+200,Introduction to the Theory of Computation,Michael Sipser,Computer Science,1997,PWS Publishing,10
+201,"Introduction to Automata Theory, Languages, and Computation","John Hopcroft, Jeffrey Ullman",Computer Science,1979,Addison-Wesley,10
+202,Computer Organization and Architecture,William Stallings,Computer Science,1987,Macmillan,10
+203,Computer Architecture: A Quantitative Approach,"John Hennessy, David Patterson",Computer Science,1990,Morgan Kaufmann,10
+204,Computer Organization and Design,"David Patterson, John Hennessy",Computer Science,1994,Morgan Kaufmann,10
+205,Structure and Interpretation of Computer Programs,"Harold Abelson, Gerald Sussman",Computer Science,1985,MIT Press,10
+206,Clean Code,Robert C. Martin,Computer Science,2008,Prentice Hall,10
+207,The Pragmatic Programmer,"Andrew Hunt, David Thomas",Computer Science,1999,Addison-Wesley,10
+208,Design Patterns: Elements of Reusable Object-Oriented Software,"Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",Computer Science,1994,Addison-Wesley,10
+209,Code Complete,Steve McConnell,Computer Science,1993,Microsoft Press,10
+210,Refactoring,Martin Fowler,Computer Science,1999,Addison-Wesley,10
+211,The Mythical Man-Month,Frederick Brooks,Computer Science,1975,Addison-Wesley,10
+212,Cracking the Coding Interview,Gayle Laakmann McDowell,Computer Science,2008,CareerCup,10
+213,Algorithms,"Robert Sedgewick, Kevin Wayne",Computer Science,1983,Addison-Wesley,10
+214,The Algorithm Design Manual,Steven Skiena,Computer Science,1997,Springer (TELOS),10
+215,Fundamentals of Data Structures,"Ellis Horowitz, Sartaj Sahni",Computer Science,1976,Computer Science Press,10
+216,Data Structures Using C,Reema Thareja,Computer Science,2011,Oxford University Press,10
+217,Python Crash Course,Eric Matthes,Computer Science,2015,No Starch Press,10
+218,Automate the Boring Stuff with Python,Al Sweigart,Computer Science,2015,No Starch Press,10
+219,Fluent Python,Luciano Ramalho,Computer Science,2015,O'Reilly,10
+220,Effective Java,Joshua Bloch,Computer Science,2001,Addison-Wesley,10
+221,Head First Java,"Kathy Sierra, Bert Bates",Computer Science,2003,O'Reilly,10
+222,The C++ Programming Language,Bjarne Stroustrup,Computer Science,1985,Addison-Wesley,10
+223,Discrete Mathematics and Its Applications,Kenneth Rosen,Computer Science,1988,McGraw-Hill,10
+224,Software Engineering,Ian Sommerville,Computer Science,1982,Addison-Wesley,10
+225,Software Engineering: A Practitioner's Approach,Roger Pressman,Computer Science,1982,McGraw-Hill,10
+226,Cryptography and Network Security,William Stallings,Computer Science,1998,Prentice Hall,10
+227,The Linux Programming Interface,Michael Kerrisk,Computer Science,2010,No Starch Press,10
+228,The Linux Command Line,William Shotts,Computer Science,2012,No Starch Press,10
+229,Code: The Hidden Language of Computer Hardware and Software,Charles Petzold,Computer Science,2000,Microsoft Press,10
+230,"Godel, Escher, Bach: An Eternal Golden Braid",Douglas Hofstadter,Computer Science,1979,Basic  s,10
+231,The Soul of a New Machine,Tracy Kidder,Computer Science,1981,"Little, Brown",10
+232,Hackers: Heroes of the Computer Revolution,Steven Levy,Computer Science,1984,Anchor Press/Doubleday,10
+233,Algorithm Design,"Jon Kleinberg, Eva Tardos",Computer Science,2005,Addison-Wesley,10
+234,Algorithms Unlocked,Thomas Cormen,Computer Science,2013,MIT Press,10
+235,Grokking Algorithms,Aditya Bhargava,Computer Science,2016,Manning,10
+236,Programming Pearls,Jon Bentley,Computer Science,1986,Addison-Wesley,10
+237,The Practice of Programming,"Brian Kernighan, Rob Pike",Computer Science,1999,Addison-Wesley,10
+238,The Unix Programming Environment,"Brian Kernighan, Rob Pike",Computer Science,1984,Prentice Hall,10
+239,Advanced Programming in the UNIX Environment,W. Richard Stevens,Computer Science,1992,Addison-Wesley,10
+240,"TCP/IP Illustrated, Volume 1",W. Richard Stevens,Computer Science,1994,Addison-Wesley,10
+241,UNIX Network Programming,W. Richard Stevens,Computer Science,1990,Prentice Hall,10
+242,Operating Systems: Internals and Design Principles,William Stallings,Computer Science,1992,Macmillan,10
+243,Database Management Systems,"Raghu Ramakrishnan, Johannes Gehrke",Computer Science,1998,McGraw-Hill,10
+244,Database Internals,Alex Petrov,Computer Science,2019,O'Reilly,10
+245,Introduction to Information Retrieval,"Christopher Manning, Prabhakar Raghavan, Hinrich Schutze",Computer Science,2008,Cambridge University Press,10
+246,Computer Graphics: Principles and Practice,"James Foley, Andries van Dam, Steven Feiner, John Hughes",Computer Science,1990,Addison-Wesley,10
+247,Concepts of Programming Languages,Robert Sebesta,Computer Science,1989,Benjamin/Cummings,10
+248,Types and Programming Languages,Benjamin Pierce,Computer Science,2002,MIT Press,10
+249,Programming Language Pragmatics,Michael Scott,Computer Science,2000,Morgan Kaufmann,10
+250,Engineering a Compiler,"Keith Cooper, Linda Torczon",Computer Science,2003,Morgan Kaufmann,10
+251,Java: The Complete Reference,Herbert Schildt,Computer Science,1996,Osborne/McGraw-Hill,10
+252,C++ Primer,Stanley Lippman,Computer Science,1989,Addison-Wesley,10
+253,JavaScript: The Good Parts,Douglas Crockford,Computer Science,2008,O'Reilly,10
+254,Learning Python,Mark Lutz,Computer Science,1999,O'Reilly,10
+255,Think Python,Allen Downey,Computer Science,2012,O'Reilly,10
+256,Computer Networks: A Systems Approach,"Larry Peterson, Bruce Davie",Computer Science,1996,Morgan Kaufmann,10
+257,Security Engineering,Ross Anderson,Computer Science,2001,Wiley,10
+258,Applied Cryptography,Bruce Schneier,Computer Science,1994,Wiley,10
+259,The Art of Unix Programming,Eric S. Raymond,Computer Science,2003,Addison-Wesley,10
+260,The Cathedral and the Bazaar,Eric S. Raymond,Computer Science,1999,O'Reilly,10
+261,Site Reliability Engineering,"Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Murphy",Computer Science,2016,O'Reilly,10
+262,The Phoenix Project,"Gene Kim, Kevin Behr, George Spafford",Computer Science,2013,IT Revolution Press,10
+263,Domain-Driven Design,Eric Evans,Computer Science,2003,Addison-Wesley,10
+264,Patterns of Enterprise Application Architecture,Martin Fowler,Computer Science,2002,Addison-Wesley,10
+265,Head First Design Patterns,"Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra",Computer Science,2004,O'Reilly,10
+266,Peopleware,"Tom DeMarco, Timothy Lister",Computer Science,1987,Dorset House,10
+267,Hacker's Delight,Henry S. Warren Jr.,Computer Science,2002,Addison-Wesley,10
+268,Molecular Biology of the Cell,Bruce Alberts et al.,Biotechnology,1983,Garland Science,5
+269,Essential Cell Biology,Bruce Alberts et al.,Biotechnology,1998,Garland Science,5
+270,Lehninger Principles of Biochemistry,"David Nelson, Michael Cox",Biotechnology,1982,Worth Publishers,5
+271,Biochemistry,Lubert Stryer,Biotechnology,1975,W.H. Freeman,5
+272,Molecular Biology of the Gene,James Watson et al.,Biotechnology,1965,W.A. Benjamin,5
+273,Genes,Benjamin Lewin,Biotechnology,1983,Wiley,5
+274,Principles of Genetics,"D. Peter Snustad, Michael Simmons",Biotechnology,1997,Wiley,5
+275,Genetics: From Genes to Genomes,Leland Hartwell et al.,Biotechnology,2000,McGraw-Hill,5
+276,Brock Biology of Microorganisms,Michael Madigan et al.,Biotechnology,1970,Prentice Hall,5
+277,Microbiology: An Introduction,"Gerard Tortora, Berdell Funke, Christine Case",Biotechnology,1982,Benjamin Cummings,5
+278,Molecular Cloning: A Laboratory Manual,"Tom Maniatis, Edward Fritsch, Joseph Sambrook",Biotechnology,1982,Cold Spring Harbor Laboratory Press,5
+279,Gene Cloning and DNA Analysis,T.A. Brown,Biotechnology,1986,Blackwell,5
+280,Principles of Gene Manipulation,"R.W. Old, S.B. Primrose",Biotechnology,1980,Blackwell,5
+281,Biotechnology: Academic Cell Update Edition,"David Clark, Nanette Pazdernik",Biotechnology,2009,Academic Press,5
+282,Bioprocess Engineering: Basic Concepts,"Michael Shuler, Fikret Kargi",Biotechnology,1992,Prentice Hall,5
+283,Campbell Biology,Jane Reece et al.,Biotechnology,1987,Benjamin Cummings,5
+284,Janeway's Immunobiology,Kenneth Murphy,Biotechnology,1994,Garland Science,5
+285,Cell and Molecular Biology,Gerald Karp,Biotechnology,1996,Wiley,5
+286,Bioinformatics and Functional Genomics,Jonathan Pevsner,Biotechnology,2003,Wiley,5
+287,Introduction to Bioinformatics,Arthur Lesk,Biotechnology,2002,Oxford University Press,5
+288,Biological Sequence Analysis,"Richard Durbin, Sean Eddy, Anders Krogh, Graeme Mitchison",Biotechnology,1998,Cambridge University Press,5
+289,Structure and Mechanism in Protein Science,Alan Fersht,Biotechnology,1999,W.H. Freeman,5
+290,Introduction to Protein Structure,"Carl Branden, John Tooze",Biotechnology,1991,Garland,5
+291,The Double Helix,James Watson,Biotechnology,1968,Atheneum,5
+292,The Gene: An Intimate History,Siddhartha Mukherjee,Biotechnology,2016,Scribner,5
+293,The Emperor of All Maladies,Siddhartha Mukherjee,Biotechnology,2010,Scribner,5
+294,The Selfish Gene,Richard Dawkins,Biotechnology,1976,Oxford University Press,5
+295,The Immortal Life of Henrietta Lacks,Rebecca Skloot,Biotechnology,2010,Crown,5
+296,A Crack in Creation,"Jennifer Doudna, Samuel Sternberg",Biotechnology,2017,Houghton Mifflin Harcourt,5
+297,Advanced Engineering Mathematics,Erwin Kreyszig,Mathematics,1962,Wiley,10
+298,Higher Engineering Mathematics,B.S. Grewal,Mathematics,,Khanna Publishers,10
+299,Calculus,James Stewart,Mathematics,1987,Brooks/Cole,10
+300,Thomas' Calculus,"George Thomas, Ross Finney",Mathematics,1951,Addison-Wesley,10
+301,Calculus,Michael Spivak,Mathematics,1967,W.A. Benjamin,10
+302,Calculus Made Easy,Silvanus P. Thompson,Mathematics,1910,Macmillan,10
+303,Linear Algebra and Its Applications,Gilbert Strang,Mathematics,1976,Academic Press,10
+304,Introduction to Linear Algebra,Gilbert Strang,Mathematics,1993,Wellesley-Cambridge Press,10
+305,Linear Algebra Done Right,Sheldon Axler,Mathematics,1996,Springer,10
+306,Matrix Computations,"Gene Golub, Charles Van Loan",Mathematics,1983,Johns Hopkins University Press,10
+307,Principles of Mathematical Analysis,Walter Rudin,Mathematics,1953,McGraw-Hill,10
+308,Real and Complex Analysis,Walter Rudin,Mathematics,1966,McGraw-Hill,10
+309,Introductory Real Analysis,"A.N. Kolmogorov, S.V. Fomin",Mathematics,1970,Prentice Hall,10
+310,Introduction to Probability,"Dimitri Bertsekas, John Tsitsiklis",Mathematics,2002,Athena Scientific,10
+311,A First Course in Probability,Sheldon Ross,Mathematics,1976,Macmillan,10
+312,Introduction to Probability Models,Sheldon Ross,Mathematics,1972,Academic Press,10
+313,Probability and Statistics,"Morris DeGroot, Mark Schervish",Mathematics,1975,Addison-Wesley,10
+314,"Probability, Random Variables, and Stochastic Processes",Athanasios Papoulis,Mathematics,1965,McGraw-Hill,10
+315,Elementary Differential Equations and Boundary Value Problems,"William Boyce, Richard DiPrima",Mathematics,1965,Wiley,10
+316,Complex Variables and Applications,"James Brown, Ruel Churchill",Mathematics,1948,McGraw-Hill,10
+317,Numerical Methods for Engineers,"Steven Chapra, Raymond Canale",Mathematics,1985,McGraw-Hill,10
+318,Numerical Analysis,"Richard Burden, J. Douglas Faires",Mathematics,1978,PWS Publishing,10
+319,Concrete Mathematics,"Ronald Graham, Donald Knuth, Oren Patashnik",Mathematics,1989,Addison-Wesley,10
+320,How to Solve It,George Polya,Mathematics,1945,Princeton University Press,10
+321,Elementary Number Theory,David Burton,Mathematics,1976,Allyn and Bacon,10
+322,Introduction to Graph Theory,Douglas West,Mathematics,1996,Prentice Hall,10
+323,Abstract Algebra,"David Dummit, Richard Foote",Mathematics,1991,Prentice Hall,10
+324,Topics in Algebra,I.N. Herstein,Mathematics,1964,Blaisdell,10
+325,Convex Optimization,"Stephen Boyd, Lieven Vandenberghe",Mathematics,2004,Cambridge University Press,10
+326,Mathematics for Machine Learning,"Marc Deisenroth, A. Aldo Faisal, Cheng Soon Ong",Mathematics,2020,Cambridge University Press,10
+327,Fermat's Enigma,Simon Singh,Mathematics,1997,Walker & Company,10
+328,The Man Who Knew Infinity,Robert Kanigel,Mathematics,1991,Scribner,10
+329,A Mind for Numbers,Barbara Oakley,Mathematics,2014,TarcherPerigee,10
+330,Wings of Fire,"A.P.J. Abdul Kalam, Arun Tiwari",Autobiography / Inspirational,1999,Universities Press,10
+331,Ignited Minds,A.P.J. Abdul Kalam,Autobiography / Inspirational,2002,Viking (Penguin India),10
+332,India 2020,"A.P.J. Abdul Kalam, Y.S. Rajan",Autobiography / Inspirational,1998,Viking (Penguin India),10
+333,Turning Points,A.P.J. Abdul Kalam,Autobiography / Inspirational,2012,HarperCollins India,10
+334,My Journey,A.P.J. Abdul Kalam,Autobiography / Inspirational,2013,Rupa Publications,10
+335,The Story of My Experiments with Truth,M.K. Gandhi,Autobiography / Inspirational,1927,Navajivan,10
+336,An Autobiography (Toward Freedom),Jawaharlal Nehru,Autobiography / Inspirational,1936,The Bodley Head,10
+337,The Discovery of India,Jawaharlal Nehru,Autobiography / Inspirational,1946,Signet Press,10
+338,Long Walk to Freedom,Nelson Mandela,Autobiography / Inspirational,1994,"Little, Brown",10
+339,Autobiography of a Yogi,Paramahansa Yogananda,Autobiography / Inspirational,1946,Philosophical Library,10
+340,The Diary of a Young Girl,Anne Frank,Autobiography / Inspirational,1947,Contact Publishing,10
+341,Steve Jobs,Walter Isaacson,Autobiography / Inspirational,2011,Simon & Schuster,10
+342,Elon Musk,Ashlee Vance,Autobiography / Inspirational,2015,Ecco,10
+343,Elon Musk,Walter Isaacson,Autobiography / Inspirational,2023,Simon & Schuster,10
+344,Einstein: His Life and Universe,Walter Isaacson,Autobiography / Inspirational,2007,Simon & Schuster,10
+345,The Innovators,Walter Isaacson,Autobiography / Inspirational,2014,Simon & Schuster,10
+346,"Surely You're Joking, Mr. Feynman!","Richard Feynman, Ralph Leighton",Autobiography / Inspirational,1985,W.W. Norton,10
+347,What Do You Care What Other People Think?,"Richard Feynman, Ralph Leighton",Autobiography / Inspirational,1988,W.W. Norton,10
+348,My Brief History,Stephen Hawking,Autobiography / Inspirational,2013,Bantam,10
+349,Born a Crime,Trevor Noah,Autobiography / Inspirational,2016,Spiegel & Grau,10
+350,Becoming,Michelle Obama,Autobiography / Inspirational,2018,Crown,10
+351,Dreams from My Father,Barack Obama,Autobiography / Inspirational,1995,Times  s,10
+352,I Am Malala,"Malala Yousafzai, Christina Lamb",Autobiography / Inspirational,2013,Weidenfeld & Nicolson,10
+353,Educated,Tara Westover,Autobiography / Inspirational,2018,Random House,10
+354,Man's Search for Meaning,Viktor Frankl,Autobiography / Inspirational,1946,Verlag fur Jugend und Volk (German original),10
+355,Atomic Habits,James Clear,Autobiography / Inspirational,2018,Avery,10
+356,The 7 Habits of Highly Effective People,Stephen R. Covey,Autobiography / Inspirational,1989,Free Press,10
+357,Rich Dad Poor Dad,Robert Kiyosaki,Autobiography / Inspirational,1997,Plata Publishing,10
+358,Think and Grow Rich,Napoleon Hill,Autobiography / Inspirational,1937,The Ralston Society,10
+359,How to Win Friends and Influence People,Dale Carnegie,Autobiography / Inspirational,1936,Simon & Schuster,10
+360,The Power of Now,Eckhart Tolle,Autobiography / Inspirational,1997,Namaste Publishing,10
+361,Mindset,Carol Dweck,Autobiography / Inspirational,2006,Random House,10
+362,Grit,Angela Duckworth,Autobiography / Inspirational,2016,Scribner,10
+363,Deep Work,Cal Newport,Autobiography / Inspirational,2016,Grand Central Publishing,10
+364,Zero to One,"Peter Thiel, Blake Masters",Autobiography / Inspirational,2014,Crown Business,10
+365,Shoe Dog,Phil Knight,Autobiography / Inspirational,2016,Scribner,10
+366,The Hard Thing About Hard Things,Ben Horowitz,Autobiography / Inspirational,2014,HarperBusiness,10
+367,The Lean Startup,Eric Ries,Autobiography / Inspirational,2011,Crown Business,10
+368,Sapiens,Yuval Noah Harari,Autobiography / Inspirational,2011,Dvir Publishing House (Hebrew original),10
+369,The Subtle Art of Not Giving a F*ck,Mark Manson,Autobiography / Inspirational,2016,HarperOne,10
+370,Can't Hurt Me,David Goggins,Autobiography / Inspirational,2018,Lioncrest Publishing,10
+371,Playing It My Way,"Sachin Tendulkar, Boria Majumdar",Autobiography / Inspirational,2014,Hodder & Stoughton,10
+372,Tuesdays with Morrie,Mitch Albom,Autobiography / Inspirational,1997,Doubleday,10
+373,The Pursuit of Happyness,Chris Gardner,Autobiography / Inspirational,2006,Amistad,10
+374,Open,Andre Agassi,Autobiography / Inspirational,2009,Knopf,10
+375,Unbroken,Laura Hillenbrand,Autobiography / Inspirational,2010,Random House,10
+376,The Boy Who Harnessed the Wind,"William Kamkwamba, Bryan Mealer",Autobiography / Inspirational,2009,William Morrow,10
+377,Hidden Figures,Margot Lee Shetterly,Autobiography / Inspirational,2016,William Morrow,10
+378,"Thinking, Fast and Slow",Daniel Kahneman,Autobiography / Inspirational,2011,"Farrar, Straus and Giroux",10
+379,Pride and Prejudice,Jane Austen,Novels / Popular Science Fiction,1813,T. Egerton,4
+380,Frankenstein,Mary Shelley,Novels / Popular Science Fiction,1818,"Lackington, Hughes, Harding, Mavor & Jones",4
+381,The Time Machine,H.G. Wells,Novels / Popular Science Fiction,1895,William Heinemann,4
+382,The Great Gatsby,F. Scott Fitzgerald,Novels / Popular Science Fiction,1925,Charles Scribner's Sons,4
+383,Brave New World,Aldous Huxley,Novels / Popular Science Fiction,1932,Chatto & Windus,4
+384,The Hobbit,J.R.R. Tolkien,Novels / Popular Science Fiction,1937,George Allen & Unwin,4
+385,Animal Farm,George Orwell,Novels / Popular Science Fiction,1945,Secker & Warburg,4
+386,1984,George Orwell,Novels / Popular Science Fiction,1949,Secker & Warburg,4
+387,"I, Robot",Isaac Asimov,Novels / Popular Science Fiction,1950,Gnome Press,4
+388,Foundation,Isaac Asimov,Novels / Popular Science Fiction,1951,Gnome Press,4
+389,The Catcher in the Rye,J.D. Salinger,Novels / Popular Science Fiction,1951,"Little, Brown",4
+390,The Guide,R.K. Narayan,Novels / Popular Science Fiction,1958,Viking Press,4
+391,To Kill a Mockingbird,Harper Lee,Novels / Popular Science Fiction,1960,J.B. Lippincott,4
+392,Dune,Frank Herbert,Novels / Popular Science Fiction,1965,Chilton  s,4
+393,Do Androids Dream of Electric Sheep?,Philip K. Dick,Novels / Popular Science Fiction,1968,Doubleday,4
+394,Malgudi Days,R.K. Narayan,Novels / Popular Science Fiction,1943,Indian Thought Publications,4
+395,The Hitchhiker's Guide to the Galaxy,Douglas Adams,Novels / Popular Science Fiction,1979,Pan  s,4
+396,Midnight's Children,Salman Rushdie,Novels / Popular Science Fiction,1981,Jonathan Cape,4
+397,Neuromancer,William Gibson,Novels / Popular Science Fiction,1984,Ace  s,4
+398,Ender's Game,Orson Scott Card,Novels / Popular Science Fiction,1985,Tor  s,4
+399,Contact,Carl Sagan,Novels / Popular Science Fiction,1985,Simon & Schuster,4
+400,Jurassic Park,Michael Crichton,Novels / Popular Science Fiction,1990,Knopf,4
+401,Harry Potter and the Philosopher's Stone,J.K. Rowling,Novels / Popular Science Fiction,1997,Bloomsbury,4
+402,The God of Small Things,Arundhati Roy,Novels / Popular Science Fiction,1997,IndiaInk,4
+403,Five Point Someone,Chetan Bhagat,Novels / Popular Science Fiction,2004,Rupa Publications,4
+404,The Alchemist,Paulo Coelho,Novels / Popular Science Fiction,1988,Rocco (Portuguese original),4
+405,The White Tiger,Aravind Adiga,Novels / Popular Science Fiction,2008,Atlantic  s,4
+406,Ready Player One,Ernest Cline,Novels / Popular Science Fiction,2011,Crown,4
+407,The Martian,Andy Weir,Novels / Popular Science Fiction,2014,Crown,4
+408,Jane Eyre,Charlotte Bronte,Novels / Popular Science Fiction,1847,"Smith, Elder & Co.",4
+409,Wuthering Heights,Emily Bronte,Novels / Popular Science Fiction,1847,Thomas Cautley Newby,4
+410,Moby-Dick,Herman Melville,Novels / Popular Science Fiction,1851,Harper & Brothers,4
+411,Great Expectations,Charles Dickens,Novels / Popular Science Fiction,1861,Chapman & Hall,4
+412,Crime and Punishment,Fyodor Dostoevsky,Novels / Popular Science Fiction,1866,The Russian Messenger (serial),4
+413,Twenty Thousand Leagues Under the Seas,Jules Verne,Novels / Popular Science Fiction,1870,Pierre-Jules Hetzel,4
+414,Around the World in Eighty Days,Jules Verne,Novels / Popular Science Fiction,1873,Pierre-Jules Hetzel,4
+415,The Adventures of Tom Sawyer,Mark Twain,Novels / Popular Science Fiction,1876,American Publishing Company,4
+416,The Picture of Dorian Gray,Oscar Wilde,Novels / Popular Science Fiction,1890,Lippincott's Monthly 4
+417,The Adventures of Sherlock Holmes,Arthur Conan Doyle,Novels / Popular Science Fiction,1892,George Newnes,4
+418,Dracula,Bram Stoker,Novels / Popular Science Fiction,1897,Archibald Constable and Company,4
+419,The War of the Worlds,H.G. Wells,Novels / Popular Science Fiction,1898,William Heinemann,4
+420,Murder on the Orient Express,Agatha Christie,Novels / Popular Science Fiction,1934,Collins Crime Club,4
+421,Of Mice and Men,John Steinbeck,Novels / Popular Science Fiction,1937,Covici Friede,4
+422,The Grapes of Wrath,John Steinbeck,Novels / Popular Science Fiction,1939,Viking Press,4
+423,The Little Prince,Antoine de Saint-Exupery,Novels / Popular Science Fiction,1943,Reynal & Hitchcock,4
+424,The Old Man and the Sea,Ernest Hemingway,Novels / Popular Science Fiction,1952,Charles Scribner's Sons,4
+425,Fahrenheit 451,Ray Bradbury,Novels / Popular Science Fiction,1953,Ballantine  s,4
+426,Childhood's End,Arthur C. Clarke,Novels / Popular Science Fiction,1953,Ballantine  s,4
+427,"The Fellowship of the Ring (The Lord of the Rings, Vol. 1)",J.R.R. Tolkien,Novels / Popular Science Fiction,1954,George Allen & Unwin,4
+428,Lord of the Flies,William Golding,Novels / Popular Science Fiction,1954,Faber and Faber,4
+429,One Hundred Years of Solitude,Gabriel Garcia Marquez,Novels / Popular Science Fiction,1967,Editorial Sudamericana,4
+430,2001: A Space Odyssey,Arthur C. Clarke,Novels / Popular Science Fiction,1968,Hutchinson,4
+431,Slaughterhouse-Five,Kurt Vonnegut,Novels / Popular Science Fiction,1969,Delacorte Press,4
+432,The Left Hand of Darkness,Ursula K. Le Guin,Novels / Popular Science Fiction,1969,Ace  s,4
+433,Rendezvous with Rama,Arthur C. Clarke,Novels / Popular Science Fiction,1973,Victor Gollancz,4
+434,Hyperion,Dan Simmons,Novels / Popular Science Fiction,1989,Doubleday,4
+435,Snow Crash,Neal Stephenson,Novels / Popular Science Fiction,1992,Bantam  s,4
+436,Life of Pi,Yann Martel,Novels / Popular Science Fiction,2001,Knopf Canada,4
+437,The Kite Runner,Khaled Hosseini,Novels / Popular Science Fiction,2003,Riverhead  s,4
+438,The Namesake,Jhumpa Lahiri,Novels / Popular Science Fiction,2003,Houghton Mifflin,4
+439,The Da Vinci Code,Dan Brown,Novels / Popular Science Fiction,2003,Doubleday,4
+440,The Three-Body Problem,Liu Cixin,Novels / Popular Science Fiction,2008,Chongqing Publishing House,4
+441,The Hunger Games,Suzanne Collins,Novels / Popular Science Fiction,2008,Scholastic Press,4
+442,2 States: The Story of My Marriage,Chetan Bhagat,Novels / Popular Science Fiction,2009,Rupa Publications,4
+443,Project Hail Mary,Andy Weir,Novels / Popular Science Fiction,2021,Ballantine  s,4
+444,Communications of the ACM,,Journal: General computing,1958,ACM,
+445,Journal of the ACM,,Journal: Theoretical CS,1954,ACM,
+446,ACM Computing Surveys,,Journal: Survey articles in CS,1969,ACM,
+447,ACM Transactions on Graphics,,Journal: Computer graphics,1982,ACM,
+448,ACM Transactions on Database Systems,,Journal: Databases,1976,ACM,
+449,IEEE Computer,,Journal: General computing,1970,IEEE Computer Society,
+450,IEEE Spectrum,,Journal: Technology 1964,IEEE,
+451,Proceedings of the IEEE,,Journal: Electrical and computer engineering,1913,IEEE,
+452,IEEE Transactions on Pattern Analysis and Machine Intelligence,,Journal: AI / computer vision,1979,IEEE,
+453,IEEE Transactions on Neural Networks and Learning Systems,,Journal: Neural networks,1990,IEEE,
+454,IEEE Transactions on Software Engineering,,Journal: Software engineering,1975,IEEE Computer Society,
+455,IEEE/ACM Transactions on Networking,,Journal: Networking,1993,IEEE / ACM,
+456,IEEE Transactions on Knowledge and Data Engineering,,Journal: Data engineering,1989,IEEE,
+457,IEEE Transactions on Electron Devices,,Journal: Electronics / semiconductor devices,1954,IEEE,
+458,IEEE Journal of Solid-State Circuits,,Journal: Integrated circuits,1966,IEEE,
+459,IEEE Transactions on Dependable and Secure Computing,,Journal: Security,2004,IEEE,
+460,Journal of Machine Learning Research,,Journal: Machine learning,2000,JMLR Inc. / MIT Press,
+461,Machine Learning,,Journal: Machine learning,1986,Springer,
+462,Neural Computation,,Journal: Neural computation,1989,MIT Press,
+463,Artificial Intelligence,,Journal: AI,1970,Elsevier,
+464,Pattern Recognition,,Journal: Pattern recognition,1968,Elsevier,
+465,International Journal of Computer Vision,,Journal: Computer vision,1987,Springer,
+466,Data Mining and Knowledge Discovery,,Journal: Data science,1997,Springer,
+467,Journal of Big Data,,Journal: Big data,2014,SpringerOpen,
+468,Nature Machine Intelligence,,Journal: AI,2019,Springer Nature,
+469,Journal of Cryptology,,Journal: Cryptography,1988,IACR / Springer,
+470,Nature,,Journal: Multidisciplinary science,1869,Springer Nature,
+471,Science,,Journal: Multidisciplinary science,1880,AAAS,
+472,Bioinformatics,,Journal: Bioinformatics,1985,Oxford University Press,
+473,Nucleic Acids Research,,Journal: Molecular biology,1974,Oxford University Press,
+474,Nature Biotechnology,,Journal: Biotechnology,1983,Springer Nature,
+475,Physical Review Letters,,Journal: Physics,1958,American Physical Society,
+476,Reviews of Modern Physics,,Journal: Physics,1929,American Physical Society,
+477,Applied Physics Letters,,Journal: Applied physics,1962,AIP Publishing,
+478,Annals of Mathematics,,Journal: Mathematics,1884,Princeton University / IAS,
+479,SIAM Review,,Journal: Applied mathematics,1959,SIAM,
+480,Current Science,,Journal: Multidisciplinary science,1932,Current Science Association (India),
+481,"arXiv (cs, stat.ML, physics sections)",,Journal: Open preprint server,1991,Cornell University,
