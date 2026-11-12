@@ -1,3 +1,9 @@
+// THigs left to be done :
+// 1. Error handilng in the input in the admin and the student part 
+//2. Return book function 
+//3. fixing the login 
+//4. Csv handiling for the login part
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -164,12 +170,18 @@ void Admin(void)
 
         case 2: // Add a book
             {
+            Book:
             Check_File_Opening(IT_College_Library_Catalogue, "IT_College_Library_Catalogue.csv");
             char book_name[100], author_name[100], publisher_name[100];
             int num_books =0;
             int total_books = 0;
             printf("How many books do you want to add? ");
             scanf("%d", &total_books);
+            if(sizeof(total_books)!= 4)
+            {
+                printf("Please enter a valid entry.")
+                goto Book;
+            }
             fprintf(IT_College_Library_Catalogue, "Book Name,Author Name,Publisher Name,Number of Books\n");
             for (int i = 0; i < total_books; i++)
             {
