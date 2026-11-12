@@ -250,8 +250,6 @@ void Admin(void)
                 getchar();
                 fgets(book_name, sizeof(book_name), stdin);
                 book_name[strcspn(book_name, "\n")] = '\0';
-                // Search for the matching record in the Issued_Books.csv file
-                //[^,]- Used to skip the programme from reading commas
                 while (fscanf(Issued_Books,
                             "%99[^,],%99[^,],%99[^,],%d,%d",
                             book,
@@ -272,10 +270,10 @@ void Admin(void)
                 {
                     printf("Enter the current date (DDMMYYYY): ");
                     scanf("%d", &date_today);
-                    if ((date_today - date_issued) > 15)
+                    if ((date_today - date_issued) > 15000)
                     {
                         printf("\nBook is overdue.\n");
-                        int fine = (date_today - date_issued - 15) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
+                        int fine = ((date_today - date_issued - 15)/10000) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
                         printf("\nPending fine for enrollment number %d and book '%s' is: %d rupees.\n",
                             enrollment_number, book_name, fine);
                     }
@@ -359,6 +357,7 @@ void Admin(void)
                 printf("Books returned successfully.\n");
                 goto Admin;
             }
+        
         case 7:// Library Statistics Dashboard
             {
                 FILE *catalogue;
@@ -432,15 +431,7 @@ void Admin(void)
     }
 }
 
-// To be formatted completly
 
-// To create : 
-//1. Isseue fine  csv
-//2. issue book csv 
-//3. Adding time stamp to the issued book csv
-//4. Showing up the fine charges and the return duration of the book
-
-// Issued books csv will have the following columns : Book Name, Author Name, Publisher Name, Issue Date, Return Date, Fine calculated 
 void Student(void)
 {
     Student:
@@ -513,7 +504,6 @@ void Student(void)
                 getchar();
                 fgets(book_name, sizeof(book_name), stdin);
                 book_name[strcspn(book_name, "\n")] = '\0';
-                // Search for the matching record in the Issued_Books.csv file
                 //[^,]- Used to skip the programme from reading commas
                 while (fscanf(Issued_Books,
                             "%99[^,],%99[^,],%99[^,],%d,%d",
@@ -535,10 +525,10 @@ void Student(void)
                 {
                     printf("Enter the current date (DDMMYYYY): ");
                     scanf("%d", &date_today);
-                    if ((date_today - date_issued) > 15)
+                    if ((date_today - date_issued) > 15000)
                     {
                         printf("\nBook is overdue.\n");
-                        int fine = (date_today - date_issued - 15) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
+                        int fine = ((date_today - date_issued - 15)/1000) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
                         printf("\nPending fine for enrollment number %d and book '%s' is: %d rupees.\n",
                             enrollment_number, book_name, fine);
                     }
