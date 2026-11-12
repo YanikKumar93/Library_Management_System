@@ -60,7 +60,7 @@ start:
     return 0;
 }
 
-void Admin_Login(void) // Fix for general 
+void Admin_Login(void) // Fix it for creating a password for a particular user.
 {
     char username[20], password[20];
     printf("Enter admin username: "); 
@@ -79,7 +79,7 @@ void Admin_Login(void) // Fix for general
     }
 }
 
-void Student_Login(void)// Fix for general 
+void Student_Login(void)// Fix it for creating a password for a particular user. 
 {
     char username[20], password[20];
     printf("Enter student username: ");
@@ -97,8 +97,7 @@ void Student_Login(void)// Fix for general
         printf("Invalid student credentials.\n");
     }
 }
-
-//Error handling throughout the code 
+ 
 
 void Admin(void)
 {
@@ -112,12 +111,12 @@ void Admin(void)
     printf("What do you want to do?\n");
     printf("\t1. Add a student\n");//Completed
     printf("\t2. Add a book\n");//Completed
-    printf("\t3. Check availability of books\n");//To be done
-    printf("\t4. Checking pending fines\n");//To be done
-    printf("\t5. Issue a book\n");//To be done
+    printf("\t3. Check availability of books\n");//Completed
+    printf("\t4. Checking pending fines\n");//Completed
+    printf("\t5. Issue a book\n");//Completed
     printf("\t6. Return a book\n");//To be done
-    printf("\t7. Library statistics dashboard\n");//To be done
-    printf("\t8. Exit\n");//To be done
+    printf("\t7. Library statistics dashboard\n");//Completed
+    printf("\t8. Exit\n");//Completed
     printf("Enter your choice here: ");
 
     if (scanf("%d", &Choice) != 1)
@@ -361,7 +360,7 @@ void Admin(void)
                 printf("Books returned successfully.\n");
                 goto Admin;
             }
-        case 7:
+        case 7:// Library Statistics Dashboard
             {
                 FILE *catalogue;
                 FILE *student_file;
@@ -419,14 +418,14 @@ void Admin(void)
                 goto Admin;
             }
 
-        case 8:
+        case 8://Exit
             {
                 printf("\nExiting the Admin Dashboard.\n");
                 printf("Thank you for using the JIIT Library Management System.\n");
                 break;
             }
 
-        default:
+        default://Case of any error
             {
                 printf("Invalid Admin choice.\n");
                 goto Admin;
@@ -449,10 +448,10 @@ void Student(void)
     int Choice;
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
-    printf("\t1. Search for a book\n");
-    printf("\t2. Check pending fine\n");//To be done
-    printf("\t3. Check the issued books\n");
-    printf("\t4. Exit\n");
+    printf("\t1. Search for a book\n");//Completed
+    printf("\t2. Check pending fine\n");//Completed
+    printf("\t3. Check the issued books\n");//Comlpleted
+    printf("\t4. Exit\n");//Completed
     printf("Enter your choice here: ");
     if (scanf("%d", &Choice) != 1)
     {
@@ -462,7 +461,7 @@ void Student(void)
 
     switch (Choice)
     {
-        case 1:
+        case 1:// Searching for a book
         {
             FILE *catalogue;
             Check_File_Opening(catalogue = fopen("IT_College_Library_Catalogue.csv", "r"), "IT_College_Library_Catalogue.csv");
@@ -496,7 +495,7 @@ void Student(void)
             goto Student;
         }
 
-        case 2:
+        case 2: // Check Pending fines
         {
             FILE *Issued_Books;
                 int enrollment_number;
@@ -557,7 +556,7 @@ void Student(void)
             goto Student;
         }
 
-        case 3:
+        case 3: // Checking Issued books
         {
             FILE *Issued_Books;
             Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "r"), "Issued_Books.csv");
@@ -595,14 +594,14 @@ void Student(void)
             goto Student;
         }
 
-        case 4:
+        case 4: // Exit 
         {
             printf("\nExiting the Student Dashboard.\n");
             printf("Thank you for visiting the JIIT Library .\n");
             break;
         }
 
-        default :
+        default : // Case of any invlaid input.
             {
                 printf("Invalid Student choice.\n");
                 printf("Please enter a valid choice.\n");
