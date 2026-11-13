@@ -21,6 +21,17 @@ void Check_File_Opening(FILE *file, const char *filename)
     }
 }
 
+unsigned long HashPassword(char password[])
+{
+    unsigned long hash = 0;
+    int i;
+    for (i = 0; password[i] != '\0'; i++)
+    {
+        hash = hash * 31 + password[i];
+    }
+    return hash;
+}
+
 int main(void)
 {
     int User;
@@ -66,22 +77,90 @@ start:
     return 0;
 }
 
-void Admin_Login(void) // Fix it for creating a password for a particular user.
+void Admin_Login(void)
 {
+    FILE *Admin_Credentials;
     char username[20], password[20];
-    printf("Enter admin username: "); 
-    scanf("%s", username);
-    printf("Enter admin password: ");
-    scanf("%s", password);
-
-    if (strcmp(username, "admin") == 0 && strcmp(password, "admin123") == 0)
+    char stored_username[20];
+    unsigned long password_hash, stored_hash;
+    int exists = 0;
+    int choice;
+    Admin_login :
+    printf("----- ADMIN LOGIN -----\n");
+    printf("\t1. Login\n");   
+    printf("\t2. Register\n");
+    printf("Enter your choice here: ");
+    scanf("%d", &choice);
+    if (choice == 1)
     {
-        printf("Admin login successful.\n");
-        Admin();
+        printf("Enter your username: ");
+        scanf("%19s", username);
+        printf("Enter your password: ");
+        scanf("%19s", password);
+        password_hash = HashPassword(password);
+        Admin_Credentials = fopen("Admin_Credentials.csv", "r");
+        if (Admin_Credentials != NULL)
+        {
+            while (fscanf(Admin_Credentials, " %19[^,],%lu",
+                          stored_username, &stored_hash) == 2)
+            {
+                if (strcmp(username, stored_username) == 0 &&
+                    password_hash == stored_hash)
+                {
+                    printf("\nAdmin login successful!\n");
+                    fclose(Admin_Credentials);
+                    Admin();
+                    return;
+                }
+            }
+            fclose(Admin_Credentials);
+        }
+        printf("\nInvalid username or password. Please try again.\n\n");
+        goto Admin_login;
+    }
+    else if (choice == 2)
+    {
+        Admin_register: 
+        printf("\n----- ADMIN REGISTRATION -----\n");
+        printf("Enter your username: ");
+        scanf("%19s", username);
+        Admin_Credentials = fopen("Admin_Credentials.csv", "r");
+        if (Admin_Credentials != NULL)
+        {
+            while (fscanf(Admin_Credentials, " %19[^,],%lu",
+                        stored_username, &stored_hash) == 2)
+            {
+                if (strcmp(username, stored_username) == 0)
+                {
+                    exists = 1;
+                    break;
+                }
+            }
+            fclose(Admin_Credentials);
+        }
+        if (exists ==1)
+        {
+            printf("This username is already registered.\n");
+            printf("Please choose a different username or login if you are already registered.\n");
+            goto Admin_login;
+        }
+        printf("Create your password: ");
+        scanf("%19s", password);
+        // Convert the password into a hash.
+        password_hash = HashPassword(password);// HashPassword is a function that hashes the password.
+        Admin_Credentials = fopen("Admin_Credentials.csv", "a");
+        Check_File_Opening(Admin_Credentials, "Admin_Credentials.csv");
+        fprintf(Admin_Credentials, "%s,%lu\n", username, password_hash);
+        fclose(Admin_Credentials);
+        printf("\nAdmin registration successful!\n");
+        printf("You can now log in with your credentials.\n\n");
+        goto Admin_login;
     }
     else
     {
-        printf("Invalid admin credentials.\n");
+        printf("Invalid choice. \n");
+        printf("Please enter a valid choice.\n\n");
+        goto Admin_login;
     }
 }
 
@@ -115,14 +194,14 @@ void Admin(void)
     Check_File_Opening(IT_College_Library_Catalogue = fopen("IT_College_Library_Catalogue.csv", "a+"), "IT_College_Library_Catalogue.csv");
     printf("\nWelcome to the Admin Dashboard\n");
     printf("What do you want to do?\n");
-    printf("\t1. Add a student\n");//Completed
-    printf("\t2. Add a book\n");//Completed
-    printf("\t3. Check availability of books\n");//Completed
-    printf("\t4. Checking pending fines\n");//Completed
-    printf("\t5. Issue a book\n");//Completed
-    printf("\t6. Return a book\n");//To be done
-    printf("\t7. Library statistics dashboard\n");//Completed
-    printf("\t8. Exit\n");//Completed
+    printf("\t1. Add a student\n");
+    printf("\t2. Add a book\n");
+    printf("\t3. Check availability of books\n");
+    printf("\t4. Checking pending fines\n");
+    printf("\t5. Issue a book\n");
+    printf("\t6. Return a book\n");
+    printf("\t7. Library statistics dashboard\n");
+    printf("\t8. Exit\n");
     printf("Enter your choice here: ");
 
     if (scanf("%d", &Choice) != 1)
@@ -179,7 +258,7 @@ void Admin(void)
             scanf("%d", &total_books);
             if(sizeof(total_books)!= 4)
             {
-                printf("Please enter a valid entry.")
+                printf("Please enter a valid entry.");
                 goto Book;
             }
             fprintf(IT_College_Library_Catalogue, "Book Name,Author Name,Publisher Name,Number of Books\n");
@@ -196,7 +275,7 @@ void Admin(void)
                 fgets(publisher_name, sizeof(publisher_name), stdin); 
                 publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
                 printf("Enter the quantity of copies of the books added to the library %d: ", i + 1);
-                scanf("%d", num_books); 
+                scanf("%d", &num_books); 
                 fprintf(IT_College_Library_Catalogue, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, num_books);
             }
             fclose(IT_College_Library_Catalogue);
@@ -340,7 +419,7 @@ void Admin(void)
                 goto Admin;
             }
 
-        case 6: // Return a book
+        case 6: // Return a book : To be completed
             {
                 FILE *Issued_Books;
                 Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "a+"), "Issued_Books.csv");
@@ -450,10 +529,10 @@ void Student(void)
     int Choice;
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
-    printf("\t1. Search for a book\n");//Completed
-    printf("\t2. Check pending fine\n");//Completed
-    printf("\t3. Check the issued books\n");//Comlpleted
-    printf("\t4. Exit\n");//Completed
+    printf("\t1. Search for a book\n");
+    printf("\t2. Check pending fine\n");
+    printf("\t3. Check the issued books\n");
+    printf("\t4. Exit\n");
     printf("Enter your choice here: ");
     if (scanf("%d", &Choice) != 1)
     {
