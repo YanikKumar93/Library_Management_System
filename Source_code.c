@@ -1,8 +1,5 @@
-// THigs left to be done :
-// 1. Error handilng in the input in the admin and the student part 
-//2. Return book function 
-//3. fixing the login 
-//4. Csv handiling for the login part
+// Things left to be done :
+//1. Return book function 
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +18,7 @@ void Check_File_Opening(FILE *file, const char *filename)
     }
 }
 
-unsigned long HashPassword(char password[])
+unsigned long HashPassword(char password[])// Reurns a hash value for the given password using a simple hashing algorithm and working on bits inspite of words.
 {
     unsigned long hash = 0;
     int i;
@@ -86,13 +83,14 @@ void Admin_Login(void)
     int exists = 0;
     int choice;
     Admin_login :
-    printf("----- ADMIN LOGIN -----\n");
+    printf("----- ADMIN LOGIN DASHBOARD -----\n");
     printf("\t1. Login\n");   
     printf("\t2. Register\n");
     printf("Enter your choice here: ");
     scanf("%d", &choice);
     if (choice == 1)
     {
+        printf("\n----- ADMIN LOGIN -----\n");
         printf("Enter your username: ");
         scanf("%19s", username);
         printf("Enter your password: ");
@@ -146,8 +144,7 @@ void Admin_Login(void)
         }
         printf("Create your password: ");
         scanf("%19s", password);
-        // Convert the password into a hash.
-        password_hash = HashPassword(password);// HashPassword is a function that hashes the password.
+        password_hash = HashPassword(password);
         Admin_Credentials = fopen("Admin_Credentials.csv", "a");
         Check_File_Opening(Admin_Credentials, "Admin_Credentials.csv");
         fprintf(Admin_Credentials, "%s,%lu\n", username, password_hash);
@@ -164,25 +161,109 @@ void Admin_Login(void)
     }
 }
 
-void Student_Login(void)// Fix it for creating a password for a particular user. 
-{
-    char username[20], password[20];
-    printf("Enter student username: ");
-    scanf("%s", username);
-    printf("Enter student password: ");
-    scanf("%s", password);
 
-    if (strcmp(username, "student") == 0 && strcmp(password, "student123") == 0)
+void Student_Login(void)
+{
+    FILE *Student_Credentials;
+    char username[20], password[20], stored_username[20];
+    int enrollment_number, stored_enrollment,exists = 0,choice;
+    unsigned long password_hash, stored_hash;
+    Student_login:
+    printf("----- STUDENT LOGIN DASHBOARD -----\n");
+    printf("\t1. Login\n");
+    printf("\t2. Register\n");
+    printf("Enter your choice here: ");
+    scanf("%d", &choice);
+    if (choice == 1)
     {
-        printf("Student login successful.\n");
-        Student();
+        printf("\n----- STUDENT LOGIN -----\n");
+        printf("Enter your enrollment number: ");
+        scanf("%d", &enrollment_number);
+        printf("Enter your username: ");
+        scanf("%19s", username);
+        printf("Enter your password: ");
+        scanf("%19s", password);
+        password_hash = HashPassword(password);
+        Student_Credentials = fopen("Student_Credentials.csv", "r");
+        if (Student_Credentials != NULL)
+        {
+            while (fscanf(Student_Credentials,
+                          "%d,%19[^,],%lu",
+                          &stored_enrollment,
+                          stored_username,
+                          &stored_hash) == 3)
+            {
+                if (enrollment_number == stored_enrollment &&
+                    strcmp(username, stored_username) == 0 &&
+                    password_hash == stored_hash)
+                {
+                    printf("\nStudent login successful!\n");
+                    fclose(Student_Credentials);
+                    Student();
+                    return;
+                }
+            }
+            fclose(Student_Credentials);
+        }
+        printf("\nInvalid student credentials. Please try again.\n\n");
+        goto Student_login;
     }
+    else if (choice == 2)
+    {
+        Student_register:
+        printf("\n----- STUDENT REGISTRATION -----\n");
+        printf("Enter your enrollment number: ");
+        scanf("%d", &enrollment_number);
+        printf("Enter your username: ");
+        scanf("%19s", username);
+        exists = 0;
+        Student_Credentials = fopen("Student_Credentials.csv", "r");
+        if (Student_Credentials != NULL)
+        {
+            while (fscanf(Student_Credentials,
+                          "%d,%19[^,],%lu",
+                          &stored_enrollment,
+                          stored_username,
+                          &stored_hash) == 3)
+            {
+                if (enrollment_number == stored_enrollment ||
+                    strcmp(username, stored_username) == 0)
+                {
+                    exists = 1;
+                    break;
+                }
+            }
+            fclose(Student_Credentials);
+        }
+        if (exists == 1)
+        {
+            printf("\nThis enrollment number or username is already registered.\n");
+            printf("Please use different details or login if already registered.\n\n");
+
+            goto Student_login;
+        }
+        printf("Create your password: ");
+        scanf("%19s", password);
+        password_hash = HashPassword(password);
+        Student_Credentials = fopen("Student_Credentials.csv", "a");
+        Check_File_Opening(Student_Credentials, "Student_Credentials.csv");
+        fprintf(Student_Credentials, "%d,%s,%lu\n",
+                enrollment_number, username, password_hash);
+        fclose(Student_Credentials);
+        printf("\nStudent registration successful!\n");
+        printf("You can now log in with your credentials.\n\n");
+        goto Student_login;
+    }
+
     else
     {
-        printf("Invalid student credentials.\n");
+        printf("\nInvalid choice.\n");
+        printf("Please enter a valid choice.\n\n");
+
+        goto Student_login;
     }
 }
- 
+
 
 void Admin(void)
 {
@@ -256,6 +337,7 @@ void Admin(void)
             int total_books = 0;
             printf("How many books do you want to add? ");
             scanf("%d", &total_books);
+            getchar();
             if(sizeof(total_books)!= 4)
             {
                 printf("Please enter a valid entry.");
