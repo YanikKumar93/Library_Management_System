@@ -1,6 +1,3 @@
-// Things left to be done :
-//1. Return book function 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,7 +17,7 @@ void Check_File_Opening(FILE *file, const char *filename)
 
 unsigned long HashPassword(char password[])// Reurns a hash value for the given password using a simple hashing algorithm and working on bits inspite of words.
 {
-    unsigned long hash = 0;
+    unsigned long hash = 111;
     int i;
     for (i = 0; password[i] != '\0'; i++)
     {
@@ -161,7 +158,6 @@ void Admin_Login(void)
     }
 }
 
-
 void Student_Login(void)
 {
     FILE *Student_Credentials;
@@ -170,11 +166,6 @@ void Student_Login(void)
     unsigned long password_hash, stored_hash;
     Student_login:
     printf("----- STUDENT LOGIN DASHBOARD -----\n");
-    printf("\t1. Login\n");
-    printf("\t2. Register\n");
-    printf("Enter your choice here: ");
-    scanf("%d", &choice);
-    if (choice == 1)
     {
         printf("\n----- STUDENT LOGIN -----\n");
         printf("Enter your enrollment number: ");
@@ -207,61 +198,7 @@ void Student_Login(void)
         }
         printf("\nInvalid student credentials. Please try again.\n\n");
         goto Student_login;
-    }
-    else if (choice == 2)
-    {
-        Student_register:
-        printf("\n----- STUDENT REGISTRATION -----\n");
-        printf("Enter your enrollment number: ");
-        scanf("%d", &enrollment_number);
-        printf("Enter your username: ");
-        scanf("%19s", username);
-        exists = 0;
-        Student_Credentials = fopen("Student_Credentials.csv", "r");
-        if (Student_Credentials != NULL)
-        {
-            while (fscanf(Student_Credentials,
-                          "%d,%19[^,],%lu",
-                          &stored_enrollment,
-                          stored_username,
-                          &stored_hash) == 3)
-            {
-                if (enrollment_number == stored_enrollment ||
-                    strcmp(username, stored_username) == 0)
-                {
-                    exists = 1;
-                    break;
-                }
-            }
-            fclose(Student_Credentials);
-        }
-        if (exists == 1)
-        {
-            printf("\nThis enrollment number or username is already registered.\n");
-            printf("Please use different details or login if already registered.\n\n");
-
-            goto Student_login;
-        }
-        printf("Create your password: ");
-        scanf("%19s", password);
-        password_hash = HashPassword(password);
-        Student_Credentials = fopen("Student_Credentials.csv", "a");
-        Check_File_Opening(Student_Credentials, "Student_Credentials.csv");
-        fprintf(Student_Credentials, "%d,%s,%lu\n",
-                enrollment_number, username, password_hash);
-        fclose(Student_Credentials);
-        printf("\nStudent registration successful!\n");
-        printf("You can now log in with your credentials.\n\n");
-        goto Student_login;
-    }
-
-    else
-    {
-        printf("\nInvalid choice.\n");
-        printf("Please enter a valid choice.\n\n");
-
-        goto Student_login;
-    }
+    } 
 }
 
 
@@ -284,14 +221,12 @@ void Admin(void)
     printf("\t7. Library statistics dashboard\n");
     printf("\t8. Exit\n");
     printf("Enter your choice here: ");
-
     if (scanf("%d", &Choice) != 1)
     {
         printf("Invalid input.\n");
         printf("Please enter a valid choice. \n");
         goto Admin;
     }
-
     switch (Choice)
     {
         case 1: // Add a student 
@@ -368,17 +303,45 @@ void Admin(void)
 
         case 3: // Check availability of books
             {
-               FILE *catalogue;
+                FILE *catalogue;
+                FILE *Issued_Books;
+                FILE *Returned_Books;
+                Returned_Books = fopen("Returned_Books.csv", "r");
+                catalogue = fopen("IT_College_Library_Catalogue.csv", "r");
+                Issued_Books = fopen("Issued_Books.csv", "r");
                 Check_File_Opening(catalogue, "IT_College_Library_Catalogue.csv");
-                char book_name[100];
-                char author_name[100];
-                char publisher_name[100];
-                char search_book[100];
-                int num_books;
-                int found = 0;                
+                Check_File_Opening(Issued_Books, "Issued_Books.csv");
+                Check_File_Opening(Returned_Books, "Returned_Books.csv");
+                char book_name[100],author_name[100],publisher_name[100],search_book[100];
+                int num_books=0,found = 0;  
+                int i=0,j=0;             
                 fscanf(catalogue, "%*[^\n]\n");
                 printf("Enter the name of the book to search: ");
                 scanf(" %99[^\n]", search_book);
+                fscanf(Issued_Books, "%*[^\n]\n");
+                fscanf(Returned_Books, "%*[^\n]\n");
+                while (fscanf(Issued_Books, " %99[^,],%99[^,],%99[^,],%d",
+                            book_name,
+                            author_name,
+                            publisher_name,
+                            &num_books) == 4)
+                {
+                    if (strcmp(search_book, book_name) == 0)
+                    {
+                        i++;
+                    }
+                }
+                while (fscanf(Returned_Books, " %99[^,],%99[^,],%99[^,],%d",
+                            book_name,
+                            author_name,
+                            publisher_name,
+                            &num_books) == 4)
+                {
+                    if (strcmp(search_book, book_name) == 0)
+                    {
+                        j++;
+                    }
+                }
                 while (fscanf(catalogue, " %99[^,],%99[^,],%99[^,],%d",
                             book_name,
                             author_name,
@@ -391,7 +354,7 @@ void Admin(void)
                         printf("Book Name: %s\n", book_name);
                         printf("Author Name: %s\n", author_name);
                         printf("Publisher Name: %s\n", publisher_name);
-                        printf("Quantity: %d\n", num_books);
+                        printf("Quantity: %d\n", num_books-i+j);
                         found = 1;
                         break;
                     }
@@ -401,82 +364,22 @@ void Admin(void)
                     printf("\nBook not found in the catalogue.\n");
                 }
                 fclose(catalogue);
-                goto Admin;
-            }
-
-        case 4: // Checking pending fines
-            {   
-                FILE *Issued_Books;
-                int enrollment_number;
-                char book_name[100];
-                char book[100];
-                char author[100];
-                char publisher[100];
-                int enrollment;
-                int date_issued, date_today;
-                int found = 0;
-                Issued_Books = fopen("Issued_Books.csv", "r");
-                Check_File_Opening(Issued_Books, "Issued_Books.csv");
-                printf("Enter the enrollment number of the student: ");
-                scanf("%d", &enrollment_number);
-                printf("Enter the name of the book to check pending fine: ");
-                getchar();
-                fgets(book_name, sizeof(book_name), stdin);
-                book_name[strcspn(book_name, "\n")] = '\0';
-                while (fscanf(Issued_Books,
-                            "%99[^,],%99[^,],%99[^,],%d,%d",
-                            book,
-                            author,
-                            publisher,
-                            &enrollment,
-                            &date_issued) == 5)
-                {
-                    if (enrollment == enrollment_number &&
-                        strcmp(book, book_name) == 0)
-                    {
-                        found = 1;
-                        break;
-                    }
-                }
+                fclose(Returned_Books);
                 fclose(Issued_Books);
-                if (found>0)
-                {
-                    printf("Enter the current date (DDMMYYYY): ");
-                    scanf("%d", &date_today);
-                    if ((date_today - date_issued) > 15000)
-                    {
-                        printf("\nBook is overdue.\n");
-                        int fine = ((date_today - date_issued - 15)/10000) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
-                        printf("\nPending fine for enrollment number %d and book '%s' is: %d rupees.\n",
-                            enrollment_number, book_name, fine);
-                    }
-                    else
-                    {
-                        printf("\nNo pending fine for enrollment number %d and book '%s'.\n",
-                            enrollment_number, book_name);
-                    }
-                }
-                else
-                {
-                    printf("\nNo matching issued-book record found.\n");
-                }
                 goto Admin;
             }
 
         case 5: // Issue a book 
             {
-                FILE *Issued_Books;
-                Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "a+"), "Issued_Books.csv");
+                FILE *Backup_issue;
+                Check_File_Opening(Backup_issue = fopen("Backup_issue.csv", "a+"), "Backup_issue.csv");
                 char book_name[100], author_name[100], publisher_name[100];
                 int enrollment_number;
-                int date;
+                int num_books;
                 printf("Enter the enrollment number of the student: ");
                 scanf("%d", &enrollment_number);
-                int num_books;
                 printf("Enter the number of books to issue: ");
                 scanf("%d", &num_books);
-                printf("Enter the issue date (in format DDMMYYYY): ");
-                scanf("%d", &date);
                 if (num_books > 5)
                 {
                     printf("You can issue maximum 5 books at a time.\n");
@@ -494,17 +397,17 @@ void Admin(void)
                     printf("Enter the publisher name of book %d to issue: ", i + 1);
                     fgets(publisher_name, sizeof(publisher_name), stdin); 
                     publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
-                    fprintf(Issued_Books, "%s,%s,%s,%d,%d\n", book_name, author_name, publisher_name, enrollment_number, date);
+                    fprintf(Backup_issue, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, enrollment_number);
                 }
-                fclose(Issued_Books);
+                fclose(Backup_issue);
                 printf("Books issued successfully.\n"); 
                 goto Admin;
             }
 
-        case 6: // Return a book : To be completed
+        case 6: // Return a book 
             {
-                FILE *Issued_Books;
-                Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "a+"), "Issued_Books.csv");
+                FILE *Returned_Books;
+                Check_File_Opening(Returned_Books = fopen("Returned_Books.csv", "a+"), "Returned_Books.csv");
                 char book_name[100], author_name[100], publisher_name[100];
                 int enrollment_number;  
                 int num_books;
@@ -524,9 +427,9 @@ void Admin(void)
                     printf("Enter the publisher name of book %d to return: ", i + 1);
                     fgets(publisher_name, sizeof(publisher_name), stdin); 
                     publisher_name[strcspn(publisher_name, "\n")] = '\0'; 
-                    fprintf(Issued_Books, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, enrollment_number);
+                    fprintf(Returned_Books, "%s,%s,%s,%d\n", book_name, author_name, publisher_name, enrollment_number);
                 }
-                fclose(Issued_Books);
+                fclose(Returned_Books);
                 printf("Books returned successfully.\n");
                 goto Admin;
             }
@@ -536,6 +439,7 @@ void Admin(void)
                 FILE *catalogue;
                 FILE *student_file;
                 FILE *Issued_Books;
+                FILE *Returned_Books;
                 char book_name[100], author_name[100], publisher_name[100];
                 char name[50], roll_number[20], email[50], Branch[50];
                 int enrollment_number;
@@ -544,16 +448,21 @@ void Admin(void)
                 int total_books = 0;
                 int total_students = 0;
                 int total_issued_books = 0;
+                int total_returned_books = 0;
                 Issued_Books = fopen("Issued_Books.csv", "r");
+                catalogue = fopen("IT_College_Library_Catalogue.csv", "r");
+                student_file = fopen("students.csv", "r");
+                Returned_Books = fopen("Returned_Books.csv", "r");
                 Check_File_Opening(Issued_Books, "Issued_Books.csv");
                 Check_File_Opening(catalogue, "IT_College_Library_Catalogue.csv");
                 Check_File_Opening(student_file, "students.csv");
+                Check_File_Opening(Returned_Books, "Returned_Books.csv");
                 fscanf(catalogue, "%*[^\n]\n");
                 while (fscanf(catalogue, "%99[^,],%99[^,],%99[^,],%d",
                             book_name,
                             author_name,
                             publisher_name,
-                            num_books,
+                            &num_books,
                             &date) == 5)
                 {
                     total_books += num_books;
@@ -569,8 +478,6 @@ void Admin(void)
                 }
                 fclose(Issued_Books);
                 fclose(catalogue);
-                fclose(student_file);
-                student_file = fopen("students.csv", "r");
                 fscanf(student_file, "%*[^\n]\n");
                 while (fscanf(student_file, "%99[^,],%99[^,],%99[^,],%c",
                             name,
@@ -581,9 +488,20 @@ void Admin(void)
                     total_students += 1;
                 }
                 fclose(student_file);
+                fscanf(Returned_Books, "%*[^\n]\n");
+                while (fscanf(Returned_Books, "%99[^,],%99[^,],%99[^,],%d,%d",
+                            book_name,
+                            author_name,
+                            publisher_name,
+                            &enrollment_number,
+                            &date) == 5)
+                {
+                    total_returned_books += 1;
+                }
+                fclose(Returned_Books);
                 printf("\nLibrary Statistics Dashboard\n");
                 printf("1. Total number of books in the library: %d\n", total_books);
-                printf("2. Total number of books currently present in the library: %d\n", total_books-total_issued_books); 
+                printf("2. Total number of books currently present in the library: %d\n", total_books-total_issued_books+total_returned_books); 
                 printf("3. Total issued books: %d\n", total_issued_books); 
                 printf("4. Total registered students: %d\n", total_students);
                 goto Admin;
@@ -612,9 +530,8 @@ void Student(void)
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
     printf("\t1. Search for a book\n");
-    printf("\t2. Check pending fine\n");
-    printf("\t3. Check the issued books\n");
-    printf("\t4. Exit\n");
+    printf("\t2. Check the issued books\n");
+    printf("\t3. Exit\n");
     printf("Enter your choice here: ");
     if (scanf("%d", &Choice) != 1)
     {
@@ -658,67 +575,7 @@ void Student(void)
             goto Student;
         }
 
-        case 2: // Check Pending fines
-        {
-            FILE *Issued_Books;
-                int enrollment_number;
-                char book_name[100];
-                char book[100];
-                char author[100];
-                char publisher[100];
-                int enrollment;
-                int date_issued, date_today;
-                int found = 0;
-                Issued_Books = fopen("Issued_Books.csv", "r");
-                Check_File_Opening(Issued_Books, "Issued_Books.csv");
-                printf("Enter your enrollment number : ");
-                scanf("%d", &enrollment_number);
-                printf("Enter the name of the book to check pending fine: ");
-                getchar();
-                fgets(book_name, sizeof(book_name), stdin);
-                book_name[strcspn(book_name, "\n")] = '\0';
-                //[^,]- Used to skip the programme from reading commas
-                while (fscanf(Issued_Books,
-                            "%99[^,],%99[^,],%99[^,],%d,%d",
-                            book,
-                            author,
-                            publisher,
-                            &enrollment,
-                            &date_issued) == 5)
-                {
-                    if (enrollment == enrollment_number &&
-                        strcmp(book, book_name) == 0)
-                    {
-                        found = 1;
-                        break;
-                    }
-                }
-                fclose(Issued_Books);
-                if (found>0)
-                {
-                    printf("Enter the current date (DDMMYYYY): ");
-                    scanf("%d", &date_today);
-                    if ((date_today - date_issued) > 15000)
-                    {
-                        printf("\nBook is overdue.\n");
-                        int fine = ((date_today - date_issued - 15)/1000) * 2 + 10; // Assuming a fine of 2 rupees per day after 15 days and a base fine of 10 units
-                        printf("\nPending fine for enrollment number %d and book '%s' is: %d rupees.\n",
-                            enrollment_number, book_name, fine);
-                    }
-                    else
-                    {
-                        printf("\nNo pending fine for enrollment number %d and book '%s'.\n",
-                            enrollment_number, book_name);
-                    }
-                }
-                else
-                {
-                    printf("\nNo matching issued-book record found.\n");
-                }
-            goto Student;
-        }
-
-        case 3: // Checking Issued books
+        case 2: // Checking Issued books
         {
             FILE *Issued_Books;
             Check_File_Opening(Issued_Books = fopen("Issued_Books.csv", "r"), "Issued_Books.csv");
@@ -756,7 +613,7 @@ void Student(void)
             goto Student;
         }
 
-        case 4: // Exit 
+        case 3: // Exit 
         {
             printf("\nExiting the Student Dashboard.\n");
             printf("Thank you for visiting the JIIT Library .\n");
