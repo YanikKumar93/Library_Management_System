@@ -448,78 +448,129 @@ Admin:
                 goto Admin;
             }
         
+        
         case 7:// Library Statistics Dashboard
+        {
+            FILE *catalogue;
+            FILE *student_file;
+            FILE *Issued_Books;
+            FILE *Backup_issue;
+            FILE *Returned_Books;
+
+            char book_name[100], author_name[100], publisher_name[100];
+            char name[50], roll_number[20], email[50], Branch[50];
+            char line[300];
+
+            int enrollment_number;
+            int num_books;
+            int total_books = 0;
+            int total_students = 0;
+            int total_issued_books = 0;
+            int backup_issued_books = 0;
+            int total_returned_books = 0;
+
+            Issued_Books = fopen("Issued_Books.csv", "r");
+            Backup_issue = fopen("Backup_issue.csv", "r");
+            catalogue = fopen("IT_College_Library_Catalogue.csv", "r");
+            student_file = fopen("students.csv", "r");
+            Returned_Books = fopen("Returned_Books.csv", "r");
+
+            Check_File_Opening(Issued_Books, "Issued_Books.csv");
+            if (Backup_issue == NULL)
             {
-                FILE *catalogue;
-                FILE *student_file;
-                FILE *Issued_Books;
-                FILE *Returned_Books;
-                char book_name[100], author_name[100], publisher_name[100];
-                char name[50], roll_number[20], email[50], Branch[50];
-                int enrollment_number;
-                int num_books;
-                int date;
-                int total_books = 0;
-                int total_students = 0;
-                int total_issued_books = 0;
-                int total_returned_books = 0;
-                Issued_Books = fopen("Issued_Books.csv", "r");
-                catalogue = fopen("IT_College_Library_Catalogue.csv", "r");
-                student_file = fopen("students.csv", "r");
-                Returned_Books = fopen("Returned_Books.csv", "r");
-                Check_File_Opening(Issued_Books, "Issued_Books.csv");
-                Check_File_Opening(catalogue, "IT_College_Library_Catalogue.csv");
-                Check_File_Opening(student_file, "students.csv");
-                Check_File_Opening(Returned_Books, "Returned_Books.csv");
-                fscanf(catalogue, "%*[^\n]\n");
-                while (fscanf(catalogue, "%99[^,],%99[^,],%99[^,],%d",
-                            book_name,
-                            author_name,
-                            publisher_name,
-                            &num_books,
-                            &date) == 5)
+                Backup_issue = fopen("Backup_issue.csv", "a+");
+                Check_File_Opening(Backup_issue, "Backup_issue.csv");
+                rewind(Backup_issue);
+            }
+            Check_File_Opening(catalogue, "IT_College_Library_Catalogue.csv");
+            Check_File_Opening(student_file, "students.csv");
+            Check_File_Opening(Returned_Books, "Returned_Books.csv");
+
+            // Count total books
+            while (fgets(line, sizeof(line), catalogue) != NULL)
+            {
+                char *last_comma = strrchr(line, ',');
+                if (last_comma != NULL &&
+                    sscanf(last_comma + 1, "%d", &num_books) == 1)
                 {
                     total_books += num_books;
                 }
-                while (fscanf(Issued_Books, "%99[^,],%99[^,],%99[^,],%d,%d",
-                            book_name,
-                            author_name,
-                            publisher_name,
-                            &enrollment_number,
-                            &date) == 5)
-                {
-                    total_issued_books += 1;
-                }
-                fclose(Issued_Books);
-                fclose(catalogue);
-                fscanf(student_file, "%*[^\n]\n");
-                while (fscanf(student_file, "%99[^,],%99[^,],%99[^,],%c",
-                            name,
-                            roll_number,
-                            email,
-                            Branch) == 4)
-                {
-                    total_students += 1;
-                }
-                fclose(student_file);
-                fscanf(Returned_Books, "%*[^\n]\n");
-                while (fscanf(Returned_Books, "%99[^,],%99[^,],%99[^,],%d,%d",
-                            book_name,
-                            author_name,
-                            publisher_name,
-                            &enrollment_number,
-                            &date) == 5)
-                {
-                    total_returned_books += 1;
-                }
-                fclose(Returned_Books);
-                printf("\nLibrary Statistics Dashboard\n");
-                printf("1. Total number of books in the library: %d\n", total_books);
-                printf("2. Total number of books currently present in the library: %d\n", total_books-total_issued_books+total_returned_books); 
-                printf("3. Total issued books: %d\n", total_issued_books); 
-                printf("4. Total registered students: %d\n", total_students);
-                goto Admin;
             }
+
+            // Count total issued books
+            while (fgets(line, sizeof(line), Issued_Books) != NULL)
+            {
+                char *last_comma = strrchr(line, ',');
+                if (last_comma != NULL &&
+                    sscanf(last_comma + 1, "%d", &enrollment_number) == 1)
+                {
+                    total_issued_books++;
+                }
+            }
+
+            // Case 5 currently stores issue records in this backup file.
+            rewind(Backup_issue);
+            while (fgets(line, sizeof(line), Backup_issue) != NULL)
+            {
+                char *last_comma = strrchr(line, ',');
+                if (last_comma != NULL &&
+                    sscanf(last_comma + 1, "%d", &enrollment_number) == 1)
+                {
+                    backup_issued_books++;
+                }
+            }
+
+            if (total_issued_books == 0)
+            {
+                total_issued_books = backup_issued_books;
+            }
+
+            // Count total registered students
+            while (fgets(line, sizeof(line), student_file) != NULL)
+            {
+                if (strncmp(line, "Name,", 5) != 0 &&
+                    strchr(line, ',') != NULL)
+                {
+                    total_students++;
+                }
+            }
+
+            // Count total returned books
+            while (fgets(line, sizeof(line), Returned_Books) != NULL)
+            {
+                char *last_comma = strrchr(line, ',');
+                if (last_comma != NULL &&
+                    sscanf(last_comma + 1, "%d", &enrollment_number) == 1)
+                {
+                    total_returned_books++;
+                }
+            }
+
+            fclose(Issued_Books);
+            fclose(Backup_issue);
+            fclose(catalogue);
+            fclose(student_file);
+            fclose(Returned_Books);
+
+            printf("\nLibrary Statistics Dashboard\n");
+
+            printf("1. Total number of books in the library: %d\n",
+                   total_books);
+
+            printf("2. Total number of books currently present in the library: %d\n",
+                   total_books - total_issued_books + total_returned_books);
+
+            printf("3. Total issued books: %d\n",
+                   total_issued_books);
+
+            printf("4. Total returned books: %d\n",
+                   total_returned_books);
+
+            printf("5. Total registered students: %d\n",
+                   total_students);
+
+            goto Admin;
+        }
 
         case 8://Exit
             {
