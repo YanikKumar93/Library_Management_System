@@ -15,6 +15,13 @@ void Check_File_Opening(FILE *file, const char *filename)
     }
 }
 
+static void clear_input(void)
+{
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF);
+    if (c == EOF) exit(EXIT_SUCCESS);
+}
+
 unsigned long HashPassword(char password[])// Reurns a hash value for the given password using a simple hashing algorithm and working on bits inspite of words.
 {
     unsigned long hash = 111;
@@ -29,8 +36,12 @@ unsigned long HashPassword(char password[])// Reurns a hash value for the given 
 int main(void)
 {
     int User;
-    FILE *catalogue;
-    catalogue = fopen("IT_College_Library_Catalogue.csv", "a+");
+    FILE *f;
+
+    if ((f = fopen("students.csv", "a")) != NULL) fclose(f);
+    if ((f = fopen("IT_College_Library_Catalogue.csv", "a")) != NULL) fclose(f);
+    if ((f = fopen("Issued_Books.csv", "a")) != NULL) fclose(f);
+    if ((f = fopen("Returned_Books.csv", "a")) != NULL) fclose(f);
 
 start:
     printf("-------------------WELCOME TO JIIT LIBRARY--------------------\n\n");
@@ -63,11 +74,6 @@ start:
             goto start;
     }
 
-    if (catalogue != NULL)
-    {
-        fclose(catalogue);
-    }
-
     return 0;
 }
 
@@ -84,7 +90,11 @@ void Admin_Login(void)
     printf("\t1. Login\n");   
     printf("\t2. Register\n");
     printf("Enter your choice here: ");
-    scanf("%d", &choice);
+    if (scanf("%d", &choice) != 1)
+    {
+        clear_input();
+        goto Admin_login;
+    }
     if (choice == 1)
     {
         printf("\n----- ADMIN LOGIN -----\n");
@@ -115,7 +125,6 @@ void Admin_Login(void)
     }
     else if (choice == 2)
     {
-        Admin_register: 
         printf("\n----- ADMIN REGISTRATION -----\n");
         printf("Enter your username: ");
         scanf("%19s", username);
@@ -162,14 +171,18 @@ void Student_Login(void)
 {
     FILE *Student_Credentials;
     char username[20], password[20], stored_username[20];
-    int enrollment_number, stored_enrollment,exists = 0,choice;
+    int enrollment_number, stored_enrollment,exists = 0;
     unsigned long password_hash, stored_hash;
     Student_login:
     printf("----- STUDENT LOGIN DASHBOARD -----\n");
     {
         printf("\n----- STUDENT LOGIN -----\n");
         printf("Enter your enrollment number: ");
-        scanf("%d", &enrollment_number);
+        if (scanf("%d", &enrollment_number) != 1)
+        {
+            clear_input();
+            goto Student_login;
+        }
         printf("Enter your username: ");
         scanf("%19s", username);
         printf("Enter your password: ");
@@ -205,11 +218,9 @@ void Student_Login(void)
 void Admin(void)
 {
     int Choice;
-    Admin:
     FILE *student_file;
-    Check_File_Opening(student_file = fopen("students.csv", "a+"), "students.csv");
     FILE *IT_College_Library_Catalogue;
-    Check_File_Opening(IT_College_Library_Catalogue = fopen("IT_College_Library_Catalogue.csv", "a+"), "IT_College_Library_Catalogue.csv");
+Admin:
     printf("\nWelcome to the Admin Dashboard\n");
     printf("What do you want to do?\n");
     printf("\t1. Add a student\n");
@@ -225,14 +236,15 @@ void Admin(void)
     {
         printf("Invalid input.\n");
         printf("Please enter a valid choice. \n");
+        clear_input();
         goto Admin;
     }
     switch (Choice)
     {
         case 1: // Add a student 
            { 
-            int num;
-            Check_File_Opening(student_file, "students.csv");
+            int num = 0;
+            Check_File_Opening(student_file = fopen("students.csv", "a+"), "students.csv");
             printf("How many students do you want to add? ");
             scanf("%d", &num);
             getchar();
@@ -265,6 +277,7 @@ void Admin(void)
 
         case 2: // Add a book
             {
+            Check_File_Opening(IT_College_Library_Catalogue = fopen("IT_College_Library_Catalogue.csv", "a+"), "IT_College_Library_Catalogue.csv");
             Book:
             Check_File_Opening(IT_College_Library_Catalogue, "IT_College_Library_Catalogue.csv");
             char book_name[100], author_name[100], publisher_name[100];
@@ -374,8 +387,8 @@ void Admin(void)
                 FILE *Backup_issue;
                 Check_File_Opening(Backup_issue = fopen("Backup_issue.csv", "a+"), "Backup_issue.csv");
                 char book_name[100], author_name[100], publisher_name[100];
-                int enrollment_number;
-                int num_books;
+                int enrollment_number = 0;
+                int num_books = 0;
                 printf("Enter the enrollment number of the student: ");
                 scanf("%d", &enrollment_number);
                 printf("Enter the number of books to issue: ");
@@ -383,6 +396,7 @@ void Admin(void)
                 if (num_books > 5)
                 {
                     printf("You can issue maximum 5 books at a time.\n");
+                    fclose(Backup_issue);
                     goto Admin;
                 }
                 for (int i = 0; i < num_books; i++)
@@ -409,8 +423,8 @@ void Admin(void)
                 FILE *Returned_Books;
                 Check_File_Opening(Returned_Books = fopen("Returned_Books.csv", "a+"), "Returned_Books.csv");
                 char book_name[100], author_name[100], publisher_name[100];
-                int enrollment_number;  
-                int num_books;
+                int enrollment_number = 0;
+                int num_books = 0;
                 printf("Enter the enrollment number of the student: ");
                 scanf("%d", &enrollment_number);
                 printf("Enter the number of books to return: ");
@@ -483,7 +497,7 @@ void Admin(void)
                             name,
                             roll_number,
                             email,
-                            &Branch) == 4)
+                            Branch) == 4)
                 {
                     total_students += 1;
                 }
@@ -525,8 +539,8 @@ void Admin(void)
 
 void Student(void)
 {
-    Student:
     int Choice;
+Student:
     printf("\nWelcome to the Student Dashboard\n");
     printf("What do you want to do?\n");
     printf("\t1. Search for a book\n");
@@ -536,6 +550,7 @@ void Student(void)
     if (scanf("%d", &Choice) != 1)
     {
         printf("Invalid input.\n");
+        clear_input();
         goto Student;
     }
 
@@ -582,7 +597,7 @@ void Student(void)
             printf("---------NOTE----------\n");
             printf("\t1. Please note that the books can be issued for a max of 15 days.\n");
             printf("\t2. If the book is not returned within 15 days, a fine of 2 rupees per day will be charged with a base charge of 10 rupees.\n");
-            int enrollment_number;
+            int enrollment_number = 0;
             printf("Enter your enrollment number to check the issued books: ");
             scanf("%d", &enrollment_number);
             char book[100];
