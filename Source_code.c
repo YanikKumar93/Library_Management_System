@@ -98,6 +98,7 @@ void Admin_Login(void)
         Admin_Credentials = fopen("Admin_Credentials.csv", "r");
         if (Admin_Credentials != NULL)
         {
+            // [^,] = does not match a comma, %19[^,] = read up to 19 characters until a comma is found
             while (fscanf(Admin_Credentials, " %19[^,],%lu",
                           stored_username, &stored_hash) == 2)
             {
@@ -577,6 +578,8 @@ static int csv_field_count(const char *line)
     }
     return count;
 }
+
+// size_t = unsigned integer type designed to represent size in bytes and array indices
 
 static int get_csv_field(const char *line, int field_number,char *output, size_t output_size)
 {
